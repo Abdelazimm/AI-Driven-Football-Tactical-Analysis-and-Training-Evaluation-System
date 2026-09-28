@@ -1,0 +1,315 @@
+{
+  "phase": "IMPLEMENTATION_PHASE6",
+  "collected_at_utc": "2026-09-27T11:25:53.826812+00:00",
+  "disposition": "PHASE6_FINAL_FULL_E2E_PASS_WITH_LIMITATIONS",
+  "research_scope": "Derived copy is for cloud transport/product E2E only; formal TrackEval and original research remain frozen.",
+  "authoritative_research_source": {
+    "role": "AUTHORITATIVE_RESEARCH_SOURCE",
+    "sha256": "0e676f4327d1e7e7ed458d619e5558f6630fc7efb0dda7bc608aec45cb9a5c71",
+    "size_bytes": 2390441924,
+    "previously_verified": true
+  },
+  "transport_copy": {
+    "role": "PHASE6_TRANSPORT_COPY",
+    "input_asset_role": "DERIVED_TRANSPORT_COPY",
+    "sha256": "b19071bbeb16e9b88b239d5fc66d51157acde3d480b8ff5e9ccb2ebeac4679a6",
+    "size_bytes": 43997249,
+    "suitability_gate": "PHASE6_TRANSPORT_COPY_ACCEPTED_FOR_PRODUCT_E2E"
+  },
+  "prior_original_upload_attempt": {
+    "resumable_upload_create_http_status": 413,
+    "provider_message": "Maximum size exceeded",
+    "additional_64_mib_probe_http_status": 413,
+    "bucket_specific_limit_bytes": null,
+    "project_global_limit_bytes": null,
+    "project_global_limit_interpretation": "At most 64 MiB based on the rejected probe; exact configured limit and billing plan were unavailable.",
+    "object_exists_after_failure": false,
+    "bytes_uploaded": 0
+  },
+  "product": {
+    "session_id": "b7a81465-4262-4ae4-b6b5-4d1679967818",
+    "transport_media_id": "0ccfbb77-2d37-4e1e-a80a-90f6b9bd44ab",
+    "original_rejected_media_id": "6591dcf9-2691-4d95-b1dd-2ecfd6545e80",
+    "storage_bucket": "analysis-inputs",
+    "storage_path": "b7a81465-4262-4ae4-b6b5-4d1679967818/video/0ccfbb77-2d37-4e1e-a80a-90f6b9bd44ab_3v3_match_iphone16_PHASE6_TRANSPORT.mp4",
+    "upload_intent_http_status": 201,
+    "tus_create_http_status": 201,
+    "uploaded_bytes": 43997249,
+    "media_validation_status": "VALIDATED",
+    "job_id": "9b01f139-5411-4a6d-9f9b-85e6a6fb4cdc",
+    "dispatch_id": "800cb888-511d-464e-833c-fa35b126cb23",
+    "modal_call_id": "fc-01M3H776A65X2P2VCCATB57FND",
+    "dispatch_final_state": "SUCCEEDED",
+    "dispatch_finished_at": "2026-09-27T11:14:23.166879+00:00",
+    "job_status": "COMPLETED_WITH_LIMITATIONS",
+    "current_stage": "UPLOADING_RESULTS",
+    "progress_percent": 100.0,
+    "error_code": null,
+    "error_details": null,
+    "final_api_result_http_status": 200
+  },
+  "modal": {
+    "call_status": "COMPLETED_WITH_LIMITATIONS",
+    "timings": {
+      "media_acquisition_s": 10.703,
+      "model_verification_s": 3.336,
+      "pipeline_s": 2012.314,
+      "persistence_s": 4.459,
+      "total_s": 2032.682
+    },
+    "checkpoint_files": {
+      "checkpoint_best_total.pth": {
+        "size_bytes": 134747227,
+        "sha256": "7539cfb3eca3125136c1446d7a522a5a46abb14136d55f79aec8daececc00b85",
+        "path": "/data/models/m2/checkpoint_best_total.pth"
+      },
+      "sports_model.pth.tar-60": {
+        "size_bytes": 30393613,
+        "sha256": "8d5b2fd8763db34c2aad69810466adf413f0426d9f8119d322227e0e639c5fbd",
+        "path": "/data/models/m2/sports_model.pth.tar-60"
+      }
+    },
+    "retrieval_error": null
+  },
+  "private_output_artifact_readback": {
+    "verified_at_utc": "2026-09-27T11:23:13.216463+00:00",
+    "bucket": "analysis-outputs",
+    "private": true,
+    "job_id": "9b01f139-5411-4a6d-9f9b-85e6a6fb4cdc",
+    "artifacts": {
+      "result_json": {
+        "storage_path": "jobs/9b01f139-5411-4a6d-9f9b-85e6a6fb4cdc/results/result.json",
+        "size_bytes": 444754,
+        "sha256": "1929b50d144b0a936db48b8e7ace34f83e91e9a1f51618188de6d10a3f1fbdfe"
+      },
+      "coach_report_md": {
+        "storage_path": "jobs/9b01f139-5411-4a6d-9f9b-85e6a6fb4cdc/reports/coach_report.md",
+        "size_bytes": 8083,
+        "sha256": "cfe58e4fcbc7dc669d73e0ed4732c9f53b24bec79868c110b956ea0d00046b97"
+      },
+      "report_metadata_json": {
+        "storage_path": "jobs/9b01f139-5411-4a6d-9f9b-85e6a6fb4cdc/reports/report_metadata.json",
+        "size_bytes": 663,
+        "sha256": "ca541d41df04567fed77634656de4a7daba8b778d641e3d1fea7fea826c18826"
+      },
+      "execution_manifest_json": {
+        "storage_path": "jobs/9b01f139-5411-4a6d-9f9b-85e6a6fb4cdc/logs/execution_manifest.json",
+        "size_bytes": 2312,
+        "sha256": "84eb2b39fdcca1f0d3ac0ffd93ee1af1eae739700593bc0a8b2dcc76dd61f549"
+      }
+    },
+    "raw_contents_exported": false
+  },
+  "frontend": {
+    "local_result_url": "http://127.0.0.1:5173/analysis/9b01f139-5411-4a6d-9f9b-85e6a6fb4cdc/results",
+    "real_job_rendered_in_browser": true,
+    "observed_status": "COMPLETED_WITH_LIMITATIONS",
+    "observed_identity_status": "FAIL_UNSAFE_MERGE",
+    "observed_calibration": "NO_METRIC_CALIBRATION",
+    "observed_coach_event_count": 13,
+    "observed_report_status": "DETERMINISTIC_FALLBACK",
+    "observed_no_overlay_artifact_notice": true,
+    "frontend_build_passed": true,
+    "typescript_check_passed": true
+  },
+  "analysis": {
+    "requested_methodology": "METHOD_2_RFDETR_GTATRACK",
+    "resolved_methodology": "METHOD_2_RFDETR_GTATRACK",
+    "media_metadata": {
+      "source_media_sha256": "b19071bbeb16e9b88b239d5fc66d51157acde3d480b8ff5e9ccb2ebeac4679a6",
+      "duration_s": 340.0,
+      "fps": 59.97352941176471,
+      "resolution_width": 1920,
+      "resolution_height": 1080,
+      "container_format": "mp4",
+      "video_codec": null
+    },
+    "frames_processed_reported_by_fusion": 20391,
+    "first_vision_timestamp_s": 0.0,
+    "last_vision_timestamp_s": 339.9833,
+    "instruction_event_count": 13,
+    "instruction_events": [
+      {
+        "start_s": 26.54,
+        "end_s": 28.26,
+        "category": "Defensive",
+        "action": "drop back",
+        "target_resolved": false
+      },
+      {
+        "start_s": 47.82,
+        "end_s": 49.1,
+        "category": "Pressing",
+        "action": "press",
+        "target_resolved": false
+      },
+      {
+        "start_s": 49.76,
+        "end_s": 51.18,
+        "category": "Pressing",
+        "action": "press",
+        "target_resolved": false
+      },
+      {
+        "start_s": 52.62,
+        "end_s": 53.54,
+        "category": "Pressing",
+        "action": "press",
+        "target_resolved": false
+      },
+      {
+        "start_s": 78.05,
+        "end_s": 79.71,
+        "category": "Positioning / Hold Ground",
+        "action": "hold your position",
+        "target_resolved": false
+      },
+      {
+        "start_s": 81.34,
+        "end_s": 82.12,
+        "category": "Positioning / Hold Ground",
+        "action": "hold your position",
+        "target_resolved": false
+      },
+      {
+        "start_s": 87.16,
+        "end_s": 89.94,
+        "category": "Positioning / Hold Ground",
+        "action": "hold your position",
+        "target_resolved": false
+      },
+      {
+        "start_s": 121.0,
+        "end_s": 173.32,
+        "category": "Defensive",
+        "action": "mark",
+        "target_resolved": false
+      },
+      {
+        "start_s": 173.32,
+        "end_s": 262.73,
+        "category": "Defensive",
+        "action": "drop back",
+        "target_resolved": false
+      },
+      {
+        "start_s": 262.73,
+        "end_s": 276.2,
+        "category": "Pressing",
+        "action": "press",
+        "target_resolved": false
+      },
+      {
+        "start_s": 277.77,
+        "end_s": 336.52,
+        "category": "Pressing",
+        "action": "press",
+        "target_resolved": false
+      },
+      {
+        "start_s": 277.77,
+        "end_s": 336.52,
+        "category": "Positioning / Hold Ground",
+        "action": "hold your position",
+        "target_resolved": false
+      },
+      {
+        "start_s": 336.7,
+        "end_s": 339.86,
+        "category": "Pressing",
+        "action": "press",
+        "target_resolved": false
+      }
+    ],
+    "structured_evidence_count": 28,
+    "evidence_scopes": [
+      "ANONYMOUS_TRACK",
+      "EVENT",
+      "TEAM"
+    ],
+    "response_windows_without_tracking": [
+      {
+        "event_id": "evt_7",
+        "window_start_s": 175.32,
+        "window_end_s": 179.32,
+        "limitations": [
+          "NO_TRACKS_DETECTED_IN_RESPONSE_WINDOW"
+        ]
+      },
+      {
+        "event_id": "evt_8",
+        "window_start_s": 264.73,
+        "window_end_s": 268.73,
+        "limitations": [
+          "NO_TRACKS_DETECTED_IN_RESPONSE_WINDOW"
+        ]
+      },
+      {
+        "event_id": "evt_9",
+        "window_start_s": 278.2,
+        "window_end_s": 282.2,
+        "limitations": [
+          "NO_TRACKS_DETECTED_IN_RESPONSE_WINDOW"
+        ]
+      },
+      {
+        "event_id": "evt_10",
+        "window_start_s": 338.52,
+        "window_end_s": 342.52,
+        "limitations": [
+          "NO_TRACKS_DETECTED_IN_RESPONSE_WINDOW"
+        ]
+      },
+      {
+        "event_id": "evt_11",
+        "window_start_s": 338.52,
+        "window_end_s": 342.52,
+        "limitations": [
+          "NO_TRACKS_DETECTED_IN_RESPONSE_WINDOW"
+        ]
+      },
+      {
+        "event_id": "evt_12",
+        "window_start_s": 341.86,
+        "window_end_s": 345.86,
+        "limitations": [
+          "NO_VISUAL_OBSERVATIONS_IN_RESPONSE_WINDOW"
+        ]
+      }
+    ],
+    "metric_values_in_evidence_count": 0,
+    "unresolved_target_count": 13,
+    "identity": {
+      "formal_status": "FAIL_UNSAFE_MERGE",
+      "formal_basis": "FORMAL_DENSE_GT",
+      "runtime_status": "UNVERIFIED_HEURISTIC_PASS",
+      "runtime_basis": "RUNTIME_HEURISTIC_ONLY",
+      "player_level_analysis_allowed": false,
+      "withholding_reason": "The selected automated tracking methodology has not demonstrated sufficiently safe persistent physical-player identity under formal dense-GT benchmark evaluation (FAIL_UNSAFE_MERGE). Player-level analytics are withheld; runtime diagnostics on the current upload are heuristic only and cannot unlock player-level assessment.",
+      "runtime_diagnostics_player_allowed": false
+    },
+    "calibration": {
+      "calibration_mode": "NO_METRIC_CALIBRATION",
+      "homography_sha256": null,
+      "rmse_m": null,
+      "pitch_dimensions_m": null,
+      "is_metric_reporting_allowed": false,
+      "is_pitch_visualization_allowed": false
+    },
+    "metric_count": 0,
+    "report_status": "DETERMINISTIC_FALLBACK",
+    "report_sha256": "cfe58e4fcbc7dc669d73e0ed4732c9f53b24bec79868c110b956ea0d00046b97",
+    "report_bytes": 8083,
+    "limitation_codes": [
+      "IDENTITY_SAFETY_GATE_ACTIVE",
+      "DETERMINISTIC_REPORT_FALLBACK"
+    ],
+    "execution_manifest_provenance": {
+      "input_asset_role": "DERIVED_TRANSPORT_COPY",
+      "authoritative_source_sha256": "0e676f4327d1e7e7ed458d619e5558f6630fc7efb0dda7bc608aec45cb9a5c71",
+      "transport_copy_sha256": "b19071bbeb16e9b88b239d5fc66d51157acde3d480b8ff5e9ccb2ebeac4679a6",
+      "probed_input_sha256": "b19071bbeb16e9b88b239d5fc66d51157acde3d480b8ff5e9ccb2ebeac4679a6"
+    },
+    "raw_transcripts_exported": false
+  }
+}

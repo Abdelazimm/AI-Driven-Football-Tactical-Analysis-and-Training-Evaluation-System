@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="684pt" height="308.232pt" viewBox="0 0 684 308.232" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-27T18:27:19.724686</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.5, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 308.232 
+L 684 308.232 
+L 684 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 29.9664 175.271904 
+L 171.9216 175.271904 
+Q 182.6352 175.271904 182.6352 170.570592 
+L 182.6352 93.586608 
+Q 182.6352 88.885296 171.9216 88.885296 
+L 29.9664 88.885296 
+Q 19.2528 88.885296 19.2528 93.586608 
+L 19.2528 170.570592 
+Q 19.2528 175.271904 29.9664 175.271904 
+z
+" clip-path="url(#pb78a61dc3f)" style="fill: #eef4f7; stroke: #2875a8; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 197.3664 175.271904 
+L 339.3216 175.271904 
+Q 350.0352 175.271904 350.0352 170.570592 
+L 350.0352 93.586608 
+Q 350.0352 88.885296 339.3216 88.885296 
+L 197.3664 88.885296 
+Q 186.6528 88.885296 186.6528 93.586608 
+L 186.6528 170.570592 
+Q 186.6528 175.271904 197.3664 175.271904 
+z
+" clip-path="url(#pb78a61dc3f)" style="fill: #eef4f7; stroke: #16817a; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 364.7664 175.271904 
+L 506.7216 175.271904 
+Q 517.4352 175.271904 517.4352 170.570592 
+L 517.4352 93.586608 
+Q 517.4352 88.885296 506.7216 88.885296 
+L 364.7664 88.885296 
+Q 354.0528 88.885296 354.0528 93.586608 
+L 354.0528 170.570592 
+Q 354.0528 175.271904 364.7664 175.271904 
+z
+" clip-path="url(#pb78a61dc3f)" style="fill: #eef4f7; stroke: #d48325; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 532.1664 175.271904 
+L 654.0336 175.271904 
+Q 664.7472 175.271904 664.7472 170.570592 
+L 664.7472 93.586608 
+Q 664.7472 88.885296 654.0336 88.885296 
+L 532.1664 88.885296 
+Q 521.4528 88.885296 521.4528 93.586608 
+L 521.4528 170.570592 
+Q 521.4528 175.271904 532.1664 175.271904 
+z
+" clip-path="url(#pb78a61dc3f)" style="fill: #eef4f7; stroke: #b94d4d; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 176.596049 132.0786 
+Q 184.641578 132.0786 191.177762 132.0786 
+" clip-path="url(#pb78a61dc3f)" style="fill: none; stroke: #607080; stroke-width: 1.35; stroke-linecap: round"/>
+    <path d="M 185.977762 129.4786 
+L 191.177762 132.0786 
+L 185.977762 134.6786 
+z
+" clip-path="url(#pb78a61dc3f)" style="fill: #607080; stroke: #607080; stroke-width: 1.35; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 343.996049 132.0786 
+Q 352.041578 132.0786 358.577762 132.0786 
+" clip-path="url(#pb78a61dc3f)" style="fill: none; stroke: #607080; stroke-width: 1.35; stroke-linecap: round"/>
+    <path d="M 353.377762 129.4786 
+L 358.577762 132.0786 
+L 353.377762 134.6786 
+z
+" clip-path="url(#pb78a61dc3f)" style="fill: #607080; stroke: #607080; stroke-width: 1.35; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 511.396049 132.0786 
+Q 519.441578 132.0786 525.977762 132.0786 
+" clip-path="url(#pb78a61dc3f)" style="fill: none; stroke: #607080; stroke-width: 1.35; stroke-linecap: round"/>
+    <path d="M 520.777762 129.4786 
+L 525.977762 132.0786 
+L 520.777762 134.6786 
+z
+" clip-path="url(#pb78a61dc3f)" style="fill: #607080; stroke: #607080; stroke-width: 1.35; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="fill: #17324d; font: 700 17px 'DejaVu Sans'; text-anchor: start" x="20.592" y="28.932304" transform="rotate(-0 20.592 28.932304)">Grounded reporting and deterministic fallback</text>
+   </g>
+   <g id="text_2">
+    <text style="fill: #17324d; font: 700 10px 'DejaVu Sans'; text-anchor: middle" x="100.944" y="121.351086" transform="rotate(-0 100.944 121.351086)">Structured evidence</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: #607080; font: 8.3px 'DejaVu Sans'; text-anchor: middle" x="100.944" y="149.442463" transform="rotate(-0 100.944 149.442463)">provenance + nulls</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: #17324d; font: 700 10px 'DejaVu Sans'; text-anchor: middle" x="268.344" y="121.351086" transform="rotate(-0 268.344 121.351086)">Llama 3.1 8B</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: #607080; font: 8.3px 'DejaVu Sans'; text-anchor: middle" x="268.344" y="149.442463" transform="rotate(-0 268.344 149.442463)">bounded report attempt</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: #17324d; font: 700 10px 'DejaVu Sans'; text-anchor: middle" x="435.744" y="121.351086" transform="rotate(-0 435.744 121.351086)">Patch-001</text>
+   </g>
+   <g id="text_7">
+    <text style="fill: #607080; font: 8.3px 'DejaVu Sans'; text-anchor: middle" x="435.744" y="149.442463" transform="rotate(-0 435.744 149.442463)">8 grounding gates</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: #17324d; font: 700 10px 'DejaVu Sans'; text-anchor: middle" x="593.1" y="121.351086" transform="rotate(-0 593.1 121.351086)">Output</text>
+   </g>
+   <g id="text_9">
+    <text style="fill: #607080; font: 8.3px 'DejaVu Sans'; text-anchor: middle" x="593.1" y="149.442463" transform="rotate(-0 593.1 149.442463)">validated / fallback</text>
+   </g>
+   <g id="text_10">
+    <text style="fill: #b94d4d; font: 700 10px 'DejaVu Sans'; text-anchor: middle" x="342" y="245.20392" transform="rotate(-0 342 245.20392)">Full-session Phase 6 report status: DETERMINISTIC_FALLBACK</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pb78a61dc3f">
+   <rect x="7.2" y="7.2" width="669.6" height="293.832"/>
+  </clipPath>
+ </defs>
+</svg>

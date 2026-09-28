@@ -1,0 +1,50 @@
+{
+  "disposition": "FINAL_DEMO_POLISH_PASS_OVERLAY_DEFERRED",
+  "phase6_job_id": "9b01f139-5411-4a6d-9f9b-85e6a6fb4cdc",
+  "phase6_job_status": "COMPLETED_WITH_LIMITATIONS",
+  "full_session_overlay_render_source": "REQUIRES_INFERENCE_RERUN",
+  "overlay_generated": false,
+  "overlay_deferred_reason": "Only event-level structured evidence and vision timestamps were persisted; no complete per-frame boxes, detections, tracklets, or observation parquet exist. No OVERLAY_VIDEO artifact is registered.",
+  "inference_rerun_performed": false,
+  "showcase": {
+    "endpoint": "/api/v1/showcase",
+    "mode": "ORACLE_ASSISTED_CAPABILITY_DEMONSTRATION",
+    "cases_exposed": ["C03_HOLD_POSITION", "C04_DEFENSIVE_MARKING", "C06_PRESSING"],
+    "cards_clickable": true,
+    "media": {
+      "C03": {"path": "golden/media/c03/C03_hold_position_overlay.mp4", "mime_type": "video/mp4", "browser_loaded": true, "duration_seconds": 19.951, "sha256": "b34a274a80952a770b9125414f07d5881904c3849dac95d2366fd968c5ab0f2e"},
+      "C04": {"path": "golden/media/c04/C04_black01_red03_response_contact_sheet.png", "mime_type": "image/png", "browser_loaded": true, "width": 2400, "height": 8520, "sha256": "73d47fab27089d5de39302e90244f235969dec5d058efed4510a92f25f378a50"},
+      "C06": {"path": "golden/media/c06/C06_pressing_sequence_overlay.mp4", "mime_type": "video/mp4", "browser_loaded": true, "duration_seconds": 7.515, "sha256": "6d8d8eea0f6a65c014228d1481f821742a2b2f4e6fb6db154a1e3ae1f39bfb05"}
+    }
+  },
+  "input_video": {
+    "media_id": "0ccfbb77-2d37-4e1e-a80a-90f6b9bd44ab",
+    "label": "Analyzed Session Video",
+    "private_signed_url_issued": true,
+    "signed_url_exported_to_evidence": false,
+    "range_read_http_status": 206,
+    "browser_loaded": true,
+    "duration_seconds": 340,
+    "width": 1920,
+    "height": 1080
+  },
+  "result_surface": {
+    "tabs": ["Executive Summary", "Tactical Events", "Video / Media", "Radar / Spatial View", "Kinematics", "Identity Safety", "Full Coach Report", "Artifacts / Provenance"],
+    "tabs_activated_in_browser": true,
+    "tactical_events": 13,
+    "structured_evidence_items": 28,
+    "late_windows_marked_insufficient": 6,
+    "formal_identity_status": "FAIL_UNSAFE_MERGE",
+    "player_level_analysis_allowed": false,
+    "calibration_mode": "NO_METRIC_CALIBRATION",
+    "report_status": "DETERMINISTIC_FALLBACK"
+  },
+  "local_routes_verified": ["/", "/analysis/new", "/analysis/9b01f139-5411-4a6d-9f9b-85e6a6fb4cdc/results", "/showcase", "/comparisons", "/research"],
+  "browser_console_errors_after_final_fix": 0,
+  "frontend_build": "PASS",
+  "frontend_typecheck": "PASS",
+  "backend_targeted_tests": {"passed": 12, "failed": 0},
+  "screenshots_captured": false,
+  "scientific_configuration_changed": false,
+  "research_artifacts_modified": false
+}

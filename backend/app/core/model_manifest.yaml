@@ -1,0 +1,153 @@
+# ==============================================================================
+# Model and Pipeline Configuration Manifest
+# Authoritative metadata for frozen models, checkpoints, and pipeline components.
+# In accordance with P0_ARCHITECTURE_CONTRACT_FREEZE_REV2A.
+# ==============================================================================
+
+manifest_version: "2.0-rev2a"
+updated_at: "2026-09-27"
+system_status: "PRODUCTION_INTEGRATION"
+
+# ------------------------------------------------------------------------------
+# 1. VISION METHODOLOGIES & CHECKPOINTS
+# ------------------------------------------------------------------------------
+vision_resolution:
+  default_methodology: "METHOD_2_RFDETR_GTATRACK"
+  auto_resolution: "METHOD_2_RFDETR_GTATRACK"
+  cross_method_fallback_allowed: false
+  fallback_behavior: "FAIL_CLOSED"
+
+methodologies:
+  METHOD_1_YOLO11_BOTSORT:
+    name: "Method 1: YOLO11m + BoT-SORT"
+    runtime_role: "baseline detector and tracker"
+    status: "production_verified"
+    detector:
+      model: "yolo11m"
+      checkpoint_filename: "best.pt"
+      sha256: "ad908a9caf757f3f2b68a92d260da85a8308fb115e220b91d1bdccef31393f8b"
+      framework: "Ultralytics 8.4.163"
+    reid:
+      model: "prtreid"
+      checkpoint_filename: "prtreid.pth"
+      sha256: "8529c383197ae4c468eda535d1b165f8b4162cf17bf5fbcff49c7cb6455bc0bb"
+
+  METHOD_2_RFDETR_GTATRACK:
+    name: "Method 2: RF-DETR + GTA-Track"
+    runtime_role: "primary deployment methodology (AUTO winner)"
+    status: "production_verified_default"
+    detector:
+      model: "rfdetr_base"
+      checkpoint_filename: "checkpoint_best_regular.pth"
+      sha256: "7539cfb3eca3125136c1446d7a522a5a46abb14136d55f79aec8daececc00b85"
+      framework: "RF-DETR 1.10.1"
+    reid:
+      model: "gta_embedder"
+      checkpoint_filename: "gta_reid.pth"
+      sha256: "8d5b2fd8763db34c2aad69810466adf413f0426d9f8119d322227e0e639c5fbd"
+
+  METHOD_3_YOLO26_SRITRACK:
+    name: "Method 3: YOLO26n-reid + SRI-Track"
+    runtime_role: "candidate transformer tracker"
+    status: "production_verified"
+    detector:
+      model: "yolo26n-reid"
+      checkpoint_filename: "yolo26n-reid.onnx"
+      sha256: "ea9b3e434ffd7c2ca7ebcd563497accd90e03cfc8da1e8e9fc883e4790199dbf"
+      framework: "ONNX Runtime 1.30.0"
+    reid:
+      model: "dinov3_feature_extractor"
+      checkpoint_filename: "dinov3_patch16.pth"
+      sha256: "5f4f1fa2226680c26458872f6241b9a5355d6e29a405fda1acdbcb11874b32f8"
+      hf_repo: "timm/vit_base_patch16_dinov3.lvd1689m"
+      hf_pinned_snapshot: "c6a5fb7d12bbd3cf3b0079253141c3332aaed7da"
+
+# ------------------------------------------------------------------------------
+# 2. AUDIO & ASR CONFIGURATION
+# ------------------------------------------------------------------------------
+asr_model:
+  engine: "Faster-Whisper"
+  version: "1.2.1"
+  framework: "CTranslate2"
+  model_name: "base.en"
+  device: "cpu"
+  compute_type: "int8"
+  cpu_threads: 8
+  workers: 1
+  runtime_role: "coach instruction transcription and tactical keyword extraction"
+  status: "production_verified"
+  parameters:
+    beam_size: 5
+    word_timestamps: true
+    vad_filter: true
+    min_silence_duration_ms: 500
+    condition_on_previous_text: false
+  taxonomy:
+    version: "P0_REV2A"
+    total_canonical_triggers: 25
+    categories_count: 5
+    reaction_window: "[t_end + 2.0s, t_end + 6.0s]"
+
+# ------------------------------------------------------------------------------
+# 3. REPORTING & GROUNDED LLM ENGINE
+# ------------------------------------------------------------------------------
+reporting_model:
+  runtime_engine: "Ollama"
+  version: "0.34.3"
+  endpoint: "http://127.0.0.1:11434"
+  model_tag: "llama3.1:8b"
+  model_family: "llama"
+  parameter_size: "8.0B"
+  quantization_level: "Q4_K_M"
+  digest: "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e"
+  system_prompt_path: "backend/app/services/prompts/coach_report_system.txt"
+  system_prompt_sha256: "ab95a8350208367aee29395866ece720c17c85c8d03a79b33b052e99442ae9ce"
+  generation_parameters:
+    temperature: 0.0
+    seed: 42
+    top_p: 1.0
+    num_ctx: 4096
+    retries: 0
+  timeout_governance:
+    benchmark_default_seconds: 120
+    production_default_seconds: 120
+    env_override_key: "LLM_TIMEOUT_SECONDS"
+  grounding_validator:
+    name: "LLM_GROUNDING_VALIDATOR_PATCH_001"
+    gates_count: 8
+    numeric_grounding: "all_numbers_patched_recursive_leaf"
+    target_attribution: "negation_aware_regex"
+  deterministic_fallback:
+    engine: "DeterministicReportService"
+    reproducibility: "BYTE_IDENTICAL"
+    requires_llm: false
+
+# ------------------------------------------------------------------------------
+# 4. CALIBRATION & KINEMATICS GOVERNANCE
+# ------------------------------------------------------------------------------
+calibration:
+  modes:
+    - "NO_METRIC_CALIBRATION"
+    - "DEMO_FIXED_CALIBRATION"
+    - "CUSTOM_PITCH_CALIBRATION"
+  research_homography:
+    sha256: "d0e9680fdcdf3b5f6290ebf1f0e7cd1dbedcd6527f88873d857babe968cbd507"
+    camera_specific: true
+    dimensions_m:
+      length: 19.31
+      width: 19.88
+    rule: "Never silently apply research calibration to arbitrary uploads"
+  kinematics:
+    max_speed_kmh: 36.0
+    gap_threshold_seconds: 0.5
+    suppress_units_when_uncalibrated: true
+
+# ------------------------------------------------------------------------------
+# 5. DURATION & IDENTITY SAFETY BOUNDARIES
+# ------------------------------------------------------------------------------
+system_boundaries:
+  max_video_duration_seconds: 360.0
+  identity_safety_status: "FAIL_UNSAFE_MERGE"
+  identity_evidence_basis: "FORMAL_DENSE_GT"
+  player_level_analysis_allowed: false
+  track_id_format: "track_{id}"

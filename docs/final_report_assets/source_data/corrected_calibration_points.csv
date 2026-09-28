@@ -1,0 +1,5 @@
+name,visibility,expected_x_m,expected_y_m,projected_x_m,projected_y_m,euclidean_error_m
+halfway_far_sideline_intersection_corrected,MODERATE,9.41,19.88,8.95291519165039,19.8799991607666,0.4570848083503799
+halfway_near_sideline_intersection_corrected,HIGH,9.41,0.0,10.208359718322754,-1.8612303165355118e-07,0.7983597183227754
+right_goal_far_post_ground_contact,HIGH,19.31,11.46,19.437604904174805,11.810566902160645,0.3730685787626341
+right_goal_near_post_ground_contact,MODERATE,19.31,8.42,19.77899932861328,9.117986679077148,0.8409196004427868

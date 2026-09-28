@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="684pt" height="308.232pt" viewBox="0 0 684 308.232" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-27T18:27:18.504595</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.5, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 308.232 
+L 684 308.232 
+L 684 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 43.3584 137.073744 
+L 192.0096 137.073744 
+Q 202.7232 137.073744 202.7232 132.372432 
+L 202.7232 67.141728 
+Q 202.7232 62.440416 192.0096 62.440416 
+L 43.3584 62.440416 
+Q 32.6448 62.440416 32.6448 67.141728 
+L 32.6448 132.372432 
+Q 32.6448 137.073744 43.3584 137.073744 
+z
+" clip-path="url(#pac56a7d752)" style="fill: #eef4f7; stroke: #2875a8; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 264.3264 137.073744 
+L 412.9776 137.073744 
+Q 423.6912 137.073744 423.6912 132.372432 
+L 423.6912 67.141728 
+Q 423.6912 62.440416 412.9776 62.440416 
+L 264.3264 62.440416 
+Q 253.6128 62.440416 253.6128 67.141728 
+L 253.6128 132.372432 
+Q 253.6128 137.073744 264.3264 137.073744 
+z
+" clip-path="url(#pac56a7d752)" style="fill: #fff1f1; stroke: #b94d4d; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 485.2944 137.073744 
+L 633.9456 137.073744 
+Q 644.6592 137.073744 644.6592 132.372432 
+L 644.6592 67.141728 
+Q 644.6592 62.440416 633.9456 62.440416 
+L 485.2944 62.440416 
+Q 474.5808 62.440416 474.5808 67.141728 
+L 474.5808 132.372432 
+Q 474.5808 137.073744 485.2944 137.073744 
+z
+" clip-path="url(#pac56a7d752)" style="fill: #fff1f1; stroke: #b94d4d; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 196.686501 99.75708 
+Q 228.166104 99.75708 258.136362 99.75708 
+" clip-path="url(#pac56a7d752)" style="fill: none; stroke: #607080; stroke-width: 1.35; stroke-linecap: round"/>
+    <path d="M 252.936362 97.15708 
+L 258.136362 99.75708 
+L 252.936362 102.35708 
+z
+" clip-path="url(#pac56a7d752)" style="fill: #607080; stroke: #607080; stroke-width: 1.35; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 417.654501 99.75708 
+Q 449.134104 99.75708 479.104362 99.75708 
+" clip-path="url(#pac56a7d752)" style="fill: none; stroke: #b94d4d; stroke-width: 1.35; stroke-linecap: round"/>
+    <path d="M 473.904362 97.15708 
+L 479.104362 99.75708 
+L 473.904362 102.35708 
+z
+" clip-path="url(#pac56a7d752)" style="fill: #b94d4d; stroke: #b94d4d; stroke-width: 1.35; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 264.3264 251.668224 
+L 412.9776 251.668224 
+Q 423.6912 251.668224 423.6912 246.966912 
+L 423.6912 181.736208 
+Q 423.6912 177.034896 412.9776 177.034896 
+L 264.3264 177.034896 
+Q 253.6128 177.034896 253.6128 181.736208 
+L 253.6128 246.966912 
+Q 253.6128 251.668224 264.3264 251.668224 
+z
+" clip-path="url(#pac56a7d752)" style="fill: #eef4f7; stroke: #16817a; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 338.652 135.547769 
+Q 338.652 157.055651 338.652 177.054187 
+" clip-path="url(#pac56a7d752)" style="fill: none; stroke: #16817a; stroke-width: 1.35; stroke-linecap: round"/>
+    <path d="M 341.252 171.854187 
+L 338.652 177.054187 
+L 336.052 171.854187 
+z
+" clip-path="url(#pac56a7d752)" style="fill: #16817a; stroke: #16817a; stroke-width: 1.35; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="fill: #17324d; font: 700 17px 'DejaVu Sans'; text-anchor: start" x="20.592" y="28.932304" transform="rotate(-0 20.592 28.932304)">Identity safety controls the report scope</text>
+   </g>
+   <g id="text_2">
+    <text style="fill: #17324d; font: 700 10px 'DejaVu Sans'; text-anchor: middle" x="117.684" y="91.027624" transform="rotate(-0 117.684 91.027624)">Vision observation</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: #607080; font: 8.3px 'DejaVu Sans'; text-anchor: middle" x="117.684" y="114.88782" transform="rotate(-0 117.684 114.88782)">track evidence</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: #17324d; font: 700 10px 'DejaVu Sans'; text-anchor: middle" x="338.652" y="90.988561" transform="rotate(-0 338.652 90.988561)">Formal identity gate</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: #607080; font: 8.3px 'DejaVu Sans'; text-anchor: middle" x="338.652" y="114.699124" transform="rotate(-0 338.652 114.699124)">FAIL_UNSAFE_MERGE</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: #17324d; font: 700 10px 'DejaVu Sans'; text-anchor: middle" x="559.62" y="90.988561" transform="rotate(-0 559.62 90.988561)">Player-level output</text>
+   </g>
+   <g id="text_7">
+    <text style="fill: #607080; font: 8.3px 'DejaVu Sans'; text-anchor: middle" x="559.62" y="114.88782" transform="rotate(-0 559.62 114.88782)">WITHHELD</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: #17324d; font: 700 10px 'DejaVu Sans'; text-anchor: middle" x="338.652" y="205.622104" transform="rotate(-0 338.652 205.622104)">Scoped evidence</text>
+   </g>
+   <g id="text_9">
+    <text style="fill: #607080; font: 8.3px 'DejaVu Sans'; text-anchor: middle" x="338.652" y="229.4823" transform="rotate(-0 338.652 229.4823)">anonymous / team / event</text>
+   </g>
+   <g id="text_10">
+    <text style="fill: #b94d4d; font: 700 10px 'DejaVu Sans'; text-anchor: middle" x="342" y="283.40208" transform="rotate(-0 342 283.40208)">Runtime heuristic diagnostics cannot override the formal gate</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pac56a7d752">
+   <rect x="7.2" y="7.2" width="669.6" height="293.832"/>
+  </clipPath>
+ </defs>
+</svg>

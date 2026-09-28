@@ -1,0 +1,106 @@
+{
+  "status": "CORRECTED_MEASURED_METRIC_HOMOGRAPHY",
+  "homography_matrix_tracking_to_metric": [
+    [
+      -0.012802040941679778,
+      -0.03938196326742872,
+      24.416392327252076
+    ],
+    [
+      0.0003684827148920768,
+      0.03530078523580245,
+      -32.538796529924724
+    ],
+    [
+      -1.1678487000361972e-05,
+      -0.00363943658404158,
+      1.0
+    ]
+  ],
+  "inverse_homography_matrix_metric_to_tracking": [
+    [
+      -79.8482715200417,
+      -47.531141302604354,
+      403.0005884057422
+    ],
+    [
+      0.011067425913674257,
+      -12.02390662938212,
+      -391.51367792143884
+    ],
+    [
+      -0.0008922278061867844,
+      -0.0443153374858882,
+      -0.4201827654471221
+    ]
+  ],
+  "corrected_image_corners_tracking_space_1920x1080": {
+    "corrected_top_left": [
+      416.4849955483918,
+      484.60088704574974
+    ],
+    "corrected_top_right": [
+      1580.5428975962463,
+      478.1059981061657
+    ],
+    "corrected_bottom_left": [
+      -959.1078509257479,
+      931.7699381400969
+    ],
+    "corrected_bottom_right": [
+      2603.6558875362152,
+      894.58049837848
+    ]
+  },
+  "corrected_image_corners_source_space_3840x2160": {
+    "corrected_top_left": [
+      832.9699910967836,
+      969.2017740914995
+    ],
+    "corrected_top_right": [
+      3161.0857951924927,
+      956.2119962123314
+    ],
+    "corrected_bottom_left": [
+      -1918.2157018514959,
+      1863.5398762801938
+    ],
+    "corrected_bottom_right": [
+      5207.3117750724305,
+      1789.16099675696
+    ]
+  },
+  "destination_metric_corners_m": {
+    "corrected_top_left": [
+      0.0,
+      19.8799991607666
+    ],
+    "corrected_top_right": [
+      19.309999465942383,
+      19.8799991607666
+    ],
+    "corrected_bottom_left": [
+      0.0,
+      0.0
+    ],
+    "corrected_bottom_right": [
+      19.309999465942383,
+      0.0
+    ]
+  },
+  "pitch_length_m": 19.31,
+  "pitch_width_m": 19.88,
+  "orientation": {
+    "left_goal_side": "X=0",
+    "right_goal_side": "X=19.31",
+    "near_sideline": "Y=0",
+    "far_sideline": "Y=19.88"
+  },
+  "measurement_provenance": {
+    "date": "2026-09-19",
+    "method": "physical_on_site_measurement_by_researcher"
+  },
+  "boundary_correction_provenance": "researcher_confirmed_white_playing_area_boundary",
+  "creation_date": "2026-09-20",
+  "historical_homography_modified": false
+}

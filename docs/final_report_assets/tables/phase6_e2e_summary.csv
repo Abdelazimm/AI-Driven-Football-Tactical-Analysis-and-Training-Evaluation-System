@@ -1,0 +1,15 @@
+field,observed_result
+Input role,DERIVED_TRANSPORT_COPY
+Method,M2 RF-DETR/Deep-EIoU/GTA
+Media duration,340 s
+Frames processed,"20,391"
+Tactical events,13
+Structured evidence items,28
+Unresolved instruction targets,13
+Missing response windows,6
+Formal identity,FAIL_UNSAFE_MERGE
+Player-level analysis,Withheld
+Calibration,NO_METRIC_CALIBRATION
+Metric values in evidence,0 (unavailable; not an observed zero)
+Report,DETERMINISTIC_FALLBACK
+Job,COMPLETED_WITH_LIMITATIONS

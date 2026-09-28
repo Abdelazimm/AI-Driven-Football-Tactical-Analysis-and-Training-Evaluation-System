@@ -1,0 +1,3 @@
+candidate,completed_of_16,timeout_of_16,schema_valid_of_16,raw_pre_patch_gate_pass_of_16
+Qwen3 8B,5,11,5,2
+Llama 3.1 8B,15,1,15,0

@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1400" viewBox="0 0 1200 1400">
+  <defs>
+    <linearGradient id="teal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#10D7B5"/>
+      <stop offset="100%" stop-color="#009E8F"/>
+    </linearGradient>
+    <style>
+      .navy{fill:#10283C}
+      .tealFill{fill:url(#teal)}
+      .strokeNavy{stroke:#10283C;stroke-width:26;stroke-linecap:round;stroke-linejoin:round;fill:none}
+      .strokeTeal{stroke:url(#teal);stroke-width:26;stroke-linecap:round;stroke-linejoin:round;fill:none}
+      .white{fill:#FFFFFF}
+      .title{font-family:Arial,Helvetica,sans-serif;font-weight:800;letter-spacing:1px}
+      .subtitle{font-family:Arial,Helvetica,sans-serif;font-weight:500;fill:#10283C}
+    </style>
+  </defs>
+
+  <!-- Brain silhouette -->
+  <g transform="translate(600 390)">
+    <path class="navy" d="M-72,-215
+      C-135,-255 -215,-218 -224,-145
+      C-286,-144 -325,-84 -303,-31
+      C-344,8 -334,79 -278,103
+      C-287,171 -228,222 -166,200
+      C-145,260 -72,272 -28,228
+      L-28,-204
+      C-41,-206 -58,-210 -72,-215Z"/>
+    <path class="navy" d="M72,-215
+      C135,-255 215,-218 224,-145
+      C286,-144 325,-84 303,-31
+      C344,8 334,79 278,103
+      C287,171 228,222 166,200
+      C145,260 72,272 28,228
+      L28,-204
+      C41,-206 58,-210 72,-215Z"/>
+
+    <!-- football center circle -->
+    <circle cx="0" cy="0" r="170" fill="#fff"/>
+    <circle cx="0" cy="0" r="163" class="strokeNavy"/>
+
+    <!-- football panels -->
+    <polygon points="0,-58 54,-18 34,46 -34,46 -54,-18" class="navy"/>
+    <polygon points="0,-154 43,-122 32,-70 -32,-70 -43,-122" class="navy"/>
+    <polygon points="125,-88 160,-57 145,-5 92,-18 76,-68" class="navy"/>
+    <polygon points="136,74 108,118 55,115 42,62 82,26" class="navy"/>
+    <polygon points="-136,74 -108,118 -55,115 -42,62 -82,26" class="navy"/>
+    <polygon points="-125,-88 -160,-57 -145,-5 -92,-18 -76,-68" class="navy"/>
+
+    <!-- seams -->
+    <g class="strokeNavy" stroke-width="12">
+      <path d="M-54,-18 L-92,-18 L-125,-88"/>
+      <path d="M54,-18 L92,-18 L125,-88"/>
+      <path d="M34,46 L42,62 L82,26"/>
+      <path d="M-34,46 L-42,62 L-82,26"/>
+      <path d="M0,-58 L0,-70"/>
+    </g>
+
+    <!-- circuit lines -->
+    <g>
+      <path class="strokeNavy" d="M0,-215 L0,-275"/>
+      <circle cx="0" cy="-305" r="22" fill="#fff" stroke="url(#teal)" stroke-width="18"/>
+
+      <path class="strokeNavy" d="M-165,-120 L-230,-120 L-260,-150"/>
+      <circle cx="-285" cy="-175" r="20" fill="#fff" stroke="url(#teal)" stroke-width="18"/>
+
+      <path class="strokeNavy" d="M165,-120 L230,-120 L260,-150"/>
+      <circle cx="285" cy="-175" r="20" fill="#fff" stroke="url(#teal)" stroke-width="18"/>
+
+      <path class="strokeNavy" d="M-170,0 L-260,0"/>
+      <circle cx="-295" cy="0" r="20" fill="#fff" stroke="url(#teal)" stroke-width="18"/>
+
+      <path class="strokeNavy" d="M170,0 L260,0"/>
+      <circle cx="295" cy="0" r="20" fill="#fff" stroke="url(#teal)" stroke-width="18"/>
+
+      <path class="strokeNavy" d="M-165,120 L-230,120 L-260,150"/>
+      <circle cx="-285" cy="175" r="20" fill="#fff" stroke="url(#teal)" stroke-width="18"/>
+
+      <path class="strokeNavy" d="M165,120 L230,120 L260,150"/>
+      <circle cx="285" cy="175" r="20" fill="#fff" stroke="url(#teal)" stroke-width="18"/>
+
+      <path class="strokeNavy" d="M0,215 L0,275"/>
+      <circle cx="0" cy="305" r="22" fill="#fff" stroke="url(#teal)" stroke-width="18"/>
+    </g>
+  </g>
+
+  <!-- Acronym -->
+  <text x="600" y="930" text-anchor="middle" class="title" font-size="118">
+    <tspan fill="#10283C">AIF</tspan><tspan fill="url(#teal)">TATES</tspan>
+  </text>
+
+  <!-- Full project name -->
+  <text x="600" y="1015" text-anchor="middle" class="subtitle" font-size="42">
+    <tspan x="600" dy="0">AI-Driven Football Tactical Analysis</tspan>
+    <tspan x="600" dy="58">and Training Evaluation System</tspan>
+  </text>
+</svg>

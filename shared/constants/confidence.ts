@@ -1,0 +1,39 @@
+/**
+ * Metric measurement confidence levels.
+ */
+export const METRIC_CONFIDENCE = {
+  VALIDATED_METRIC: 'VALIDATED_METRIC',
+  MEASURED_METRIC_ESTIMATE: 'MEASURED_METRIC_ESTIMATE',
+  APPROXIMATE_METRIC_ESTIMATE: 'APPROXIMATE_METRIC_ESTIMATE',
+  NO_METRIC_CALIBRATION: 'NO_METRIC_CALIBRATION',
+} as const;
+
+export type MetricConfidence = (typeof METRIC_CONFIDENCE)[keyof typeof METRIC_CONFIDENCE];
+
+/**
+ * Persistent identity evaluation outcomes.
+ */
+export const IDENTITY_STATUS = {
+  NOT_EVALUATED: 'NOT_EVALUATED',
+  EVALUATING: 'EVALUATING',
+  PASS_RELIABLE: 'PASS_RELIABLE',
+  FAIL_HIGH_FRAGMENTATION: 'FAIL_HIGH_FRAGMENTATION',
+  FAIL_IDENTITY_CONFLICT: 'FAIL_IDENTITY_CONFLICT',
+  FAIL_UNSAFE_MERGE: 'FAIL_UNSAFE_MERGE',
+  FAIL_INVALID_OUTPUT: 'FAIL_INVALID_OUTPUT',
+} as const;
+
+export type IdentityStatus = (typeof IDENTITY_STATUS)[keyof typeof IDENTITY_STATUS];
+
+/**
+ * Generated coach evaluation report grounding and generation status.
+ */
+export const REPORT_STATUS = {
+  VALIDATED_LLM_REPORT: 'VALIDATED_LLM_REPORT',
+  GROUNDED_LLM: 'GROUNDED_LLM',
+  DETERMINISTIC_FALLBACK: 'DETERMINISTIC_FALLBACK',
+  WITHHELD: 'WITHHELD',
+} as const;
+
+export type ReportStatus = (typeof REPORT_STATUS)[keyof typeof REPORT_STATUS];
+

@@ -1,0 +1,228 @@
+{
+  "status": "PHASE6_TRANSPORT_COPY_INTEGRITY_PASS",
+  "created_at": "2026-09-27T10:33:56.381482+00:00",
+  "authoritative_research_source": {
+    "asset_role": "AUTHORITATIVE_RESEARCH_SOURCE",
+    "path": "G:\\My Drive\\Football_Training_Assistant_MVP\\data\\custom\\3v3_match_iphone16.MOV",
+    "sha256_previously_verified": "0e676f4327d1e7e7ed458d619e5558f6630fc7efb0dda7bc608aec45cb9a5c71",
+    "size_bytes": 2390441924,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "hevc",
+          "codec_type": "video",
+          "width": 3840,
+          "height": 2160,
+          "r_frame_rate": "60/1",
+          "avg_frame_rate": "3058650/51001",
+          "start_time": "0.000000",
+          "duration": "340.006667",
+          "nb_frames": "20391"
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 2,
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "start_time": "0.000000",
+          "duration": "339.966667",
+          "nb_frames": "15938"
+        },
+        {
+          "index": 2,
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 4,
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "start_time": "0.000000",
+          "duration": "340.010000",
+          "nb_frames": "15938"
+        },
+        {
+          "index": 3,
+          "codec_type": "data",
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "start_time": "0.000000",
+          "duration": "340.010000"
+        },
+        {
+          "index": 4,
+          "codec_type": "data",
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "start_time": "0.000000",
+          "duration": "340.010000"
+        },
+        {
+          "index": 5,
+          "codec_type": "data",
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "start_time": "0.000000",
+          "duration": "340.010000"
+        },
+        {
+          "index": 6,
+          "codec_type": "data",
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "start_time": "0.000000",
+          "duration": "340.006667",
+          "nb_frames": "20391"
+        },
+        {
+          "index": 7,
+          "codec_type": "data",
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "start_time": "0.000000",
+          "duration": "340.010000"
+        }
+      ],
+      "format": {
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "start_time": "0.000000",
+        "duration": "340.010000",
+        "size": "2390441924"
+      }
+    }
+  },
+  "derived_transport_copy": {
+    "asset_role": "PHASE6_TRANSPORT_COPY",
+    "input_asset_role": "DERIVED_TRANSPORT_COPY",
+    "path": "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\scratch\\phase6_transport\\3v3_match_iphone16_PHASE6_TRANSPORT.mp4",
+    "sha256": "b19071bbeb16e9b88b239d5fc66d51157acde3d480b8ff5e9ccb2ebeac4679a6",
+    "size_bytes": 43997249,
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "hevc",
+          "codec_type": "video",
+          "width": 1920,
+          "height": 1080,
+          "display_aspect_ratio": "16:9",
+          "r_frame_rate": "60/1",
+          "avg_frame_rate": "20391/340",
+          "start_time": "0.000000",
+          "duration": "340.000000",
+          "nb_frames": "20391"
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 1,
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "start_time": "0.000000",
+          "duration": "339.966000",
+          "nb_frames": "15937"
+        }
+      ],
+      "format": {
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "start_time": "0.000000",
+        "duration": "340.000000",
+        "size": "43997249"
+      }
+    }
+  },
+  "bitrate_budget": {
+    "duration_s": 340.01,
+    "maximum_size_bytes": 48000000,
+    "maximum_average_total_bps": 1129379,
+    "selected_video_bps": 1000000,
+    "selected_audio_bps": 64000,
+    "selected_nominal_total_bps": 1064000
+  },
+  "transformation": {
+    "full_duration": true,
+    "temporal_trim": false,
+    "crop": false,
+    "spatial_operation": "uniform area downscale 3840x2160 to 1920x1080",
+    "frame_rate_conversion": false,
+    "source_video_stream": 0,
+    "source_audio_stream": 1,
+    "audio_downmix": "AAC stereo to AAC mono 48 kHz 64 kbps",
+    "ffmpeg_command_argv": [
+      "ffmpeg",
+      "-hide_banner",
+      "-y",
+      "-nostats",
+      "-loglevel",
+      "warning",
+      "-progress",
+      "scratch/phase6_transport/encode_progress.txt",
+      "-i",
+      "G:\\My Drive\\Football_Training_Assistant_MVP\\data\\custom\\3v3_match_iphone16.MOV",
+      "-map",
+      "0:v:0",
+      "-map",
+      "0:a:0",
+      "-vf",
+      "scale=1920:1080:flags=area",
+      "-fps_mode",
+      "passthrough",
+      "-c:v",
+      "hevc_nvenc",
+      "-preset",
+      "p7",
+      "-tune",
+      "hq",
+      "-rc",
+      "cbr",
+      "-b:v",
+      "1000k",
+      "-maxrate",
+      "1000k",
+      "-bufsize",
+      "2000k",
+      "-spatial_aq",
+      "1",
+      "-temporal_aq",
+      "1",
+      "-bf",
+      "3",
+      "-g",
+      "120",
+      "-pix_fmt",
+      "yuv420p",
+      "-c:a",
+      "aac",
+      "-b:a",
+      "64k",
+      "-ac",
+      "1",
+      "-ar",
+      "48000",
+      "-movflags",
+      "+faststart",
+      "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\scratch\\phase6_transport\\3v3_match_iphone16_PHASE6_TRANSPORT.mp4"
+    ],
+    "ffmpeg_version": "ffmpeg version 8.1.1-essentials_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers"
+  },
+  "checks": {
+    "under_48000000_bytes": true,
+    "duration_difference_under_0_1_s": true,
+    "starts_at_zero": true,
+    "frame_count_equal": true,
+    "resolution_1920x1080": true,
+    "aspect_ratio_preserved": true,
+    "approximately_60_fps": true,
+    "hevc_video_and_aac_audio": true,
+    "audio_covers_full_session": true
+  },
+  "research_scope": "Cloud transport and product E2E only; formal research and TrackEval remain based on authoritative original."
+}

@@ -1,0 +1,362 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CM3070_P0_Architecture_Contract_Freeze_REV1",
+  "description": "Authoritative machine-readable architectural specification and frozen contract registry (Revision 1) for the AI-Driven Football Tactical Analysis and Training Evaluation System.",
+  "version": "1.1.0",
+  "freeze_status": "P0_CONTRACT_FREEZE_REV1_READY_FOR_REVIEW",
+  "reference_evidence_log": "CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v88.md",
+  "changelog_reference": "P0_REV1_CHANGELOG.md",
+  "scientific_invariants": {
+    "identity_safety_boundary": {
+      "formal_evaluation_status": "FAIL_UNSAFE_MERGE",
+      "automated_player_level_accumulated_analytics": "DISABLED",
+      "player_attribution_policy": "FAIL_CLOSED",
+      "identity_evidence_basis_options": [
+        "FORMAL_DENSE_GT",
+        "HUMAN_ORACLE",
+        "RUNTIME_HEURISTIC_ONLY",
+        "NOT_AVAILABLE"
+      ],
+      "runtime_heuristic_rule": "Runtime heuristics generate diagnostics only; CANNOT unlock trusted physical-player identity on ungrounded production uploads."
+    },
+    "legacy_stage4b_classification": {
+      "status": "STAGE4B_IS_SUPERSEDED_LEGACY_IMPLEMENTATION",
+      "tiling_utility_reuse": "STAGE4B_TILING_UTILITY_MAY_BE_REUSED",
+      "superseded_checkpoint_sha256": "f6b3fe6f21256c61083ccc6c6b96dffeb4490c65c3ce150c3924a0fa353e6f5e",
+      "superseded_checkpoint_size_bytes": 40539756
+    },
+    "default_execution_methodology": {
+      "requested_auto_target": "METHOD_2_RFDETR_GTATRACK",
+      "scientific_justification": "M2 produced strongest observed whole-system tracking performance on frozen four-clip evaluation (HOTA 0.6710, MOTA 0.8522, IDF1 0.9144, 19 IDSW)."
+    },
+    "prohibition_against_component_mixing": true
+  },
+  "methodologies": {
+    "AUTO": {
+      "user_label": "Auto / Recommended",
+      "internal_id": "METHOD_2_RFDETR_GTATRACK",
+      "resolves_to": "METHOD_2_RFDETR_GTATRACK",
+      "is_default": true
+    },
+    "METHOD_1_YOLO11_BOTSORT": {
+      "user_label": "Method 1: Original Hybrid",
+      "source_baseline_artifact": "runs/method_1/M1_FINAL_EVALUATION_BASELINE/M1_FINAL_EVALUATION_BASELINE.json",
+      "detector": {
+        "architecture": "YOLO11m custom-domain-adapted (M1_FORMAL_003)",
+        "checkpoint_path": "runs/method_1/M1_FORMAL_003_DOMAIN_ADAPTED/training/yolo11m_domain_adapted/weights/epoch28.pt",
+        "checkpoint_sha256": "ad908a9caf757f3f2b68a92d260da85a8308fb115e220b91d1bdccef31393f8b",
+        "checkpoint_size_bytes": 104950959,
+        "tiling": {
+          "enabled": true,
+          "tiles": 3,
+          "overlap_pct": 15.0,
+          "tile_windows_at_1920x1080": [[0, 712], [605, 1317], [1208, 1920]]
+        },
+        "tile_nms_iou": 0.70,
+        "global_nms_iou": 0.50,
+        "imgsz": 1280,
+        "half": true,
+        "classes": [0],
+        "standalone_qualification_confidence": 0.25,
+        "tracker_input_candidate_confidence_floor": 0.05
+      },
+      "tracker": {
+        "tracker_type": "Ultralytics BOTSORT external-row-aligned-ReID feature bridge",
+        "track_high_thresh": 0.35,
+        "track_low_thresh": 0.10,
+        "new_track_thresh": 0.35,
+        "track_buffer": 120,
+        "match_thresh": 0.85,
+        "gmc_method": "none",
+        "proximity_thresh": 0.15,
+        "appearance_thresh": 0.88,
+        "with_reid": true,
+        "fuse_score": true
+      }
+    },
+    "METHOD_2_RFDETR_GTATRACK": {
+      "user_label": "Method 2: Global Association",
+      "source_baseline_artifact": "runs/method_2/M2_FINAL_EVALUATION_BASELINE/M2_FINAL_EVALUATION_BASELINE.json",
+      "detector": {
+        "architecture": "RF-DETR-L",
+        "version": "1.10.1",
+        "checkpoint_path": "runs/method_2/M2_FORMAL_001_DOMAIN_ADAPTED/checkpoint_best_total.pth",
+        "checkpoint_sha256": "7539cfb3eca3125136c1446d7a522a5a46abb14136d55f79aec8daececc00b85",
+        "internal_resolution": 704,
+        "native_top_queries": 300,
+        "selection_confidence_inclusive": 0.50,
+        "external_nms": false,
+        "score_semantics": "native sigmoid score; preserve actual confidence",
+        "box_semantics": "1920x1080 source-pixel xyxy"
+      },
+      "local_reid": {
+        "architecture": "OSNet-x1.0",
+        "checkpoint_path": "runs/method_2/M2_P0_preflight/checkpoints/sports_model.pth.tar-60",
+        "checkpoint_sha256": "8d5b2fd8763db34c2aad69810466adf413f0426d9f8119d322227e0e639c5fbd",
+        "embedding_dimension": 512,
+        "resize_hw": [256, 128]
+      },
+      "local_tracker": {
+        "implementation": "Deep-EIoU from GTATrack-STC2025",
+        "source_commit": "fa554145687e9b126c492072d205e42bfe01bc5b",
+        "parameters": {
+          "track_high_thresh": 0.70,
+          "track_low_thresh": 0.40,
+          "new_track_thresh": 0.70,
+          "track_buffer": 90,
+          "match_thresh": 0.80,
+          "proximity_thresh": 0.50,
+          "appearance_thresh": 0.25,
+          "with_reid": true
+        }
+      },
+      "global_association": {
+        "implementation": "GTA-Track Offline Global Association Graph Solver",
+        "config_id": "M2_GTA_BASELINE_REV1"
+      }
+    },
+    "METHOD_3_YOLO26_SRITRACK": {
+      "user_label": "Method 3: Re-entry Focused",
+      "source_baseline_artifact": "runs/method_3/M3_P5_identity_calibration/M3_selected_identity_configuration.json",
+      "detector": {
+        "architecture": "YOLO26 End-to-End Detector",
+        "operating_point_confidence": 0.30,
+        "inference_resolution": [1280, 720]
+      },
+      "tracker": {
+        "implementation": "SRITrack-v1",
+        "configuration_id": "M3_SRC_DEFAULT",
+        "parameters": {
+          "track_high_th": 0.60,
+          "track_low_th": 0.10,
+          "track_new_th": 0.30,
+          "track_buffer": 1000,
+          "track_match_th": 0.80,
+          "track_p_th": 0.50,
+          "track_vc_th": 0.50,
+          "track_vf_th": 0.25,
+          "track_b_th": 0.70,
+          "with_reid": true,
+          "EIoU": true,
+          "vp_dga": true,
+          "ris": true,
+          "det_min_area": 10
+        },
+        "reid_model": "DINOv3",
+        "resolved_config_sha256": "feeeb76e365a7e2c255e5946e7f7e7c67162530ab06112b6a8b83fbd8403f8ed",
+        "p5a_amendment_sha256": "8f9080ecfa2ca4b264c00124cae91890b8de871162e001e7312b7a3bb04f51c6"
+      }
+    }
+  },
+  "canonical_vision_contract": {
+    "coordinate_system": {
+      "canonical_box_format": "[x1, y1, x2, y2]",
+      "pixel_space": "SOURCE_VIDEO_PIXELS",
+      "normalized_box_fields": {
+        "x1_norm": "float in [0.0, 1.0]",
+        "y1_norm": "float in [0.0, 1.0]",
+        "x2_norm": "float in [0.0, 1.0]",
+        "y2_norm": "float in [0.0, 1.0]"
+      },
+      "ordering_consistency_rule": "Unified [x1, y1, x2, y2] ordering for both pixel and normalized coordinates. Conflicting array orderings are strictly prohibited."
+    },
+    "track_identifier_semantics": {
+      "opaque_track_id_definition": "Method-local trajectory identifier only; not a verified physical-player identity.",
+      "physical_player_pseudonym_policy": "Strictly null for automated runs; populated exclusively under HUMAN_VERIFIED / ORACLE provenance."
+    },
+    "session_schema": "SessionVisionResult",
+    "frame_schema": "FrameVisionResult",
+    "observation_schema": "TrackObservation",
+    "empty_frame_handling": "FAIL_SAFE_EMPTY_OBSERVATIONS_LIST"
+  },
+  "identity_safety_contract": {
+    "statuses": [
+      "NOT_EVALUATED",
+      "PASS_RELIABLE",
+      "FAIL_HIGH_FRAGMENTATION",
+      "FAIL_IDENTITY_CONFLICT",
+      "FAIL_UNSAFE_MERGE",
+      "FAIL_INVALID_OUTPUT"
+    ],
+    "evidence_basis_enum": [
+      "FORMAL_DENSE_GT",
+      "HUMAN_ORACLE",
+      "RUNTIME_HEURISTIC_ONLY",
+      "NOT_AVAILABLE"
+    ],
+    "production_upload_policy": {
+      "automated_runs_evidence_basis": "RUNTIME_HEURISTIC_ONLY",
+      "player_level_analysis_allowed": false,
+      "withheld_metrics": [
+        "distance_covered_m",
+        "average_speed_kmh",
+        "max_speed_kmh",
+        "sprint_count",
+        "individual_tactical_compliance",
+        "player_target_attribution"
+      ],
+      "permitted_anonymous_metrics": [
+        "team_spatial_centroid",
+        "team_convex_hull",
+        "team_width_depth_dispersion",
+        "unattributed_instantaneous_track_velocities",
+        "tactical_event_timestamps",
+        "spatial_pitch_density_heatmaps"
+      ]
+    }
+  },
+  "calibration_contract": {
+    "modes": [
+      "NO_METRIC_CALIBRATION",
+      "CAMERA_SPECIFIC_METRIC_CALIBRATION",
+      "INVALID_CALIBRATION"
+    ],
+    "evidence_basis": [
+      "CAMERA_SPECIFIC_INDEPENDENTLY_VALIDATED",
+      "GEOMETRIC_SOLVE_ONLY",
+      "NO_CALIBRATION",
+      "INVALID"
+    ],
+    "authoritative_research_homography": {
+      "configuration_file": "config/3v3_homography_measured_metric_corrected.json",
+      "sha256": "d0e9680fdcdf3b5f6290ebf1f0e7cd1dbedcd6527f88873d857babe968cbd507",
+      "pitch_length_m": 19.31,
+      "pitch_width_m": 19.88,
+      "independent_rmse_m": 0.650505707264347,
+      "independent_point_count": 4,
+      "maximum_error_m": 0.8409196004427868,
+      "confidence": "MODERATE_CONFIDENCE_MEASURED_METRIC_ESTIMATE",
+      "restriction": "RESTRICTED_TO_RESEARCH_IPHONE16_TRIPOD_SETUP"
+    },
+    "user_calibration_policy": {
+      "four_point_solve_without_independent_landmarks": "GEOMETRIC_SOLVE_ONLY (No independent RMSE claim permitted; bounded visualization only)",
+      "uncalibrated_upload_default": "NO_METRIC_CALIBRATION (Strict suppression of metres and km/h)"
+    }
+  },
+  "kinematics_contract": {
+    "smoothing_filter": "Centred rolling median filter over 7 observations per raw track",
+    "temporal_gap_policy": {
+      "valid_delta_frames": "0 < delta_frames <= 120",
+      "discontinuity_threshold_seconds": 0.50,
+      "gap_behavior": "RESET_VELOCITY_NULL_DISCONTINUITY (No interpolation across gaps)"
+    },
+    "outlier_rejection_semantics": {
+      "threshold_kmh": 36.0,
+      "threshold_ms": 10.0,
+      "action": "REJECT_AND_EXCLUDE_OUTLIER",
+      "rule": "Speeds > 36 km/h are rejected and excluded from accepted steps, cumulative distance covered, and speed statistics. Never clamped."
+    }
+  },
+  "asr_contract": {
+    "model": "faster-whisper base.en",
+    "execution_runtime": "CTranslate2",
+    "quantization": "int8",
+    "threads": 8,
+    "audio_spec": "16kHz mono WAV",
+    "vad": "Silero VAD",
+    "historical_fallback_policy": "ELIMINATED_PROHIBITED_IN_PRODUCTION",
+    "failure_behavior": "Emit typed ASRFailure; continue in Vision-only mode with COMPLETED_WITH_LIMITATIONS. Never substitute historical transcript."
+  },
+  "fusion_contract": {
+    "architecture": "REDESIGNED_PRODUCTION_BOUNDARY",
+    "validated_temporal_rule": {
+      "evaluation_start": "instruction_end + 2.0 seconds",
+      "evaluation_end": "instruction_end + 6.0 seconds",
+      "formula": "[t_end + 2.0s, t_end + 6.0s]",
+      "historical_classification": "Notebook 3 [-2s, +5s] classified as legacy pre-command alignment; [+2s, +6s] frozen as formal post-command reaction window."
+    },
+    "evidence_scopes": [
+      "TEAM",
+      "SPATIAL",
+      "EVENT",
+      "ANONYMOUS_TRACK",
+      "PLAYER"
+    ],
+    "player_scope_gate": "FORBIDDEN unless identity_evidence_basis == HUMAN_ORACLE or mode == VALIDATED_SHOWCASE",
+    "prohibited_research_constants": [
+      "PLAYER_01",
+      "339.87s",
+      "2500 rows",
+      "4.5 m displacement",
+      "8.2 km/h speed"
+    ]
+  },
+  "oracle_contract": {
+    "mode": "VALIDATED_SHOWCASE",
+    "identity_provenance": "HUMAN_VERIFIED / ORACLE",
+    "verified_showcase_readback": {
+      "C04_marking": {
+        "candidate_id": "C04_DEFEND_167_174",
+        "source_artifact": "physical_metric_upgrade/experiments/capability_showcase/metric_extensions_corrected/C04_marking_metric/C04_metric_evidence.json",
+        "target_player": "BLACK_01",
+        "opponent": "RED_03",
+        "pre_command_separation_median_m": 14.3047,
+        "first_command_minimum_separation_m": 7.9605,
+        "closing_distance_m": 6.3442,
+        "percentage_reduction": 44.3502,
+        "black_01_distance_covered_m": 34.5815,
+        "average_movement_speed_kmh": 5.7565,
+        "followup_separation_median_m": 4.2975,
+        "independent_rmse_m": 0.6505
+      },
+      "C06_pressing": {
+        "candidate_id": "C06_PRESS_272_277",
+        "source_artifact": "physical_metric_upgrade/experiments/capability_showcase/metric_extensions_corrected/C06_pressing_metric/C06_metric_evidence.json",
+        "target_player": "RED_01",
+        "opponents": ["BLACK_03", "BLACK_01"],
+        "event_1_minimum_separation_m": 0.7027,
+        "event_1_closing_distance_m": 0.8752,
+        "event_2_minimum_separation_m": 0.4891,
+        "event_2_closing_distance_m": 3.1078,
+        "event_2_average_speed_kmh": 9.1246,
+        "independent_rmse_m": 0.6505
+      },
+      "C03_hold_position": {
+        "candidate_id": "C03_HOLD_78_90",
+        "source_artifact": "physical_metric_upgrade/experiments/capability_showcase/metric_extensions_corrected/C03_hold_position_metric/C03_metric_evidence.json",
+        "target_player": "RED_03",
+        "tactical_zone": "Right goal-side final third (x in [12.87, 19.31]m, y in [0.0, 19.88]m)",
+        "zone_entry_time_s": 81.2041,
+        "response_latency_s": 3.2441,
+        "distance_travelled_toward_zone_m": 4.6586,
+        "repositioning_path_distance_m": 8.5084,
+        "average_repositioning_speed_kmh": 10.0932,
+        "retention_percentage": 100.0,
+        "time_inside_zone_s": 5.0023,
+        "independent_rmse_m": 0.6505
+      }
+    }
+  },
+  "llm_contract": {
+    "model": "llama3.1:8b",
+    "model_digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+    "system_prompt_sha256": "ab95a8350208367aee29395866ece720c17c85c8d03a79b33b052e99442ae9ce",
+    "validator_specification": {
+      "validator_id": "LLM_GROUNDING_VALIDATOR_PATCH_001",
+      "gates": [
+        {"gate_number": 1, "gate_id": "IDENTITY_SAFETY_NEW_PLAYER_ID", "error_category": "UNSUPPORTED_PLAYER_IDENTITY"},
+        {"gate_number": 2, "gate_id": "PROHIBITED_PSYCHOLOGICAL_INFERENCE", "error_category": "OVERSTATED_CERTAINTY"},
+        {"gate_number": 3, "gate_id": "PRIVACY_NAME_LEAK", "error_category": "PRIVACY_POLICY_VIOLATION"},
+        {"gate_number": 4, "gate_id": "UNSUPPORTED_NUMERIC_VALUES", "error_category": "UNSUPPORTED_NUMERIC_CLAIM", "patch": "all_numbers_patched across all payload string leaves with tolerance 1e-4"},
+        {"gate_number": 5, "gate_id": "UNRESOLVED_TARGET_BECAME_RESOLVED", "error_category": "CONTRADICTS_INPUT", "patch": "negation-aware target attribution verification"},
+        {"gate_number": 6, "gate_id": "MISSING_SPEED_INFERRED", "error_category": "MISSING_SPEED_INFERRED"},
+        {"gate_number": 7, "gate_id": "UNSUPPORTED_EVENT_CATEGORY", "error_category": "UNSUPPORTED_EVENT_CATEGORY"},
+        {"gate_number": 8, "gate_id": "UNSUPPORTED_EVENT_ACTION", "error_category": "UNSUPPORTED_EVENT_ACTION"}
+      ]
+    },
+    "fallback_report_status": "DETERMINISTIC_FALLBACK"
+  },
+  "media_duration_policy": {
+    "current_limit_seconds": 300.0,
+    "primary_research_session_duration_seconds": 339.99,
+    "proposed_freeze_limit_seconds": 360.0,
+    "worker_timeout_status": "CONFIGURABLE / PROVISIONAL_PENDING_REAL_E2E_BENCHMARK",
+    "orchestration_mode": "ASYNCHRONOUS_WITH_HEARTBEATS_AND_PROGRESS"
+  },
+  "dependency_packaging": {
+    "isolation_requirement": "M1, M2, and M3 must remain dependency-isolated and reproducible.",
+    "packaging_strategy": "PROVISIONAL_PENDING_DEPENDENCY_SMOKE",
+    "preferred_strategy": "Unified Modal GPU container with lazy adapter imports",
+    "validation_requirement": "Pre-integration import smoke test required before final container lock."
+  }
+}

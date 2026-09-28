@@ -1,0 +1,8 @@
+{
+  "requested_mode": "CAMERA_SPECIFIC_INDEPENDENTLY_VALIDATED",
+  "actual_input_sha256": "b19071bbeb16e9b88b239d5fc66d51157acde3d480b8ff5e9ccb2ebeac4679a6",
+  "homography_sha256": "d0e9680fdcdf3b5f6290ebf1f0e7cd1dbedcd6527f88873d857babe968cbd507",
+  "permission": "DENIED",
+  "reason": "Research calibration is restricted to validated iPhone16 research geometry (SHA 0e676f4327d1e7e7ed458d619e5558f6630fc7efb0dda7bc608aec45cb9a5c71). Incompatible video source SHA: b19071bbeb16e9b88b239d5fc66d51157acde3d480b8ff5e9ccb2ebeac4679a6. Silently applying research calibration is strictly prohibited.",
+  "selected_product_mode": "NO_METRIC_CALIBRATION"
+}

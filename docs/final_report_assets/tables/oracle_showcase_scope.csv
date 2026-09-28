@@ -1,0 +1,4 @@
+case,coaching_scenario,evidence_mode,identity_and_target_scope
+C06_PRESSING,Pressing Response,ORACLE_ASSISTED_CAPABILITY_DEMONSTRATION,manually verified
+C04_DEFENSIVE_MARKING,Defensive Marking,ORACLE_ASSISTED_CAPABILITY_DEMONSTRATION,manually verified
+C03_HOLD_POSITION,Hold Position,ORACLE_ASSISTED_CAPABILITY_DEMONSTRATION,manually verified

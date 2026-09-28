@@ -1,0 +1,109 @@
+{
+  "phase": "IMPLEMENTATION_PHASE6",
+  "generated_at_utc": "2026-09-27T11:25:55.321725+00:00",
+  "disposition": "PHASE6_FINAL_FULL_E2E_PASS_WITH_LIMITATIONS",
+  "authoritative_research_source": {
+    "role": "AUTHORITATIVE_RESEARCH_SOURCE",
+    "sha256_previously_verified": "0e676f4327d1e7e7ed458d619e5558f6630fc7efb0dda7bc608aec45cb9a5c71",
+    "modified": false
+  },
+  "derived_transport_copy": {
+    "role": "PHASE6_TRANSPORT_COPY",
+    "path": "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\scratch\\phase6_transport\\3v3_match_iphone16_PHASE6_TRANSPORT.mp4",
+    "sha256": "b19071bbeb16e9b88b239d5fc66d51157acde3d480b8ff5e9ccb2ebeac4679a6",
+    "size_bytes": 43997249,
+    "private_storage_bucket": "analysis-inputs",
+    "private_storage_path": "b7a81465-4262-4ae4-b6b5-4d1679967818/video/0ccfbb77-2d37-4e1e-a80a-90f6b9bd44ab_3v3_match_iphone16_PHASE6_TRANSPORT.mp4"
+  },
+  "product_job": {
+    "session_id": "b7a81465-4262-4ae4-b6b5-4d1679967818",
+    "job_id": "9b01f139-5411-4a6d-9f9b-85e6a6fb4cdc",
+    "dispatch_id": "800cb888-511d-464e-833c-fa35b126cb23",
+    "modal_call_id": "fc-01M3H776A65X2P2VCCATB57FND"
+  },
+  "files": [
+    {
+      "path": "IMPLEMENTATION_PHASE6_PRE_RUN_SNAPSHOT.md",
+      "exists": true,
+      "size_bytes": 3361,
+      "sha256": "b9c20425fb542f06afac00d4d7fe8242ca5eed47914696d46e4dc6d8f0322eae"
+    },
+    {
+      "path": "IMPLEMENTATION_PHASE6_ORIGINAL_UPLOAD_FAILURE.md",
+      "exists": true,
+      "size_bytes": 4044,
+      "sha256": "a19467a3abb57aa62896710c5a0afe3b01c3dc00660207c91122067efd7801bb"
+    },
+    {
+      "path": "IMPLEMENTATION_PHASE6_ORIGINAL_UPLOAD_FAILURE_EVIDENCE.json",
+      "exists": true,
+      "size_bytes": 4289,
+      "sha256": "2129d366b50e110ad5dd339487f8bb07484e7db9857895bb9f8fc65e3bdb9279"
+    },
+    {
+      "path": "IMPLEMENTATION_PHASE6_TRANSPORT_COPY_MANIFEST.json",
+      "exists": true,
+      "size_bytes": 6739,
+      "sha256": "12e27a872688903403fec920a31d2d400c93a7f554e9da4d480f2588aa202d14"
+    },
+    {
+      "path": "IMPLEMENTATION_PHASE6_TRANSPORT_VISION_CHECK.json",
+      "exists": true,
+      "size_bytes": 23771,
+      "sha256": "2b33e458834d37304876772b8f7ae75e5f8ab24942d62f14b51ed89c4f33abfb"
+    },
+    {
+      "path": "IMPLEMENTATION_PHASE6_TRANSPORT_ASR_CHECK.json",
+      "exists": true,
+      "size_bytes": 1150,
+      "sha256": "334f8a65792f3022fa17f43f1277e6ff7223bb52de2e706c883f5143caf07d1e"
+    },
+    {
+      "path": "IMPLEMENTATION_PHASE6_CALIBRATION_GATE.json",
+      "exists": true,
+      "size_bytes": 656,
+      "sha256": "f31c4041012921e9ed85a2804f01e12b705ccadb1f98526fdb8622046846e0c9"
+    },
+    {
+      "path": "IMPLEMENTATION_PHASE6_FINAL_E2E_REPORT.md",
+      "exists": true,
+      "size_bytes": 8077,
+      "sha256": "0eb1b40325fd8875e29494115f07a8043ebecbc133290e43ad1af60c45b7cb15"
+    },
+    {
+      "path": "IMPLEMENTATION_PHASE6_FINAL_E2E_RESULT.json",
+      "exists": true,
+      "size_bytes": 11134,
+      "sha256": "c0a5d54ceb8cdd249967455d96a26e7df7be143566ad33ffb88ec036b0c66404"
+    },
+    {
+      "path": "IMPLEMENTATION_PHASE6_STAGE_TIMINGS.json",
+      "exists": true,
+      "size_bytes": 4091,
+      "sha256": "2c6f2cccfcd45990056a2fdc4721b924e18317afe553c2c8af3a284a065cc680"
+    },
+    {
+      "path": "IMPLEMENTATION_PHASE6_CHANGED_FILES.md",
+      "exists": true,
+      "size_bytes": 3570,
+      "sha256": "d14e84c312c14d6826bad72bfe34d4339ac7b7feb873a12b814335518fb7c075"
+    }
+  ],
+  "supporting_logs": [
+    "scratch/phase6_full_upload_state.json",
+    "scratch/phase6_original_failure_timings.json",
+    "scratch/phase6_transport_upload_state.json",
+    "scratch/phase6_transport/encode_progress.txt",
+    "scratch/phase6_transport/encode_stderr.log",
+    "scratch/phase6_job_stage_observations.json",
+    "scratch/phase6_remote_output_artifacts.json",
+    "scratch/modal_deploy_phase6.log",
+    "scratch/phase6_transport_frontend_build.log",
+    "scratch/phase6_transport_frontend_tsc.log",
+    "scratch/phase6_transport_frontend_build_final.log",
+    "scratch/phase6_transport_frontend_tsc_final.log",
+    "scratch/pytest_phase6_transport_final.log",
+    "scratch/pytest_phase6_transport_final_rerun.log",
+    "scratch/pytest_phase6_transport_without_m1.log"
+  ]
+}

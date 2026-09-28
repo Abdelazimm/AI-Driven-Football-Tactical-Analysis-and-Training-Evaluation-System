@@ -1,0 +1,38 @@
+{
+  "status": "PASS_FINAL_ORACLE_ASSISTED_CAPABILITY_SHOWCASE",
+  "showcase_mode": "ORACLE_ASSISTED_CAPABILITY_DEMONSTRATION",
+  "automated_identity_status": "FAIL_HIGH_FRAGMENTATION",
+  "manual_verification": true,
+  "calibration_confidence": "MODERATE_CONFIDENCE_MEASURED_METRIC_ESTIMATE",
+  "metric_sanity_status": "PASS_METRIC_SANITY_AUDIT_WITH_MULTIPLE_LIMITATIONS",
+  "ollama_model": "qwen3:8b",
+  "ollama_grounding_status": "PASS_GROUNDED_OLLAMA_REPORT",
+  "frontend_payload_status": "COMPLETE",
+  "coach_facing_exclusions": [
+    {
+      "metric": "C06_EVENT_1 peak speed 35.587 km/h",
+      "reason": "threshold-sensitive"
+    },
+    {
+      "metric": "C06_EVENT_2 peak speed 35.534 km/h",
+      "reason": "threshold-sensitive"
+    },
+    {
+      "metric": "C04 peak speed 35.759 km/h",
+      "reason": "threshold-sensitive"
+    },
+    {
+      "metric": "C03 retention path 5.427 m",
+      "reason": "RETENTION_DISTANCE_JITTER_SENSITIVE"
+    },
+    {
+      "metric": "C06 overall RED_01 path 17.642 m",
+      "reason": "not reproducible from exported timeseries coverage"
+    },
+    {
+      "metric": "player-to-ball distance",
+      "reason": "no saved ball detections"
+    }
+  ],
+  "created_at_utc": "2026-09-19T23:52:16.226420+00:00"
+}

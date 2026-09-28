@@ -1,0 +1,52 @@
+{
+  "mapping_version": "1.0",
+  "generated_at": "2026-09-21",
+  "notes": "Maps frozen research-relative media paths in showcase_frontend_payload.json to local verified fixtures and future Supabase storage keys without modifying frozen research bytes.",
+  "cases": {
+    "C06": {
+      "logical_key": "c06_pressing_overlay",
+      "card_id": "C06_PRESSING",
+      "use_case": "C06",
+      "title": "Pressing Response",
+      "original_payload_reference": "experiments/capability_showcase/C06_pressing_deterministic_response/C06_pressing_sequence_overlay.mp4",
+      "located_research_source": "C06_pressing_deterministic_response/C06_pressing_sequence_overlay.mp4",
+      "fixture_path": "golden/media/c06/C06_pressing_sequence_overlay.mp4",
+      "media_type": "video/mp4",
+      "file_size_bytes": 10726375,
+      "sha256": "6d8d8eea0f6a65c014228d1481f821742a2b2f4e6fb6db154a1e3ae1f39bfb05",
+      "resolution_status": "RESOLVED",
+      "future_storage_bucket": "showcase",
+      "future_storage_key": "c06/C06_pressing_sequence_overlay.mp4"
+    },
+    "C04": {
+      "logical_key": "c04_marking_contact_sheet",
+      "card_id": "C04_DEFENSIVE_MARKING",
+      "use_case": "C04",
+      "title": "Defensive Marking",
+      "original_payload_reference": "experiments/capability_showcase/C04_marking/C04_black01_red03_response_contact_sheet.png",
+      "located_research_source": "c04_deterministic_response/C04_black01_red03_response_contact_sheet.png",
+      "fixture_path": "golden/media/c04/C04_black01_red03_response_contact_sheet.png",
+      "media_type": "image/png",
+      "file_size_bytes": 18927018,
+      "sha256": "73d47fab27089d5de39302e90244f235969dec5d058efed4510a92f25f378a50",
+      "resolution_status": "RESOLVED",
+      "future_storage_bucket": "showcase",
+      "future_storage_key": "c04/C04_black01_red03_response_contact_sheet.png"
+    },
+    "C03": {
+      "logical_key": "c03_hold_position_overlay",
+      "card_id": "C03_HOLD_POSITION",
+      "use_case": "C03",
+      "title": "Hold Position",
+      "original_payload_reference": "experiments/capability_showcase/C03_hold_position/C03_hold_position_overlay.mp4",
+      "located_research_source": "C03_hold_position_deterministic_response/C03_hold_position_overlay.mp4",
+      "fixture_path": "golden/media/c03/C03_hold_position_overlay.mp4",
+      "media_type": "video/mp4",
+      "file_size_bytes": 20281548,
+      "sha256": "b34a274a80952a770b9125414f07d5881904c3849dac95d2366fd968c5ab0f2e",
+      "resolution_status": "RESOLVED",
+      "future_storage_bucket": "showcase",
+      "future_storage_key": "c03/C03_hold_position_overlay.mp4"
+    }
+  }
+}

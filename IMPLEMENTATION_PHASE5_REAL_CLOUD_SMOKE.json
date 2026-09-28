@@ -1,0 +1,145 @@
+{
+  "disposition": "PHASE5_REAL_MODAL_SUPABASE_SMOKE_PASS",
+  "authentication": {
+    "callback": "X-Worker-Secret; unauthenticated request verified 401",
+    "storage": "Supabase service role in private Modal secret"
+  },
+  "session_id": "b028dbcf-3a09-4923-8fe6-f57b1697b627",
+  "job_id": "0b4bdb05-1abf-41ac-b172-eed27a9ebc80",
+  "dispatch_id": "fbe30031-79ab-46e3-b34e-f55601042e6c",
+  "modal_call_id": "fc-01M3GNVRA9KTWF3P7Q78A1WNY4",
+  "modal_app": "football-tactical-analysis",
+  "modal_function": "execute_analysis_worker",
+  "modal_callback_url": "https://abd-azimmm--football-tactical-analysis-callback-api.modal.run/api/v1/internal/jobs/{job_id}/progress",
+  "supabase_video_object_path": "sessions/b028dbcf-3a09-4923-8fe6-f57b1697b627/uploads/phase5_c04_remote_167_179.mp4",
+  "supabase_audio_object_path": "sessions/b028dbcf-3a09-4923-8fe6-f57b1697b627/uploads/C04_Defensive_Marking_clip.wav",
+  "video_validation": {
+    "is_valid": true,
+    "error_code": null,
+    "error_message": null,
+    "probe": {
+      "container_format": "mov,mp4,m4a,3gp,3g2,mj2",
+      "duration_seconds": 11.983333,
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.0,
+      "video_codec": "h264",
+      "audio_codec": null,
+      "has_video": true,
+      "has_audio": false,
+      "probe_status": "SUCCESS",
+      "error_message": null
+    }
+  },
+  "requested_methodology": "AUTO",
+  "resolved_methodology": "METHOD_2_RFDETR_GTATRACK",
+  "model_volume": "football-model-checkpoints",
+  "remote_runtime_preflight": {
+    "status": "PASS",
+    "python": "3.11.12",
+    "torch": "2.14.0+cu130",
+    "torchvision": "0.29.0+cu130",
+    "cuda_available": true,
+    "gpu_name": "Tesla T4",
+    "ffmpeg": "5.1.9-0+deb12u1",
+    "m2_packaged_imports": "PASS"
+  },
+  "checkpoint_files": {
+    "checkpoint_best_total.pth": {
+      "size_bytes": 134747227,
+      "sha256": "7539cfb3eca3125136c1446d7a522a5a46abb14136d55f79aec8daececc00b85",
+      "path": "/data/models/m2/checkpoint_best_total.pth"
+    },
+    "sports_model.pth.tar-60": {
+      "size_bytes": 30393613,
+      "sha256": "8d5b2fd8763db34c2aad69810466adf413f0426d9f8119d322227e0e639c5fbd",
+      "path": "/data/models/m2/sports_model.pth.tar-60"
+    }
+  },
+  "source_offset_s": 167.0,
+  "bounded_clip": {
+    "source_start_s": 167.0,
+    "source_end_s": 179.0,
+    "start_frame": 400,
+    "max_frames": 4,
+    "clip_fps": 60.0
+  },
+  "first_asr_event": {
+    "start_s": 167.0,
+    "end_s": 171.65,
+    "alignment_window_start_s": 173.65,
+    "alignment_window_end_s": 177.65,
+    "category": "Defensive",
+    "action": "mark"
+  },
+  "vision_timestamps_s": [
+    173.6667,
+    173.6833,
+    173.7,
+    173.7167
+  ],
+  "fusion_overlap_timestamps_s": [
+    173.6667,
+    173.6833,
+    173.7,
+    173.7167
+  ],
+  "fusion_evidence_items": 6,
+  "positive_observation_items": 5,
+  "identity": {
+    "method_formal_identity_status": "FAIL_UNSAFE_MERGE",
+    "method_formal_identity_evidence_basis": "FORMAL_DENSE_GT",
+    "runtime_identity_status": "UNVERIFIED_HEURISTIC_PASS",
+    "runtime_identity_evidence_basis": "RUNTIME_HEURISTIC_ONLY",
+    "player_level_analysis_allowed": false,
+    "withholding_reason": "The selected automated tracking methodology has not demonstrated sufficiently safe persistent physical-player identity under formal dense-GT benchmark evaluation (FAIL_UNSAFE_MERGE). Player-level analytics are withheld; runtime diagnostics on the current upload are heuristic only and cannot unlock player-level assessment."
+  },
+  "report_status": "DETERMINISTIC_FALLBACK",
+  "fallback_reason_recorded": true,
+  "artifact_paths": {
+    "result_json": {
+      "path": "jobs/0b4bdb05-1abf-41ac-b172-eed27a9ebc80/results/result.json",
+      "size_bytes": 26357,
+      "accessible": true
+    },
+    "coach_report_md": {
+      "path": "jobs/0b4bdb05-1abf-41ac-b172-eed27a9ebc80/reports/coach_report.md",
+      "size_bytes": 3774,
+      "accessible": true
+    },
+    "report_metadata_json": {
+      "path": "jobs/0b4bdb05-1abf-41ac-b172-eed27a9ebc80/reports/report_metadata.json",
+      "size_bytes": 663,
+      "accessible": true
+    },
+    "execution_manifest_json": {
+      "path": "jobs/0b4bdb05-1abf-41ac-b172-eed27a9ebc80/logs/execution_manifest.json",
+      "size_bytes": 2006,
+      "accessible": true
+    }
+  },
+  "final_job_status": "COMPLETED_WITH_LIMITATIONS",
+  "final_dispatch_state": "SUCCEEDED",
+  "api_retrieval": {
+    "job_http_status": 200,
+    "result_http_status": 200,
+    "job_id_matches": true,
+    "report_accessible": true,
+    "structured_evidence_present": true,
+    "execution_manifest_present": true
+  },
+  "stage_timings_s": {
+    "media_acquisition_s": 9.702,
+    "model_verification_s": 0.849,
+    "pipeline_s": 35.822,
+    "persistence_s": 1.825,
+    "total_s": 49.259
+  },
+  "callback_sequence_evidence": {
+    "running_stages_observed": [
+      "VALIDATING",
+      "AUDIO_EXTRACTION"
+    ],
+    "terminal_callback": "SUCCEEDED; result readback required before terminal state"
+  }
+}

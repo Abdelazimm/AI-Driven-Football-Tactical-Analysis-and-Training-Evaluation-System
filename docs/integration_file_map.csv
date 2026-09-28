@@ -1,0 +1,45 @@
+current_source,type,current_role,reuse_class,proposed_application_module,production_action,notes
+01_vision_pipeline.ipynb,notebook,vision research pipeline,extract,pipeline/detection.py; pipeline/tracking.py; pipeline/identity_gate.py; pipeline/kinematics.py,extract tested pure functions and schemas,Do not import notebook or depend on execution order
+02_audio_pipeline.ipynb,notebook,audio extraction ASR event parsing,extract,media/audio.py; pipeline/asr.py; pipeline/instructions.py,extract real-session path and exclude gTTS fixture from runtime,Keep raw transcript private
+03_orchestrator_fusion.ipynb,notebook,audio vision fusion and fail-closed gates,extract,pipeline/fusion.py; pipeline/gates.py,extract interval alignment pseudonymization and withholding rules,Preserve UNRESOLVED_TARGET behavior
+04_report_generation.ipynb,notebook,inclusive report Ollama validator fallback,extract,pipeline/reporting.py; pipeline/grounding.py; adapters/report_model.py,extract deterministic engine and validation; replace transport only,localhost Ollama is not deployable as-is
+Autonomus_scout.ipynb,notebook,oracle capability research,reference,evidence/showcase_reference,consume outputs only,Manual verification is demo-only
+runs/vision_20260805T232509Z_d2f9bc0d/stage_4/fine_tuning_pilot/yolo11m_pilot_memory_safe/weights/best.pt,model,accepted Stage 4B detector,candidate,models/detectors/stage4b_best.pt,copy immutably with checksum,Application detector selection unresolved
+experiments/persistent_identity_prtreid/E6_deep_eiou_gta/01_frozen_detections/yolov8m.pt,model,Experiment C frozen detector,candidate,models/detectors/experiment_c_yolov8m.pt,copy immutably with checksum,Strongest provenance for Dataset B Experiment C
+models/yolo_multi_domain_adapted.pt,model,multi-domain adaptation research,research-only,none,retain read-only,Not proven as final Dataset B detector
+models/yolo11m.pt,model,baseline and pseudo-label teacher,research-only,none or model cache,retain read-only,Not deployment-selected
+models/faster_whisper/,model cache,Faster-Whisper base.en cache,reuse,pipeline/asr.py; deployment model volume,pin exact snapshot and measure bytes,CPU int8 was tested
+models/prtreid/,model cache,persistent identity research,research-only,none,retain read-only,Automated identity still failed
+config/selected_detection_config.json,configuration,stale baseline selection,do-not-use,none,preserve but supersede with new deployment manifest,Explicitly predates accepted Stage 4B
+configs/botsort_football_fallback_C.yaml,configuration,Experiment C BoT-SORT settings,candidate,config/tracking/experiment_c.yaml,copy immutably if Experiment C path selected,Dataset-specific experimental config
+config/frozen_splits.json,configuration,research split governance,frozen,evidence/research_splits,read only,Never evaluate frozen test during integration
+config/3v3_homography.json,configuration,historical calibration,frozen,evidence/calibration/historical,read only,Not arbitrary-video calibration
+physical_metric_upgrade/config/3v3_homography_measured_metric_corrected.json,configuration,final corrected demo calibration,reuse,config/calibration/demo_3v3.json,copy immutably with provenance,Only valid for matching camera and geometry
+config/ollama_report.json,configuration,local report-model configuration,adapt,config/reporting/research_ollama.json,retain as research reference,Do not deploy localhost endpoint unchanged
+selected_C_roster_assignments.csv,data,Experiment C observation artifact,frozen,evidence/identity/experiment_c,read only,111890 rows and 115 raw IDs
+tracking_3v3_dataset_b.csv,data,Dataset B tracking observations,frozen,evidence/tracking/dataset_b,read only,Large CSV
+data/custom/audio/coach_commands.m4a,participant media,real coach audio,private,storage/raw-private,store privately with retention policy,Do not expose participant names
+data/custom/audio/3v3_real_audio_whisper_raw.json,data,unredacted ASR output,private,storage/analysis-private,private bucket only,Not a public report artifact
+data/custom/audio/3v3_real_audio_coaching_events.json,data,pseudonymized instruction events,reuse,pipeline schemas and analysis_results,validate and store,Targets remain unresolved where evidence is insufficient
+data/custom/3v3_real_audio_fused_events.json,data,fail-closed fused events,reuse,analysis_results/evidence_json,validate and store,Contains withholding states
+experiments/3v3_real_audio_audio_summary.json,evidence,ASR run summary,frozen,analysis_results/provenance,read only,Real-session authority
+experiments/3v3_real_audio_fusion_summary.json,evidence,fusion quality gates,frozen,analysis_results/quality_gates,read only,Preserve failed identity gate
+experiments/vision_3v3_identity_repair/selected_tracking_config.json,configuration,selected Experiment C tracking evidence,frozen,evidence/tracking,read only,Use with YAML and summary together
+experiments/persistent_identity_prtreid/E6_deep_eiou_gta/,experiment,E6 frozen detections Deep-EIoU GTA,research-only,evidence/research/e6,read only,Did not solve persistent identity
+C03_hold_position_deterministic_response/,evidence/media,C03 deterministic case,frozen,storage/showcase/c03,copy/serve immutably,Manual zone and identity verification
+c04_deterministic_response/,evidence/media,C04 deterministic case,frozen,storage/showcase/c04,copy/serve immutably,Manual identity and opponent verification
+C06_pressing_deterministic_response/,evidence/media,C06 deterministic case,frozen,storage/showcase/c06,copy/serve immutably,No player-to-ball metric
+physical_metric_upgrade/experiments/homography_validation_physical_corrected/,evidence,corrected calibration validation,frozen,storage/evidence/calibration,read only,RMSE 0.651m moderate confidence
+physical_metric_upgrade/experiments/capability_showcase/metric_extensions_corrected/,evidence,corrected metric case outputs,frozen,storage/evidence/metrics,read only,Approximate metric estimates
+physical_metric_upgrade/experiments/capability_showcase/metric_sanity_audit/,evidence,metric sanity and exclusions,frozen,storage/evidence/metric-audit,read only,Peak speed and path limitations
+physical_metric_upgrade/experiments/capability_showcase/05_final_showcase/showcase_frontend_payload.json,golden payload,frontend showcase schema,frozen,storage/golden/showcase_frontend_payload.json,serve unchanged plus external media manifest,Embedded media references are stale/mismatched
+physical_metric_upgrade/experiments/capability_showcase/05_final_showcase/showcase_final_coach_report.md,golden report,final coach report,frozen,storage/golden/showcase_final_coach_report.md,serve unchanged,Grounded oracle-assisted report
+physical_metric_upgrade/experiments/capability_showcase/05_final_showcase/showcase_grounding_validation.json,golden evidence,grounding validation,frozen,storage/golden/showcase_grounding_validation.json,serve/audit unchanged,Do not regenerate during integration
+physical_metric_upgrade/experiments/capability_showcase/05_final_showcase/showcase_final_summary.json,golden evidence,final frozen status,frozen,storage/golden/showcase_final_summary.json,serve/audit unchanged,PASS applies only to oracle-assisted showcase
+build_corrected_metric_showcase.py,script,corrected homography and metric derivation,extract,pipeline/calibration.py; pipeline/kinematics.py; pipeline/evidence.py,extract project_xy inverse_project_xy build_track_kinematics and provenance helpers,Do not rerun against golden data
+build_metric_sanity_audit.py,script,metric diagnostics and reporting policy,extract,pipeline/metric_validation.py; pipeline/report_policy.py,extract prepare_case summarize_case and recommendation rules,Maximum speed is not a headline metric
+build_final_oracle_showcase.py,script,golden evidence packaging Ollama validation,extract,pipeline/grounding.py; pipeline/showcase.py,extract validate_response flatten_strings and deterministic formatting,Golden outputs remain frozen
+build_homography_validation.py,script,historical calibration audit,reference,pipeline/calibration_validation.py,extract concepts only,Historical/provisional evidence
+physical_metric_upgrade.py,script,earlier measured pitch upgrade,reference,evidence/calibration/history,retain read only,Superseded by corrected package but scientifically relevant
+.soccertrack-v2-reference/,third-party reference,SoccerTrack reference code,development-only,none,exclude from production image unless licensed/needed,Its pyproject is not the app dependency manifest
+integration_audit/,audit,new integration handoff,new,evidence/integration_audit,hand to Antigravity,Only directory added by this audit

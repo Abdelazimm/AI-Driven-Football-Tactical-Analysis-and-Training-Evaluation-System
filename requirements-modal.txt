@@ -1,0 +1,7 @@
+# Modal Serverless Compute Infrastructure & Tooling
+# Dedicated modern environment specification for Modal execution (Python >= 3.10)
+modal>=1.5.0,<2.0.0
+pydantic>=2.7.0
+pydantic-settings>=2.2.0
+httpx>=0.27.0
+python-dotenv>=1.0.0

@@ -1,0 +1,22 @@
+# Phase 5 interrupted work recovery audit
+
+Date: 2026-09-27. This is a source-first audit before recovery edits. The workspace has no `.git` directory (including nested directories), so `git status --short`, `git diff`, and `git diff --cached` cannot identify an authoritative change set or attribute edits. File timestamps, the Phase 5 prechange/readback records, current source, and existing smoke artifacts are the available evidence. Files already present are preserved unless explicitly corrected below.
+
+| Requirement | State | Evidence | Action Needed |
+|---|---|---|---|
+| Baseline Phase 5 implementation | DONE_BY_PREVIOUS_AGENT | `IMPLEMENTATION_PHASE5_PRECHANGE_SNAPSHOT.md`, `IMPLEMENTATION_PHASE5_CHANGED_FILES.md`, orchestrator and Modal files exist; prior `IMPLEMENTATION_PHASE5_TEST_RESULTS.json` reports 261 passes before subsequent edits | Rerun tests after recovery changes; do not treat old result as current. |
+| Absolute audio source offset through ASR | PARTIALLY_DONE | `orchestrator.py` accepts `audio_source_offset_s`, `audio.py` forwards it, `asr_service.py` adds it to segments and words, and bounded smoke test passes 167.0 explicitly | Verify actual current runtime and fusion observations; check remote worker propagation and reject inconsistent paths. |
+| Vision source timeline | NEEDS_VERIFICATION | Orchestrator forwards `start_frame` and `max_frames`; local smoke claims frames 10415–10418 near 173.66–173.71s | Confirm emitted frame timestamps and actual Fusion observations from current run. |
+| Formal identity contract | PARTIALLY_DONE | Orchestrator and identity service use `FAIL_UNSAFE_MERGE` / `FORMAL_DENSE_GT` with `RUNTIME_HEURISTIC_ONLY`; production result text omits historical ratio | Check canonical result/manifest, frontend wording, and runtime heuristic separation in tests. |
+| LLM 120-second default | PARTIALLY_DONE | `llm_report_service.py` defines benchmark and production defaults as 120; `config.py` and manifest also show 120 | Check explicit override behavior and eliminate stale 45-second production claim in reports. |
+| Local smoke classification | DONE_BY_PREVIOUS_AGENT | `IMPLEMENTATION_PHASE5_LOCAL_ORCHESTRATOR_SMOKE.json` exists and identifies local media; old `IMPLEMENTATION_PHASE5_REAL_CLOUD_SMOKE.json` still falsely says PASS for the same local paths | Keep truthful local record; correct/remove cloud-success claim without deleting useful evidence. |
+| Real Modal + Supabase product smoke | NOT_STARTED | No remote session/job/invocation identifiers in smoke artifact; worker source currently uses local path or signed URL and has no visible model-volume mount; preflight differs from `modal_app/app.py` | Inspect credentials/infrastructure safely, complete feasible cloud wiring, run one bounded remote lifecycle if available, otherwise document exact blocker. |
+| Modal worker absolute offset | INCORRECT | `modal_app/worker.py` forwards frame bounds but does not forward `audio_source_offset_s` to `execute_analysis_job` | Correct worker contract and test it. |
+| Modal worker packaging | INCORRECT | `modal_app/app.py` worker image includes FFmpeg/Whisper but omits RF-DETR, vision dependencies, source copy and model-volume mount; `modal_app/worker.py` has no explicit result return/persistence evidence | Audit and correct within Phase 5 scope if feasible; never claim a remote pass from static definitions. |
+| Documentation/test artifacts | INCORRECT | Phase 5 report and test JSON still say formal identity is `FAIL_HIGH_FRAGMENTATION`, 6.1667, LLM timeout 45s, and label local smoke as real cloud | Update after current code and test verification. |
+
+Research artifacts on `G:` are reference-only. This audit made no edits to research, notebooks, experiments, frozen evidence, or models. Full 340-second session execution is prohibited.
+
+## Recovery verification outcome
+
+Codex completed the local offset guard, Fusion provenance/overlap assertion, formal identity readback, LLM default/override test, corrected local/cloud classification, and regression. The full backend run passed 265 tests; frontend build and typecheck passed. Authenticated Modal inspection found no volumes or deployed apps, and the Supabase `analysis_results` endpoint returned HTTP 404. The production dispatch and worker source also remain incomplete for a remote product lifecycle. These findings supersede `NEEDS_VERIFICATION`/`PARTIALLY_DONE` table states for the local gates, while the remote smoke remains blocked. See `IMPLEMENTATION_PHASE5_FINAL_VERIFICATION.md` for the final disposition.

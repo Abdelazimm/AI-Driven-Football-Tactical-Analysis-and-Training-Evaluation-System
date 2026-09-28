@@ -1,0 +1,108 @@
+{
+  "manifest_version": "2.0",
+  "generated_at": "2026-09-21",
+  "scientific_status": "PASS_FINAL_ORACLE_ASSISTED_CAPABILITY_SHOWCASE",
+  "mode": "ORACLE_ASSISTED_CAPABILITY_DEMONSTRATION",
+  "audit_reference": "docs/research_handoff/integration_audit.json",
+  "media_map_reference": "golden/media_map.json",
+  "manual_verification_status": "VERIFIED_BY_HUMAN_ORACLE",
+  "automated_identity_status": "FAIL_HIGH_FRAGMENTATION",
+  "artifacts": {
+    "showcase_frontend_payload": {
+      "filename": "showcase_frontend_payload.json",
+      "artifact_type": "JSON_FRONTEND_PAYLOAD",
+      "research_source_path": "physical_metric_upgrade/experiments/capability_showcase/05_final_showcase/showcase_frontend_payload.json",
+      "fixture_path": "golden/fixtures/showcase_frontend_payload.json",
+      "file_size_bytes": 8556,
+      "sha256": "20e0a6f0f8a537a8ce00567ffd136044231faa88c21446d1e82180751ce9c830",
+      "is_frozen": true,
+      "required_by_frontend": true,
+      "required_for_testing": true,
+      "showcase_use_cases": ["C06", "C04", "C03"],
+      "resolution_status": "RESOLVED"
+    },
+    "showcase_final_coach_report": {
+      "filename": "showcase_final_coach_report.md",
+      "artifact_type": "MARKDOWN_COACH_REPORT",
+      "research_source_path": "physical_metric_upgrade/experiments/capability_showcase/05_final_showcase/showcase_final_coach_report.md",
+      "fixture_path": "golden/fixtures/showcase_final_coach_report.md",
+      "file_size_bytes": 3672,
+      "sha256": "d491814396302018b3efd2ded3d68937ad0a6378c022ac8f317597c48bc8793d",
+      "is_frozen": true,
+      "required_by_frontend": true,
+      "required_for_testing": true,
+      "showcase_use_cases": ["C06", "C04", "C03"],
+      "resolution_status": "RESOLVED"
+    },
+    "showcase_grounding_validation": {
+      "filename": "showcase_grounding_validation.json",
+      "artifact_type": "JSON_GROUNDING_EVIDENCE",
+      "research_source_path": "physical_metric_upgrade/experiments/capability_showcase/05_final_showcase/showcase_grounding_validation.json",
+      "fixture_path": "golden/fixtures/showcase_grounding_validation.json",
+      "file_size_bytes": 3757,
+      "sha256": "a300006b13f0985e85c89075bf2654ff780429e05fb8f7fe4f7f5b9a39b1a4dd",
+      "is_frozen": true,
+      "required_by_frontend": false,
+      "required_for_testing": true,
+      "showcase_use_cases": ["C06", "C04", "C03"],
+      "resolution_status": "RESOLVED"
+    },
+    "showcase_final_summary": {
+      "filename": "showcase_final_summary.json",
+      "artifact_type": "JSON_EXECUTIVE_SUMMARY",
+      "research_source_path": "physical_metric_upgrade/experiments/capability_showcase/05_final_showcase/showcase_final_summary.json",
+      "fixture_path": "golden/fixtures/showcase_final_summary.json",
+      "file_size_bytes": 1284,
+      "sha256": "3752c872d4cc3710fdb7c8f2fbf375269a6fb89dcc839f0c9f08cee72547e0e5",
+      "is_frozen": true,
+      "required_by_frontend": false,
+      "required_for_testing": true,
+      "showcase_use_cases": ["C06", "C04", "C03"],
+      "resolution_status": "RESOLVED"
+    }
+  },
+  "media": {
+    "C06": {
+      "filename": "C06_pressing_sequence_overlay.mp4",
+      "artifact_type": "MEDIA_OVERLAY_VIDEO",
+      "research_source_path": "C06_pressing_deterministic_response/C06_pressing_sequence_overlay.mp4",
+      "payload_reference": "experiments/capability_showcase/C06_pressing_deterministic_response/C06_pressing_sequence_overlay.mp4",
+      "fixture_path": "golden/media/c06/C06_pressing_sequence_overlay.mp4",
+      "file_size_bytes": 10726375,
+      "sha256": "6d8d8eea0f6a65c014228d1481f821742a2b2f4e6fb6db154a1e3ae1f39bfb05",
+      "is_frozen": true,
+      "required_by_frontend": true,
+      "required_for_testing": true,
+      "showcase_use_case": "C06",
+      "resolution_status": "RESOLVED"
+    },
+    "C04": {
+      "filename": "C04_black01_red03_response_contact_sheet.png",
+      "artifact_type": "MEDIA_CONTACT_SHEET",
+      "research_source_path": "c04_deterministic_response/C04_black01_red03_response_contact_sheet.png",
+      "payload_reference": "experiments/capability_showcase/C04_marking/C04_black01_red03_response_contact_sheet.png",
+      "fixture_path": "golden/media/c04/C04_black01_red03_response_contact_sheet.png",
+      "file_size_bytes": 18927018,
+      "sha256": "73d47fab27089d5de39302e90244f235969dec5d058efed4510a92f25f378a50",
+      "is_frozen": true,
+      "required_by_frontend": true,
+      "required_for_testing": true,
+      "showcase_use_case": "C04",
+      "resolution_status": "RESOLVED"
+    },
+    "C03": {
+      "filename": "C03_hold_position_overlay.mp4",
+      "artifact_type": "MEDIA_OVERLAY_VIDEO",
+      "research_source_path": "C03_hold_position_deterministic_response/C03_hold_position_overlay.mp4",
+      "payload_reference": "experiments/capability_showcase/C03_hold_position/C03_hold_position_overlay.mp4",
+      "fixture_path": "golden/media/c03/C03_hold_position_overlay.mp4",
+      "file_size_bytes": 20281548,
+      "sha256": "b34a274a80952a770b9125414f07d5881904c3849dac95d2366fd968c5ab0f2e",
+      "is_frozen": true,
+      "required_by_frontend": true,
+      "required_for_testing": true,
+      "showcase_use_case": "C03",
+      "resolution_status": "RESOLVED"
+    }
+  }
+}

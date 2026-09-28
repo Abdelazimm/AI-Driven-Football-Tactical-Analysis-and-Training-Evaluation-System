@@ -1,0 +1,5 @@
+challenge_clip,source_start_frame,source_end_frame_inclusive,scored_frames_per_method
+GT_CLIP_01_REENTRY,14333,15172,840
+GT_CLIP_02_OCCLUSION,19311,20030,720
+GT_CLIP_03_SAME_TEAM_INTERACTION,8156,8995,840
+GT_CLIP_04_LONG_GAP_REENTRY,1859,3238,1380

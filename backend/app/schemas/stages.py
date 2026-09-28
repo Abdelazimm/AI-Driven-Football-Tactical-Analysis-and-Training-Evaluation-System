@@ -1,0 +1,25 @@
+from __future__ import annotations
+from enum import Enum
+
+
+class AnalysisStage(str, Enum):
+    """
+    Analysis Job Stages representing pipeline execution position only (exactly 16 stages).
+    Terminal lifecycle outcomes (COMPLETED, COMPLETED_WITH_LIMITATIONS, FAILED) belong strictly to JobStatus.
+    """
+    UPLOADED = "UPLOADED"
+    VALIDATING = "VALIDATING"
+    PREPROCESSING = "PREPROCESSING"
+    DETECTING = "DETECTING"
+    TRACKING = "TRACKING"
+    IDENTITY_EVALUATION = "IDENTITY_EVALUATION"
+    CALIBRATING = "CALIBRATING"
+    KINEMATICS = "KINEMATICS"
+    AUDIO_EXTRACTION = "AUDIO_EXTRACTION"
+    TRANSCRIBING = "TRANSCRIBING"
+    INSTRUCTION_PARSING = "INSTRUCTION_PARSING"
+    FUSION = "FUSION"
+    GENERATING_EVIDENCE = "GENERATING_EVIDENCE"
+    GENERATING_REPORT = "GENERATING_REPORT"
+    RENDERING = "RENDERING"
+    UPLOADING_RESULTS = "UPLOADING_RESULTS"

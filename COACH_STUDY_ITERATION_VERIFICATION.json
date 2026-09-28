@@ -1,0 +1,45 @@
+{
+  "disposition": "COACH_STUDY_ITERATION_PASS_WITH_LIMITATIONS",
+  "date": "2026-09-27",
+  "study_response_count": 6,
+  "job_id": "9b01f139-5411-4a6d-9f9b-85e6a6fb4cdc",
+  "scope": "frontend presentation and navigation only",
+  "build": { "command": "npm run build", "passed": true, "exit_code": 0 },
+  "typescript": { "command": "npx tsc --noEmit", "passed": true, "exit_code": 0 },
+  "frontend_tests": { "run": false, "reason": "No test script or src test/spec files found" },
+  "persisted_result_browser_values": {
+    "job_status": "COMPLETED_WITH_LIMITATIONS",
+    "methodology_id": "METHOD_2_RFDETR_GTATRACK",
+    "formal_identity_status": "FAIL_UNSAFE_MERGE",
+    "player_level_analysis": "WITHHELD",
+    "calibration_mode": "NO_METRIC_CALIBRATION",
+    "report_mode": "DETERMINISTIC_FALLBACK",
+    "tactical_event_count": 13,
+    "structured_evidence_count": 28
+  },
+  "browser": {
+    "coach_overview_loaded": true,
+    "rich_markdown_structure_rendered": true,
+    "raw_report_source_unchanged_by_frontend": true,
+    "download_control_clickable": true,
+    "downloaded_file_bytes_verified": false,
+    "download_verification_limit": "The in-app browser did not expose a saved path for the Blob download.",
+    "technical_details_visible_on_expansion": true,
+    "automated_and_manual_labels_visible": true,
+    "showcase_cases_loaded": ["C03", "C04", "C06"],
+    "showcase_media": { "C03": "video", "C04": "image", "C06": "video" },
+    "fatal_console_errors": 0
+  },
+  "event_video_seek_checks": [
+    { "event_id": "evt_0", "source_start_s": 26.54, "observed_current_time_s": 26.54, "video_duration_s": 340, "within_tolerance": true },
+    { "event_id": "evt_7", "source_start_s": 121.0, "observed_current_time_s": 121.0, "video_duration_s": 340, "within_tolerance": true },
+    { "event_id": "evt_12", "source_start_s": 336.7, "observed_current_time_s": 336.7, "video_duration_s": 340, "within_tolerance": true }
+  ],
+  "limits": [
+    "HTML video currentTime was verified; frame-exact decoded-frame positioning was not claimed.",
+    "A real signed-URL expiry was not forced during this verification."
+  ],
+  "scientific_methodology_or_results_modified": false,
+  "inference_rerun": false,
+  "research_workspace_modified": false
+}

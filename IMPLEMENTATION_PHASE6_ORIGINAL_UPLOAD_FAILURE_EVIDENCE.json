@@ -1,0 +1,112 @@
+{
+  "phase": "IMPLEMENTATION_PHASE6",
+  "disposition": "PHASE6_FINAL_FULL_E2E_FAILED",
+  "failure_code": "SUPABASE_PROJECT_STORAGE_SIZE_LIMIT",
+  "failure_stage": "UPLOAD",
+  "failure_evidence": {
+    "resumable_upload_create_http_status": 413,
+    "provider_message": "Maximum size exceeded",
+    "additional_64_mib_probe_http_status": 413,
+    "bucket_specific_limit_bytes": null,
+    "project_global_limit_bytes": null,
+    "project_global_limit_interpretation": "At most 64 MiB based on the rejected probe; exact configured limit and billing plan were unavailable.",
+    "object_exists_after_failure": false,
+    "bytes_uploaded": 0
+  },
+  "source": {
+    "path": "G:/My Drive/Football_Training_Assistant_MVP/data/custom/3v3_match_iphone16.MOV",
+    "sha256": "0e676f4327d1e7e7ed458d619e5558f6630fc7efb0dda7bc608aec45cb9a5c71",
+    "frozen_expected_sha256": "0e676f4327d1e7e7ed458d619e5558f6630fc7efb0dda7bc608aec45cb9a5c71",
+    "hash_match": true,
+    "size_bytes": 2390441924,
+    "duration_seconds": 340.01,
+    "fps": 59.97235348326503,
+    "fps_fraction": "3058650/51001",
+    "resolution_width": 3840,
+    "resolution_height": 2160,
+    "video_codec": "hevc",
+    "video_frames": 20391,
+    "audio_streams": 2,
+    "audio_codec": "aac",
+    "container_format": "mov,mp4,m4a,3gp,3g2,mj2"
+  },
+  "product": {
+    "session_id": "b7a81465-4262-4ae4-b6b5-4d1679967818",
+    "media_id": "6591dcf9-2691-4d95-b1dd-2ecfd6545e80",
+    "upload_intent_http_status": 201,
+    "media_asset_status": "PENDING",
+    "storage_bucket": "analysis-inputs",
+    "storage_object_path": "b7a81465-4262-4ae4-b6b5-4d1679967818/video/6591dcf9-2691-4d95-b1dd-2ecfd6545e80_3v3_match_iphone16.MOV",
+    "requested_methodology": "AUTO",
+    "job_id": null,
+    "dispatch_id": null,
+    "modal_call_id": null,
+    "final_job_status": null
+  },
+  "vision": {
+    "resolved_methodology": null,
+    "expected_resolution_if_executed": "METHOD_2_RFDETR_GTATRACK",
+    "detector_checkpoint_sha256_remote_preflight": "7539cfb3eca3125136c1446d7a522a5a46abb14136d55f79aec8daececc00b85",
+    "reid_checkpoint_sha256_remote_preflight": "8d5b2fd8763db34c2aad69810466adf413f0426d9f8119d322227e0e639c5fbd",
+    "frames_requested": null,
+    "frames_processed": null,
+    "observation_count": null,
+    "anonymous_track_count": null,
+    "runtime_seconds": null
+  },
+  "asr": {
+    "model": "faster-whisper base.en CPU int8 (configured; not executed)",
+    "source_offset_s": 0.0,
+    "whisper_segment_count": null,
+    "tactical_event_count": null,
+    "categories": null,
+    "actions": null,
+    "event_timestamps": null,
+    "runtime_seconds": null
+  },
+  "fusion": {
+    "response_window_rule": "[t_end + 2.0 s, t_end + 6.0 s] (configured; not executed)",
+    "evidence_counts": null,
+    "response_windows": null,
+    "observation_coverage": null,
+    "runtime_seconds": null
+  },
+  "identity": {
+    "formal_status_in_final_result": null,
+    "formal_evidence_basis_in_final_result": null,
+    "runtime_evidence_basis_in_final_result": null,
+    "player_level_analysis_allowed_in_final_result": null,
+    "expected_safety_contract": "FAIL_UNSAFE_MERGE / FORMAL_DENSE_GT; RUNTIME_HEURISTIC_ONLY; player-level withheld"
+  },
+  "calibration": {
+    "mode_selected_for_attempt": "NO_METRIC_CALIBRATION",
+    "reason": "The existing product upload/job gate does not approve fixed-camera calibration for uploaded media.",
+    "homography_sha256_active": null,
+    "independent_rmse_m_active": null,
+    "metric_units_allowed_in_final_result": null
+  },
+  "report": {
+    "report_status": null,
+    "llm_model_used": null,
+    "llm_digest_used": null,
+    "configured_prompt_sha256": "ab95a8350208367aee29395866ece720c17c85c8d03a79b33b052e99442ae9ce",
+    "patch001_result": null,
+    "fallback_reason": null,
+    "report_sha256": null
+  },
+  "infrastructure": {
+    "modal_app": "football-tactical-analysis",
+    "modal_function": "execute_analysis_worker",
+    "remote_preflight_status": "PASS",
+    "remote_python": "3.11.12",
+    "gpu": "Tesla T4",
+    "cuda_available": true,
+    "torch": "2.14.0+cu130",
+    "callback_result": null,
+    "final_api_result_http_status": null
+  },
+  "performance": {
+    "total_full_session_wall_seconds": null,
+    "stage_timings_file": "IMPLEMENTATION_PHASE6_STAGE_TIMINGS.json"
+  }
+}

@@ -1,0 +1,289 @@
+{
+  "audit_metadata": {
+    "title": "CM3070 Final System Revalidation & Completeness Audit (v2)",
+    "project": "AI-Driven Football Tactical Analysis and Training Evaluation System",
+    "audit_timestamp_utc": "2026-09-26T10:02:00Z",
+    "audit_execution_mode": "STRICT_READ_ONLY_FULL_PROJECT_REAUDIT",
+    "audit_status": "COMPLETE_BASELINE_ESTABLISHED",
+    "workspace_roots": {
+      "parent_archive_workspace": "D:\\Final project videos transcripts",
+      "primary_product_workspace": "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System",
+      "legacy_colab_workspace": "G:\\My Drive\\Colab Notebooks",
+      "research_methodology_workspace": "G:\\My Drive\\Football_Training_Assistant_MVP"
+    }
+  },
+  "parent_archive_workspace_evidence": {
+    "unlocked_artifacts": [
+      "CM3070_EXAM_PROJECT_DOSSIER.md (75.8 KB forensic project analysis)",
+      "CM3070_EXAM_QUESTION_BANK.md (82.7 KB 100-question exam preparation bank)",
+      "_ca0bcfddc99545298e85097c36f56ae1_Consent-form-example-1.docx (University of London Ethics Consent Form PR/001)",
+      "subtitle (58).txt ... subtitle (83).txt (26 official CM3070 lecture transcripts)",
+      "build_final_oracle_showcase.py (historical generation script hardcoding MODEL = 'qwen3:8b')",
+      "tracking_3v3_dataset_b.csv (59.1 MB raw 3v3 tracking data)",
+      "selected_C_roster_assignments.csv (33.4 MB Experiment C tracking file)",
+      "build_corrected_metric_showcase.py, build_metric_sanity_audit.py, build_homography_validation.py",
+      "M3 engineering & forensics scripts (m3_p2b_..., m3_p5_..., m3_r2_...)"
+    ]
+  },
+  "formal_vision_evaluation_results": {
+    "status": "FINAL_WHOLE_SYSTEM_CHALLENGE_EVALUATION_COMPLETE",
+    "tracker_state_policy": "FORMAL_TRACKER_STATE_POLICY = FRESH_STATE_PER_CHALLENGE_CLIP",
+    "source_video_sha256": "0e676f4327d1e7e7ed458d619e5558f6630fc7efb0dda7bc608aec45cb9a5c71",
+    "frozen_dense_gt_manifest_sha256": "524d231703d77485f4b57526929aedeadb744a801089aa12d905c0ef21808aec",
+    "final_evaluation_manifest_sha256": "ec8c60824622d9b07b1b03b9b19365a7b1a2f7aab635a9c596dbec6cf90dd556",
+    "default_production_methodology": "M2_GLOBAL_ASSOCIATION",
+    "selectable_production_methodologies": [
+      "M1_ORIGINAL_HYBRID",
+      "M2_GLOBAL_ASSOCIATION",
+      "M3_REENTRY_FOCUSED"
+    ],
+    "player_level_accumulated_analytics": "DISABLED",
+    "aggregate_metrics": {
+      "M1_original_hybrid": {
+        "detector": "YOLO11m fine-tuned (Stage 4B)",
+        "tracker": "BoT-SORT (Fallback C)",
+        "HOTA": 0.4632,
+        "DetA": 0.5020,
+        "AssA": 0.4333,
+        "MOTA": 0.5673,
+        "IDF1": 0.5891,
+        "IDSW": 186,
+        "FP": 6004,
+        "FN": 2931,
+        "Precision": 0.7514,
+        "Recall": 0.8609
+      },
+      "M2_global_association": {
+        "detector": "RF-DETR",
+        "tracker": "GTA-Track (Deep-EIoU + ReID)",
+        "HOTA": 0.6710,
+        "DetA": 0.6567,
+        "AssA": 0.6862,
+        "MOTA": 0.8522,
+        "IDF1": 0.9144,
+        "IDSW": 19,
+        "FP": 224,
+        "FN": 2873,
+        "Precision": 0.9878,
+        "Recall": 0.8637
+      },
+      "M3_v1_reentry_focused": {
+        "detector": "YOLO26",
+        "tracker": "SriTrack-v1 (Spatial-Recurrent)",
+        "HOTA": 0.3517,
+        "DetA": 0.2551,
+        "AssA": 0.4852,
+        "MOTA": 0.3253,
+        "IDF1": 0.4066,
+        "IDSW": 5,
+        "FP": 36,
+        "FN": 14180,
+        "Precision": 0.9948,
+        "Recall": 0.3273
+      }
+    }
+  },
+  "oracle_showcase_revalidation": {
+    "status": "ORACLE_SHOWCASE_REQUIRES_REVALIDATION",
+    "historical_generation_script": "D:\\Final project videos transcripts\\build_final_oracle_showcase.py",
+    "historical_generating_model": "qwen3:8b",
+    "reusable_components": [
+      "Human-verified player identities (RED_01, BLACK_01, RED_03)",
+      "Human-verified instruction targets and opponent assignments (BLACK_03, BLACK_01)",
+      "Tactical event time intervals and zone semantics",
+      "Physical pitch homography (19.31m x 19.88m, RMSE 0.651m)",
+      "Video clips and overlay media (C03, C04, C06)"
+    ],
+    "components_requiring_regeneration": [
+      "Coaching report text (must re-run through frozen llama3.1:8b)",
+      "Grounding validation (must enforce LLM_GROUNDING_VALIDATOR_PATCH_001)",
+      "Frontend payload (must conform to primary AnalysisResult schema)"
+    ]
+  },
+  "subsystem_matrix": {
+    "vision": {
+      "default_method": "M2_GLOBAL_ASSOCIATION",
+      "production_role": "ALL_THREE_METHODS_SELECTABLE",
+      "stage_4b_status": "REUSABLE_TILED_UTILITY_CODE_AND_M1_DETECTOR",
+      "primary_repo_state": "STUBS_REQUIRING_INTEGRATION"
+    },
+    "asr": {
+      "status": "FROZEN_RESEARCH_METHODOLOGY",
+      "selected_model": "faster-whisper base.en",
+      "engine": "CTranslate2 (CPU int8, 8 threads)",
+      "benchmark_metrics": {
+        "WER_percent": 18.4,
+        "CER_percent": 11.86,
+        "tactical_event_recall_percent": 76.47,
+        "tactical_event_f1_percent": 83.87
+      },
+      "primary_repo_state": "STUBS_REQUIRING_INTEGRATION"
+    },
+    "llm": {
+      "status": "FROZEN_RESEARCH_METHODOLOGY",
+      "selected_model": "llama3.1:8b",
+      "digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+      "system_prompt_sha256": "ab95a8350208367aee29395866ece720c17c85c8d03a79b33b052e99442ae9ce",
+      "grounding_validator": "LLM_GROUNDING_VALIDATOR_PATCH_001",
+      "deterministic_gates": 8,
+      "benchmark_metrics": {
+        "schema_pass_rate_percent": 93.75,
+        "timeout_failure_rate_percent": 6.25,
+        "deterministic_repeatability_percent": 100.0,
+        "unsupported_identities": 0
+      },
+      "primary_repo_state": "STUBS_REQUIRING_INTEGRATION"
+    },
+    "fusion": {
+      "status": "READY_AS_IS_FOR_PORTING",
+      "temporal_window": "event_end + 2.0s to event_end + 6.0s",
+      "spatial_zones": ["Defensive Third", "Middle Third", "Attacking Third"],
+      "identity_safety_rule": "Withhold player-level attributions when identity gate fails",
+      "primary_repo_state": "STUBS_REQUIRING_INTEGRATION"
+    },
+    "homography_kinematics": {
+      "status": "FROZEN_RESEARCH_METHODOLOGY",
+      "pitch_dimensions_m": {"length": 19.31, "width": 19.88},
+      "config_sha256": "d0e9680fdcdf3b5f6290ebf1f0e7cd1dbedcd6527f88873d857babe968cbd507",
+      "validated_rmse_m": 0.651,
+      "speed_clamp_kmh": 36.0,
+      "primary_repo_state": "STUBS_REQUIRING_INTEGRATION"
+    }
+  },
+  "ethics_and_consent": {
+    "recorded_participants": {
+      "status": "RESEARCHER_CONFIRMED_ETHICS_STORE_REQUIRED",
+      "documented_template": "_ca0bcfddc99545298e85097c36f56ae1_Consent-form-example-1.docx (University of London Form PR/001)",
+      "confirmed_signed": "10 participants for 5v5, 6 participants for 3v3 signed informed consent prior to recording",
+      "safeguards": "Signed forms kept in private ethics store; outputs use canonical pseudonyms (Player_01); raw names purged"
+    },
+    "coach_user_study": {
+      "status": "PLANNED_NOT_YET_EXECUTED",
+      "instrument": "Google Forms survey with initial consent question",
+      "workflow": "Near-final prototype -> Demo video -> Coach survey -> Traceable iterative design -> Final verification"
+    }
+  },
+  "gap_register": [
+    {
+      "id": "GAP-P0-1",
+      "priority": "P0 — MUST COMPLETE BEFORE FINAL REAL E2E RUN",
+      "component": "Vision Methodology Executors",
+      "workspace": "Primary Product Workspace",
+      "files": ["backend/app/pipeline/tracking.py", "backend/app/pipeline/registry.py"],
+      "action": "Implement M1Executor, M2Executor, M3Executor adapting research implementations. Set AUTO -> M2.",
+      "requires_inference": false
+    },
+    {
+      "id": "GAP-P0-2",
+      "priority": "P0 — MUST COMPLETE BEFORE FINAL REAL E2E RUN",
+      "component": "ASR Pipeline Integration",
+      "workspace": "Primary Product Workspace",
+      "files": ["backend/app/pipeline/audio.py", "backend/app/pipeline/instructions.py"],
+      "action": "Port ASRPipeline from research backend/pipeline/asr.py.",
+      "requires_inference": false
+    },
+    {
+      "id": "GAP-P0-3",
+      "priority": "P0 — MUST COMPLETE BEFORE FINAL REAL E2E RUN",
+      "component": "Multimodal Fusion Integration",
+      "workspace": "Primary Product Workspace",
+      "files": ["backend/app/pipeline/fusion.py"],
+      "action": "Port FusionEngine from research backend/pipeline/fusion.py.",
+      "requires_inference": false
+    },
+    {
+      "id": "GAP-P0-4",
+      "priority": "P0 — MUST COMPLETE BEFORE FINAL REAL E2E RUN",
+      "component": "LLM & Grounding Validator Integration",
+      "workspace": "Primary Product Workspace",
+      "files": ["backend/app/pipeline/reporting.py", "backend/app/pipeline/evidence.py"],
+      "action": "Port ReportEngine, LLMClient, and validate_grounding from research. Enforce llama3.1:8b and Patch 001.",
+      "requires_inference": false
+    },
+    {
+      "id": "GAP-P0-5",
+      "priority": "P0 — MUST COMPLETE BEFORE FINAL REAL E2E RUN",
+      "component": "Modal GPU Worker Container",
+      "workspace": "Primary Product Workspace",
+      "files": ["modal_app/worker.py", "requirements-modal.txt"],
+      "action": "Configure GPU container (NVIDIA T4) with PyTorch, CUDA, CTranslate2, and invoke integrated pipeline.",
+      "requires_inference": false
+    },
+    {
+      "id": "GAP-P1-1",
+      "priority": "P1 — MUST COMPLETE BEFORE COACH USER STUDY / SUBMISSION",
+      "component": "Model Manifest Synchronization",
+      "workspace": "Primary Product Workspace",
+      "files": ["backend/app/core/model_manifest.yaml"],
+      "action": "Replace stale qwen3:8b with llama3.1:8b digest and prompt SHA. Declare M2 default.",
+      "requires_inference": false
+    },
+    {
+      "id": "GAP-P1-2",
+      "priority": "P1 — MUST COMPLETE BEFORE COACH USER STUDY / SUBMISSION",
+      "component": "Frontend Upload Wizard Methodology Selector",
+      "workspace": "Primary Product Workspace",
+      "files": ["frontend/tactical-ai-insights-main/src/routes/analysis.new.tsx"],
+      "action": "Add methodology dropdown (AUTO/M2, M1, M2, M3) to upload wizard.",
+      "requires_inference": false
+    },
+    {
+      "id": "GAP-P1-3",
+      "priority": "P1 — MUST COMPLETE BEFORE COACH USER STUDY / SUBMISSION",
+      "component": "Frontend Showcase Live API Wiring",
+      "workspace": "Primary Product Workspace",
+      "files": ["frontend/tactical-ai-insights-main/src/routes/showcase.tsx"],
+      "action": "Connect React Query hook to /api/v1/showcase to display live golden fixtures and overlays.",
+      "requires_inference": false
+    },
+    {
+      "id": "GAP-P1-4",
+      "priority": "P1 — MUST COMPLETE BEFORE COACH USER STUDY / SUBMISSION",
+      "component": "Oracle Showcase Revalidation",
+      "workspace": "Primary Product Workspace / Research Workspace",
+      "files": ["golden/fixtures/showcase_frontend_payload.json", "golden/fixtures/showcase_final_coach_report.md"],
+      "action": "Re-run showcase evidence through llama3.1:8b with Patch 001 validator and format into AnalysisResult contract.",
+      "requires_inference": true
+    },
+    {
+      "id": "GAP-P2-1",
+      "priority": "P2 — IMPORTANT HARDENING",
+      "component": "Python Runtime Standardization",
+      "workspace": "Primary Product Workspace",
+      "files": [".venv", "backend/pyproject.toml"],
+      "action": "Standardize local development virtual environment to Python >= 3.10.",
+      "requires_inference": false
+    },
+    {
+      "id": "GAP-P2-2",
+      "priority": "P2 — IMPORTANT HARDENING",
+      "component": "Frontend Legacy Preview Cleanup",
+      "workspace": "Primary Product Workspace",
+      "files": ["src/routes/analysis.processing.tsx", "src/routes/results.tsx"],
+      "action": "Deprecate or cleanly redirect preview routes.",
+      "requires_inference": false
+    },
+    {
+      "id": "GAP-P3-1",
+      "priority": "P3 — OPTIONAL / FUTURE WORK",
+      "component": "Authentication UI",
+      "workspace": "Primary Product Workspace",
+      "files": ["frontend/tactical-ai-insights-main/src/routes/"],
+      "action": "Implement full Supabase Auth UI in place of single-tenant dev mode.",
+      "requires_inference": false
+    }
+  ],
+  "proposed_closure_sequence": [
+    "Step 1: Manifest Synchronization (lock llama3.1:8b, prompt SHA, M2 default)",
+    "Step 2: Port Research Pipeline Modules (asr.py, homography.py, fusion.py, validator.py, reporter.py)",
+    "Step 3: Implement Vision Methodology Executors (M1, M2, M3 in tracking.py with AUTO -> M2)",
+    "Step 4: Revalidate Oracle Showcase (llama3.1:8b + Patch 001 -> AnalysisResult JSON)",
+    "Step 5: Frontend Component Wiring (methodology selector in upload wizard + live showcase API)",
+    "Step 6: Upgrade Modal GPU Container (NVIDIA T4 + PyTorch + CTranslate2)",
+    "Step 7: Automated Regression & Real E2E Smoke Test",
+    "Step 8: Evaluation Video & Coach User Study (Google Forms)",
+    "Step 9: Traceable Iterative Design Refinements & Post-Change Verification",
+    "Step 10: Final Demo & 10,500-Word Report Production (8 report figures from CSV/JSON)"
+  ],
+  "final_audit_disposition": "PASS_COMPLETE_REVALIDATION_BASELINE_ESTABLISHED"
+}

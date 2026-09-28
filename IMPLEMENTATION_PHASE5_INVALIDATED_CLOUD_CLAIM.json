@@ -1,0 +1,99 @@
+{
+  "classification": "INVALIDATED_HISTORICAL_LOCAL_SMOKE_MISLABELED_AS_CLOUD",
+  "status": "NOT_REMOTE_EXECUTION_EVIDENCE",
+  "real_modal_supabase_smoke_pass": false,
+  "reason": "The original record used G:/My Drive video and scratch/ audio; it contains no remote session, dispatch, Modal invocation, callback, persisted result, or retrieval evidence.",
+  "correct_local_artifact": "IMPLEMENTATION_PHASE5_LOCAL_ORCHESTRATOR_SMOKE.json",
+  "superseded_local_record": {
+    "smoke_test": "BOUNDED_REAL_ORCHESTRATOR_SMOKE",
+    "execution_timestamp": "2026-09-27T04:27:18Z",
+    "status": "PASS",
+    "job_id": "job_real_smoke",
+    "session_id": "sess_real_smoke",
+    "media": {
+      "video_path": "G:/My Drive/Football_Training_Assistant_MVP/data/custom/3v3_match_iphone16.MOV",
+      "audio_path": "scratch/C04_Defensive_Marking_clip.wav",
+      "probed_duration_s": 339.77,
+      "probed_fps": 59.97235348326503,
+      "probed_resolution_width": 3840,
+      "probed_resolution_height": 2160,
+      "container_format": "mov",
+      "video_codec": "hevc"
+    },
+    "methodology": {
+      "requested": "AUTO",
+      "resolved": "METHOD_2_RFDETR_GTATRACK",
+      "detector_sha256": "7539cfb3eca3125136c1446d7a522a5a46abb14136d55f79aec8daececc00b85",
+      "reid_sha256": "8d5b2fd8763db34c2aad69810466adf413f0426d9f8119d322227e0e639c5fbd",
+      "fallback_attempted": false
+    },
+    "vision_inference": {
+      "start_frame": 10415,
+      "max_frames": 4,
+      "execution_device": "cuda",
+      "total_frames_processed": 4,
+      "tracklet_splitting": "SUCCEEDED"
+    },
+    "asr_transcription": {
+      "model_id": "base.en",
+      "device": "cpu",
+      "compute_type": "int8",
+      "cpu_threads": 8,
+      "tactical_events_extracted": [
+        {
+          "event_id": "evt_0",
+          "category": "Defensive",
+          "action": "mark",
+          "t_start": 0.0,
+          "t_end": 4.63,
+          "source_text": "Mahmood! Close them down and mark your man!",
+          "alignment_window_start_s": 6.63,
+          "alignment_window_end_s": 10.63
+        },
+        {
+          "event_id": "evt_1",
+          "category": "Defensive",
+          "action": "mark",
+          "t_start": 5.46,
+          "t_end": 7.02,
+          "source_text": "Mark your man, Mahmood!",
+          "alignment_window_start_s": 9.02,
+          "alignment_window_end_s": 13.02
+        }
+      ]
+    },
+    "fusion_and_evidence": {
+      "engine": "MultimodalFusionEngine",
+      "reaction_window": "[t_end + 2.0s, t_end + 6.0s]",
+      "total_events_correlated": 2,
+      "structured_evidence_validated": true
+    },
+    "identity_evaluation": {
+      "identity_status": "FAIL_HIGH_FRAGMENTATION",
+      "player_level_analysis_allowed": false,
+      "fragmentation_ratio": 6.1667,
+      "acceptance_threshold": 1.5,
+      "withholding_reason": "Automated tracking methodology has not demonstrated sufficiently safe persistent physical-player identity under formal benchmark evaluation. Accumulated player-level analytics are withheld."
+    },
+    "calibration": {
+      "mode": "NO_METRIC_CALIBRATION",
+      "is_metric_reporting_allowed": false,
+      "note": "Pixel coordinates preserved; metres and km/h withheld"
+    },
+    "reporting": {
+      "report_status": "DETERMINISTIC_FALLBACK",
+      "fallback_reason": "Automated grounding engaged deterministic fallback",
+      "report_markdown_generated": true,
+      "report_markdown_length_chars": 2346
+    },
+    "final_disposition": {
+      "job_status": "COMPLETED_WITH_LIMITATIONS",
+      "artifacts_registered": {
+        "result_json": "jobs/job_real_smoke/results/result.json",
+        "coach_report_md": "jobs/job_real_smoke/reports/coach_report.md",
+        "report_metadata_json": "jobs/job_real_smoke/reports/report_metadata.json",
+        "execution_manifest_json": "jobs/job_real_smoke/logs/execution_manifest.json"
+      }
+    }
+  }
+}

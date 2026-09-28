@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="684pt" height="308.232pt" viewBox="0 0 684 308.232" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-27T18:27:19.189364</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.5, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 308.232 
+L 684 308.232 
+L 684 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 36.6624 175.271904 
+L 178.6176 175.271904 
+Q 189.3312 175.271904 189.3312 170.570592 
+L 189.3312 93.586608 
+Q 189.3312 88.885296 178.6176 88.885296 
+L 36.6624 88.885296 
+Q 25.9488 88.885296 25.9488 93.586608 
+L 25.9488 170.570592 
+Q 25.9488 175.271904 36.6624 175.271904 
+z
+" clip-path="url(#p8993e1d639)" style="fill: #eef4f7; stroke: #2875a8; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 271.0224 175.271904 
+L 412.9776 175.271904 
+Q 423.6912 175.271904 423.6912 170.570592 
+L 423.6912 93.586608 
+Q 423.6912 88.885296 412.9776 88.885296 
+L 271.0224 88.885296 
+Q 260.3088 88.885296 260.3088 93.586608 
+L 260.3088 170.570592 
+Q 260.3088 175.271904 271.0224 175.271904 
+z
+" clip-path="url(#p8993e1d639)" style="fill: #eef4f7; stroke: #16817a; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 505.3824 175.271904 
+L 647.3376 175.271904 
+Q 658.0512 175.271904 658.0512 170.570592 
+L 658.0512 93.586608 
+Q 658.0512 88.885296 647.3376 88.885296 
+L 505.3824 88.885296 
+Q 494.6688 88.885296 494.6688 93.586608 
+L 494.6688 170.570592 
+Q 494.6688 175.271904 505.3824 175.271904 
+z
+" clip-path="url(#p8993e1d639)" style="fill: #eef4f7; stroke: #d48325; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 183.29634 132.0786 
+Q 224.819625 132.0786 264.833563 132.0786 
+" clip-path="url(#p8993e1d639)" style="fill: none; stroke: #607080; stroke-width: 1.35; stroke-linecap: round"/>
+    <path d="M 259.633563 129.4786 
+L 264.833563 132.0786 
+L 259.633563 134.6786 
+z
+" clip-path="url(#p8993e1d639)" style="fill: #607080; stroke: #607080; stroke-width: 1.35; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 417.65634 132.0786 
+Q 459.179625 132.0786 499.193563 132.0786 
+" clip-path="url(#p8993e1d639)" style="fill: none; stroke: #607080; stroke-width: 1.35; stroke-linecap: round"/>
+    <path d="M 493.993563 129.4786 
+L 499.193563 132.0786 
+L 493.993563 134.6786 
+z
+" clip-path="url(#p8993e1d639)" style="fill: #607080; stroke: #607080; stroke-width: 1.35; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="fill: #17324d; font: 700 17px 'DejaVu Sans'; text-anchor: start" x="20.592" y="28.932304" transform="rotate(-0 20.592 28.932304)">Instruction-to-response temporal contract</text>
+   </g>
+   <g id="text_2">
+    <text style="fill: #17324d; font: 700 10px 'DejaVu Sans'; text-anchor: middle" x="107.64" y="121.351086" transform="rotate(-0 107.64 121.351086)">ASR tactical event</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: #607080; font: 8.3px 'DejaVu Sans'; text-anchor: middle" x="107.64" y="149.442463" transform="rotate(-0 107.64 149.442463)">instruction end = t</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: #17324d; font: 700 10px 'DejaVu Sans'; text-anchor: middle" x="342" y="121.351086" transform="rotate(-0 342 121.351086)">Response window</text>
+   </g>
+   <g id="text_5">
+    <text style="fill: #607080; font: 8.3px 'DejaVu Sans'; text-anchor: middle" x="342" y="149.442463" transform="rotate(-0 342 149.442463)">t + 2 s to t + 6 s</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: #17324d; font: 700 10px 'DejaVu Sans'; text-anchor: middle" x="576.36" y="121.351086" transform="rotate(-0 576.36 121.351086)">Fused evidence</text>
+   </g>
+   <g id="text_7">
+    <text style="fill: #607080; font: 8.3px 'DejaVu Sans'; text-anchor: middle" x="576.36" y="149.442463" transform="rotate(-0 576.36 149.442463)">observed / missing / withheld</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: #b94d4d; font: 700 10px 'DejaVu Sans'; text-anchor: middle" x="342" y="245.20392" transform="rotate(-0 342 245.20392)">No target, track, or measurement is invented when evidence is missing</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p8993e1d639">
+   <rect x="7.2" y="7.2" width="669.6" height="293.832"/>
+  </clipPath>
+ </defs>
+</svg>

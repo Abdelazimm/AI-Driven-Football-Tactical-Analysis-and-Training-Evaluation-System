@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0",
+  "project_title": "AI-Driven Football Tactical Analysis and Training Evaluation System",
+  "showcase_mode": "ORACLE_ASSISTED_CAPABILITY_DEMONSTRATION",
+  "scientific_automated_status": "FAIL_HIGH_FRAGMENTATION",
+  "manual_verification": true,
+  "metric_calibration": "MODERATE_CONFIDENCE_MEASURED_METRIC_ESTIMATE",
+  "homography_rmse": {
+    "value": 0.651,
+    "unit": "m"
+  },
+  "badges": [
+    "MANUALLY VERIFIED DEMO",
+    "APPROXIMATE METRIC ESTIMATES",
+    "AUTOMATED IDENTITY FAILED"
+  ],
+  "cards": [
+    {
+      "id": "C06_PRESSING",
+      "priority": "hero",
+      "title": "Pressing Response",
+      "player": "RED_01",
+      "instructions": [
+        "Press high on the ball, press high on the ball.",
+        "Press high, press high."
+      ],
+      "time": "271.600–276.740 s",
+      "response_summary": "RED_01 reduced separation from the manually verified opponents in both pressing events. The event summaries use approximate closing distance, closest separation, average estimated speed, and response timing.",
+      "primary_metrics": [
+        {
+          "label": "Event 1 closing",
+          "value": "≈ 0.8 m"
+        },
+        {
+          "label": "Event 1 closest separation",
+          "value": "≈ 0.7 m"
+        },
+        {
+          "label": "Event 2 closing",
+          "value": "≈ 3.1 m"
+        },
+        {
+          "label": "Event 2 average estimated speed",
+          "value": "9.1 km/h"
+        }
+      ],
+      "media": "experiments/capability_showcase/C06_pressing_deterministic_response/C06_pressing_sequence_overlay.mp4",
+      "manual_verification_badge": true,
+      "metric_estimate_badge": true
+    },
+    {
+      "id": "C04_DEFENSIVE_MARKING",
+      "title": "Defensive Marking",
+      "player": "BLACK_01",
+      "instructions": [
+        "Close him down and mark your man.",
+        "Mark your man."
+      ],
+      "time": "166.950–179.050 s",
+      "response_summary": "BLACK_01 reduced ground-plane separation from RED_03 during the manually verified marking sequence. The follow-up median separation remained lower than the pre-command separation.",
+      "primary_metrics": [
+        {
+          "label": "Separation reduction",
+          "value": "44.4%"
+        },
+        {
+          "label": "Closest first-command separation",
+          "value": "≈ 8.0 m"
+        },
+        {
+          "label": "Average estimated movement speed",
+          "value": "5.8 km/h"
+        },
+        {
+          "label": "Follow-up median separation",
+          "value": "≈ 4.3 m"
+        }
+      ],
+      "media": "experiments/capability_showcase/C04_marking/C04_black01_red03_response_contact_sheet.png",
+      "manual_verification_badge": true,
+      "metric_estimate_badge": true
+    },
+    {
+      "id": "C03_HOLD_POSITION",
+      "title": "Hold Position",
+      "player": "RED_03",
+      "instructions": [
+        "Hold your position.",
+        "Hold your position and stay at your zone."
+      ],
+      "time": "77.960–94.900 s",
+      "response_summary": "RED_03 moved toward the manually verified right-goal-side zone, entered it after the instruction sequence, and remained inside during the evaluated retention window.",
+      "primary_metrics": [
+        {
+          "label": "Response latency",
+          "value": "3.24 s"
+        },
+        {
+          "label": "Movement toward zone",
+          "value": "≈ 4.7 m"
+        },
+        {
+          "label": "Zone retention",
+          "value": "100%"
+        },
+        {
+          "label": "Sustained exits",
+          "value": "0"
+        }
+      ],
+      "media": "experiments/capability_showcase/C03_hold_position/C03_hold_position_overlay.mp4",
+      "manual_verification_badge": true,
+      "metric_estimate_badge": true
+    }
+  ],
+  "full_coach_report_markdown": "# Session Capability Demonstration\n\n**Mode:** Oracle-assisted capability demonstration  \n**Automated identity status:** `FAIL_HIGH_FRAGMENTATION`\n\nThis demonstration links manually verified coaching instructions to observable movement responses in three selected examples. Automated full-session player assessment remains withheld.\n\n## Pressing Response — RED_01\n\nRED_01 reduced separation from the manually verified opponents in both pressing events. The event summaries use approximate closing distance, closest separation, average estimated speed, and response timing.\n\n### Pressing event 1\n\nInstruction: “Press high on the ball, press high on the ball.”\n\n- Estimated closing distance: **≈ 0.8 m**\n- Estimated closest separation: **≈ 0.7 m**\n- Average estimated speed: **12.3 km/h**\n- Time to closest approach: **1.79 s**\n\n### Pressing event 2\n\nInstruction: “Press high, press high.”\n\n- Estimated closing distance: **≈ 3.1 m**\n- Estimated closest separation: **≈ 0.5 m**\n- Average estimated speed: **9.1 km/h**\n- Time to closest approach: **2.23 s**\n\n## Defensive Marking — BLACK_01\n\nBLACK_01 reduced ground-plane separation from RED_03 during the manually verified marking sequence. The follow-up median separation remained lower than the pre-command separation.\n\n- Separation reduction: **44.4%**\n- Estimated closest first-command separation: **≈ 8.0 m**\n- Average estimated movement speed: **5.8 km/h**\n- Estimated follow-up median separation: **≈ 4.3 m**\n\n## Position / Zone Response — RED_03\n\nRED_03 moved toward the manually verified right-goal-side zone, entered it after the instruction sequence, and remained inside during the evaluated retention window.\n\n- Response latency: **3.24 s**\n- Estimated movement toward the tactical zone: **≈ 4.7 m**\n- Zone retention: **100%**\n- Sustained exits: **0**\n- Average estimated repositioning speed: **10.1 km/h**\n\n## Next-session focus\n\n- Review pressing timing and body position during the two demonstrated close-down events.\n- Reinforce compact marking distance during the follow-up phase.\n- Repeat the hold-position drill and review zone entry and retention using the same observable criteria.\n\n## Methodology and limitations\n\n- Player identity and coach-instruction target were manually verified for this capability demonstration. Automated persistent identity and automated target attribution are evaluated separately.\n- Metre-based movement values are approximate ground-plane estimates derived from physically measured pitch dimensions and a validated planar homography. Independent landmark validation produced an RMSE of 0.651 m.\n- Automated persistent identity did not meet its reliability gate, so full-session player-level assessment remains withheld.\n\nPlayer identity and coach-instruction target were manually verified for this capability demonstration. Automated persistent identity and automated target attribution are evaluated separately.\n\nMetre-based movement values are approximate ground-plane estimates derived from physically measured pitch dimensions and a validated planar homography. Independent landmark validation produced an RMSE of 0.651 m.\n\nAutomated persistent identity did not meet its reliability gate; full-session per-player assessment remains withheld. The showcased identities, instruction targets, opponents, and zone meaning were manually verified for this demonstration. No player-to-ball metric was calculated. Threshold-sensitive peak speeds, the jitter-sensitive C03 retention path, and the unreproduced C06 overall path are deliberately excluded from coach-facing headline metrics.\n",
+  "limitations": [
+    "Player identity and coach-instruction target were manually verified for this capability demonstration. Automated persistent identity and automated target attribution are evaluated separately.",
+    "Metre-based movement values are approximate ground-plane estimates derived from physically measured pitch dimensions and a validated planar homography. Independent landmark validation produced an RMSE of 0.651 m.",
+    "Automated persistent identity remains FAIL_HIGH_FRAGMENTATION; full-session per-player assessment is withheld.",
+    "No player-to-ball metric was calculated.",
+    "Peak speeds and jitter-sensitive/unreproduced path totals are not headline metrics."
+  ],
+  "methodology_note": "Metre-based movement values are approximate ground-plane estimates derived from physically measured pitch dimensions and a validated planar homography. Independent landmark validation produced an RMSE of 0.651 m."
+}

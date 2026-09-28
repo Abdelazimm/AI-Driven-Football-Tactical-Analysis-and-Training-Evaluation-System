@@ -1,0 +1,3 @@
+candidate,WER_pct,CER_pct,event_precision_pct,event_recall_pct,event_F1_pct,predictions,TP,FP,FN
+A: faster-whisper base.en,18.4,11.8571,92.8571,76.4706,83.871,14,13,1,4
+B: Parakeet TDT 0.6B v2,36.8,23.2857,90.0,52.9412,66.6667,10,9,1,8

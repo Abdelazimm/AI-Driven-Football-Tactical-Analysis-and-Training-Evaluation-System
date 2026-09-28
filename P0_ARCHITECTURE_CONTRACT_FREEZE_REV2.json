@@ -1,0 +1,398 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CM3070_P0_Architecture_Contract_Freeze_REV2",
+  "description": "Authoritative machine-readable architectural specification and frozen contract registry (Revision 2) for the AI-Driven Football Tactical Analysis and Training Evaluation System.",
+  "version": "1.2.0",
+  "freeze_status": "P0_CONTRACT_FREEZE_REV2_READY_FOR_FINAL_REVIEW",
+  "reference_evidence_log": "CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v88.md",
+  "changelog_reference": "P0_REV2_CHANGELOG.md",
+  "coordinate_spaces": {
+    "MEDIA_SOURCE_SPACE": {
+      "definition": "Native video container frame resolution extracted dynamically via ffprobe (e.g. 3840x2160 for iPhone 16 footage).",
+      "canonical_output_space": true
+    },
+    "VISION_WORKING_SPACE": {
+      "definition": "Tracking, ReID feature extraction, and planar homography coordinate plane fixed at 1920x1080.",
+      "dimensions": [1920, 1080]
+    },
+    "MODEL_INFERENCE_SPACE": {
+      "definition": "Resolution fed directly to neural network backbones.",
+      "M1_YOLO11": "3 horizontal tiles of 1280x1280 with 15% overlap",
+      "M2_RFDETR": "Internal resize to 704 with native letterbox padding; outputs in 1920x1080 working space",
+      "M3_YOLO26": "Internal imgsz 1280; outputs in 1920x1080 working space"
+    },
+    "scale_transformation": {
+      "working_to_media_source": {
+        "formula": "x_source = x_working * (W_source / 1920.0), y_source = y_working * (H_source / 1080.0)",
+        "research_iphone16_factors": {
+          "scale_x": 2.0,
+          "scale_y": 2.0
+        },
+        "rule": "Every M1/M2/M3 adapter outputs canonical BoundingBox strictly in MEDIA_SOURCE_SPACE."
+      }
+    }
+  },
+  "scientific_invariants": {
+    "identity_assurance": {
+      "method_formal_identity_status": "FAIL_UNSAFE_MERGE",
+      "method_formal_identity_evidence_basis": "FORMAL_DENSE_GT",
+      "runtime_identity_evidence_basis_default": "RUNTIME_HEURISTIC_ONLY",
+      "automated_player_level_accumulated_analytics": "DISABLED",
+      "player_attribution_policy": "FAIL_CLOSED",
+      "runtime_diagnostic_rule": "Runtime heuristics generate diagnostics only; CANNOT claim an unsafe merge or upgrade an automated upload to trusted physical-player identity."
+    },
+    "legacy_stage4b_classification": {
+      "status": "STAGE4B_IS_SUPERSEDED_LEGACY_IMPLEMENTATION",
+      "tiling_utility_reuse": "STAGE4B_TILING_UTILITY_MAY_BE_REUSED",
+      "superseded_checkpoint_sha256": "f6b3fe6f21256c61083ccc6c6b96dffeb4490c65c3ce150c3924a0fa353e6f5e",
+      "superseded_checkpoint_size_bytes": 40539756
+    },
+    "default_execution_methodology": {
+      "requested_auto_target": "METHOD_2_RFDETR_GTATRACK",
+      "scientific_justification": "M2 produced strongest observed whole-system tracking performance on frozen four-clip evaluation (HOTA 0.6710, MOTA 0.8522, IDF1 0.9144, 19 IDSW)."
+    },
+    "prohibition_against_component_mixing": true
+  },
+  "methodologies": {
+    "AUTO": {
+      "user_label": "Auto / Recommended",
+      "internal_id": "METHOD_2_RFDETR_GTATRACK",
+      "resolves_to": "METHOD_2_RFDETR_GTATRACK",
+      "is_default": true
+    },
+    "METHOD_1_YOLO11_BOTSORT": {
+      "user_label": "Method 1: Original Hybrid",
+      "source_baseline_artifact": "runs/method_1/M1_FINAL_EVALUATION_BASELINE/M1_FINAL_EVALUATION_BASELINE.json",
+      "detector": {
+        "architecture": "YOLO11m custom-domain-adapted (M1_FORMAL_003)",
+        "checkpoint_path": "runs/method_1/M1_FORMAL_003_DOMAIN_ADAPTED/training/yolo11m_domain_adapted/weights/epoch28.pt",
+        "checkpoint_sha256": "ad908a9caf757f3f2b68a92d260da85a8308fb115e220b91d1bdccef31393f8b",
+        "checkpoint_size_bytes": 104950959,
+        "tiling": {
+          "enabled": true,
+          "tiles": 3,
+          "overlap_pct": 15.0,
+          "tile_windows_at_1920x1080": [[0, 712], [605, 1317], [1208, 1920]]
+        },
+        "tile_nms_iou": 0.70,
+        "global_nms_iou": 0.50,
+        "imgsz": 1280,
+        "half": true,
+        "classes": [0],
+        "standalone_qualification_confidence": 0.25,
+        "tracker_input_candidate_confidence_floor": 0.05
+      },
+      "tracker": {
+        "tracker_type": "Ultralytics BOTSORT external-row-aligned-ReID feature bridge",
+        "track_high_thresh": 0.35,
+        "track_low_thresh": 0.10,
+        "new_track_thresh": 0.35,
+        "track_buffer": 120,
+        "match_thresh": 0.85,
+        "gmc_method": "none",
+        "proximity_thresh": 0.15,
+        "appearance_thresh": 0.88,
+        "with_reid": true,
+        "fuse_score": true
+      }
+    },
+    "METHOD_2_RFDETR_GTATRACK": {
+      "user_label": "Method 2: Global Association",
+      "source_baseline_artifact": "runs/method_2/M2_FINAL_EVALUATION_BASELINE/M2_FINAL_EVALUATION_BASELINE.json",
+      "detector": {
+        "architecture": "RF-DETR-L",
+        "version": "1.10.1",
+        "checkpoint_path": "runs/method_2/M2_FORMAL_001_DOMAIN_ADAPTED/checkpoint_best_total.pth",
+        "checkpoint_sha256": "7539cfb3eca3125136c1446d7a522a5a46abb14136d55f79aec8daececc00b85",
+        "internal_resolution": 704,
+        "native_top_queries": 300,
+        "selection_confidence_inclusive": 0.50,
+        "external_nms": false,
+        "score_semantics": "native sigmoid score; preserve actual confidence",
+        "box_semantics": "1920x1080 working-space xyxy"
+      },
+      "local_reid": {
+        "architecture": "OSNet-x1.0",
+        "checkpoint_path": "runs/method_2/M2_P0_preflight/checkpoints/sports_model.pth.tar-60",
+        "checkpoint_sha256": "8d5b2fd8763db34c2aad69810466adf413f0426d9f8119d322227e0e639c5fbd",
+        "embedding_dimension": 512,
+        "resize_hw": [256, 128]
+      },
+      "local_tracker": {
+        "implementation": "Deep-EIoU from GTATrack-STC2025",
+        "source_commit": "fa554145687e9b126c492072d205e42bfe01bc5b",
+        "parameters": {
+          "track_high_thresh": 0.70,
+          "track_low_thresh": 0.40,
+          "new_track_thresh": 0.70,
+          "track_buffer": 90,
+          "match_thresh": 0.80,
+          "proximity_thresh": 0.50,
+          "appearance_thresh": 0.25,
+          "with_reid": true
+        }
+      },
+      "global_association": {
+        "implementation": "GTA-Track Offline Global Association Graph Solver",
+        "config_id": "M2_GTA_BASELINE_REV1",
+        "coordinate_space": "1920x1080 working space"
+      }
+    },
+    "METHOD_3_YOLO26_SRITRACK": {
+      "user_label": "Method 3: Re-entry Focused",
+      "source_baseline_artifact": "runs/method_3/M3_P5_identity_calibration/M3_selected_identity_configuration.json",
+      "detector": {
+        "architecture": "YOLO26 End-to-End Detector",
+        "checkpoint_path": "runs/method_3/M3_FORMAL_001_DOMAIN_ADAPTED/checkpoints/M3_ADAPTED_YOLO26M.pt",
+        "checkpoint_sha256": "ea9b3e434ffd7c2ca7ebcd563497accd90e03cfc8da1e8e9fc883e4790199dbf",
+        "checkpoint_size_bytes": 44081689,
+        "operating_point_confidence": 0.30,
+        "inference_imgsz": 1280,
+        "output_coordinate_space": "1920x1080 working space"
+      },
+      "tracker": {
+        "implementation": "SRITrack-v1",
+        "configuration_id": "M3_SRC_DEFAULT",
+        "parameters": {
+          "track_high_th": 0.60,
+          "track_low_th": 0.10,
+          "track_new_th": 0.30,
+          "track_buffer": 1000,
+          "track_match_th": 0.80,
+          "track_p_th": 0.50,
+          "track_vc_th": 0.50,
+          "track_vf_th": 0.25,
+          "track_b_th": 0.70,
+          "with_reid": true,
+          "EIoU": true,
+          "vp_dga": true,
+          "ris": true,
+          "det_min_area": 10
+        },
+        "reid_model": "DINOv3",
+        "reid_checkpoint_sha256": "5f4f1fa2226680c26458872f6241b9a5355d6e29a405fda1acdbcb11874b32f8",
+        "resolved_config_sha256": "feeeb76e365a7e2c255e5946e7f7e7c67162530ab06112b6a8b83fbd8403f8ed",
+        "p5a_amendment_sha256": "8f9080ecfa2ca4b264c00124cae91890b8de871162e001e7312b7a3bb04f51c6"
+      }
+    }
+  },
+  "canonical_vision_contract": {
+    "coordinate_system": {
+      "canonical_box_format": "[x1, y1, x2, y2]",
+      "pixel_space": "MEDIA_SOURCE_SPACE",
+      "normalized_box_fields": {
+        "x1_norm": "float in [0.0, 1.0]",
+        "y1_norm": "float in [0.0, 1.0]",
+        "x2_norm": "float in [0.0, 1.0]",
+        "y2_norm": "float in [0.0, 1.0]"
+      },
+      "ordering_consistency_rule": "Unified [x1, y1, x2, y2] ordering for both pixel and normalized coordinates. Conflicting array orderings are strictly prohibited."
+    },
+    "track_identifier_semantics": {
+      "opaque_track_id_definition": "Method-local trajectory identifier only; not a verified physical-player identity.",
+      "physical_player_pseudonym_policy": "Strictly null for automated runs; populated exclusively under HUMAN_VERIFIED / ORACLE provenance."
+    },
+    "session_schema": "SessionVisionResult",
+    "frame_schema": "FrameVisionResult",
+    "observation_schema": "TrackObservation",
+    "empty_frame_handling": "FAIL_SAFE_EMPTY_OBSERVATIONS_LIST"
+  },
+  "identity_safety_contract": {
+    "method_formal_identity_status": "FAIL_UNSAFE_MERGE",
+    "method_formal_identity_evidence_basis": "FORMAL_DENSE_GT",
+    "runtime_identity_evidence_basis": "RUNTIME_HEURISTIC_ONLY",
+    "player_level_analysis_allowed": false,
+    "withholding_policy": {
+      "withheld_metrics": [
+        "distance_covered_m",
+        "average_speed_kmh",
+        "max_speed_kmh",
+        "sprint_count",
+        "individual_tactical_compliance",
+        "player_target_attribution"
+      ],
+      "permitted_anonymous_metrics": [
+        "team_spatial_centroid",
+        "team_convex_hull",
+        "team_width_depth_dispersion",
+        "unattributed_instantaneous_track_velocities",
+        "tactical_event_timestamps",
+        "spatial_pitch_density_heatmaps"
+      ]
+    }
+  },
+  "calibration_contract": {
+    "safety_permission_matrix": {
+      "CAMERA_SPECIFIC_INDEPENDENTLY_VALIDATED": {
+        "permitted_visualization": "2D Pitch Radar, Ground-Plane Trajectories",
+        "permitted_quantitative_metrics": "Metres, Speeds (km/h, m/s), Physical Distance"
+      },
+      "GEOMETRIC_SOLVE_ONLY": {
+        "permitted_visualization": "Bounded 2D Pitch Radar, Normalized Radar",
+        "permitted_quantitative_metrics": "STRICTLY SUPPRESSED (No metres, no km/h, no physical speed)"
+      },
+      "NO_CALIBRATION": {
+        "permitted_visualization": "Source-Pixel Video Overlays Only",
+        "permitted_quantitative_metrics": "STRICTLY SUPPRESSED (Pixels only)"
+      },
+      "INVALID_CALIBRATION": {
+        "permitted_visualization": "Raw Video Player Only",
+        "permitted_quantitative_metrics": "STRICTLY SUPPRESSED (Zero metric claims)"
+      }
+    },
+    "authoritative_research_homography": {
+      "configuration_file": "config/3v3_homography_measured_metric_corrected.json",
+      "sha256": "d0e9680fdcdf3b5f6290ebf1f0e7cd1dbedcd6527f88873d857babe968cbd507",
+      "pitch_length_m": 19.31,
+      "pitch_width_m": 19.88,
+      "independent_rmse_m": 0.650505707264347,
+      "independent_point_count": 4,
+      "confidence": "MODERATE_CONFIDENCE_MEASURED_METRIC_ESTIMATE",
+      "restriction": "RESTRICTED_TO_RESEARCH_IPHONE16_TRIPOD_SETUP"
+    }
+  },
+  "kinematics_contract": {
+    "smoothing_filter": "Centred rolling median filter over 7 observations per raw track",
+    "temporal_gap_policy": {
+      "valid_delta_frames": "0 < delta_frames <= 120",
+      "discontinuity_threshold_seconds": 0.50,
+      "gap_behavior": "RESET_VELOCITY_NULL_DISCONTINUITY"
+    },
+    "outlier_rejection_semantics": {
+      "threshold_kmh": 36.0,
+      "threshold_ms": 10.0,
+      "action": "REJECT_AND_EXCLUDE_OUTLIER",
+      "rule": "Speeds > 36 km/h are rejected and excluded from accepted steps, cumulative distance covered, and speed statistics. Never clamped."
+    }
+  },
+  "asr_contract": {
+    "library": "faster-whisper",
+    "version": "1.2.1",
+    "model": "base.en",
+    "engine": "CTranslate2",
+    "compute_type": "int8",
+    "cpu_threads": 8,
+    "audio_spec": "16 kHz mono PCM WAV",
+    "task": "transcribe",
+    "language": "en",
+    "beam_size": 5,
+    "word_timestamps": true,
+    "vad_filter": true,
+    "min_silence_duration_ms": 500,
+    "condition_on_previous_text": false,
+    "text_normalization_rules_count": 6,
+    "tactical_categories": [
+      "Defensive",
+      "Offensive",
+      "Pressing",
+      "Passing",
+      "Positioning / Hold Ground"
+    ],
+    "timestamp_inheritance": "Direct from parent speech segment boundaries",
+    "historical_fallback_policy": "ELIMINATED_PROHIBITED_IN_PRODUCTION"
+  },
+  "fusion_contract": {
+    "architecture": "REDESIGNED_PRODUCTION_BOUNDARY",
+    "validated_temporal_rule": {
+      "evaluation_start": "instruction_end + 2.0 seconds",
+      "evaluation_end": "instruction_end + 6.0 seconds",
+      "formula": "[t_end + 2.0s, t_end + 6.0s]"
+    },
+    "evidence_scopes": [
+      "TEAM",
+      "SPATIAL",
+      "EVENT",
+      "ANONYMOUS_TRACK",
+      "PLAYER"
+    ],
+    "player_scope_gate": "FORBIDDEN unless identity_evidence_basis == HUMAN_ORACLE",
+    "prohibited_research_constants": [
+      "PLAYER_01",
+      "339.87s",
+      "2500 rows",
+      "4.5 m displacement",
+      "8.2 km/h speed"
+    ]
+  },
+  "oracle_contract": {
+    "mode": "VALIDATED_SHOWCASE",
+    "identity_provenance": "HUMAN_VERIFIED / ORACLE",
+    "verified_showcase_readback": {
+      "C04_marking": {
+        "candidate_id": "C04_DEFEND_167_174",
+        "target_player": "BLACK_01",
+        "opponent": "RED_03",
+        "pre_command_separation_median_m": 14.3047,
+        "first_command_minimum_separation_m": 7.9605,
+        "closing_distance_m": 6.3442,
+        "percentage_reduction": 44.3502,
+        "black_01_distance_covered_m": 34.5815,
+        "average_movement_speed_kmh": 5.7565,
+        "followup_separation_median_m": 4.2975,
+        "independent_rmse_m": 0.6505
+      },
+      "C06_pressing": {
+        "candidate_id": "C06_PRESS_272_277",
+        "target_player": "RED_01",
+        "opponents": ["BLACK_03", "BLACK_01"],
+        "event_1_minimum_separation_m": 0.7027,
+        "event_1_closing_distance_m": 0.8752,
+        "event_2_minimum_separation_m": 0.4891,
+        "event_2_closing_distance_m": 3.1078,
+        "event_2_average_speed_kmh": 9.1246,
+        "independent_rmse_m": 0.6505
+      },
+      "C03_hold_position": {
+        "candidate_id": "C03_HOLD_78_90",
+        "target_player": "RED_03",
+        "tactical_zone": "Right goal-side final third (x in [12.87, 19.31]m, y in [0.0, 19.88]m)",
+        "zone_entry_time_s": 81.2041,
+        "response_latency_s": 3.2441,
+        "distance_travelled_toward_zone_m": 4.6586,
+        "repositioning_path_distance_m": 8.5084,
+        "average_repositioning_speed_kmh": 10.0932,
+        "retention_percentage": 100.0,
+        "time_inside_zone_s": 5.0023,
+        "independent_rmse_m": 0.6505
+      }
+    }
+  },
+  "llm_contract": {
+    "model": "llama3.1:8b",
+    "model_digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+    "system_prompt_sha256": "ab95a8350208367aee29395866ece720c17c85c8d03a79b33b052e99442ae9ce",
+    "timeouts": {
+      "formal_benchmark_protocol_seconds": 120,
+      "provisional_product_policy_seconds": 45
+    },
+    "generation_options": {
+      "temperature": 0.0,
+      "seed": 42,
+      "top_p": 1.0,
+      "num_ctx": 4096,
+      "retries": 0
+    },
+    "validator": "LLM_GROUNDING_VALIDATOR_PATCH_001",
+    "validator_gates_count": 8,
+    "fallback_report_status": "DETERMINISTIC_FALLBACK"
+  },
+  "job_execution_manifest": {
+    "dynamic_metadata_enforced": true,
+    "source_media_fields": [
+      "filename",
+      "sha256",
+      "duration_seconds",
+      "fps",
+      "width",
+      "height",
+      "container_format"
+    ],
+    "calibration_fields_nullable": true,
+    "separation_of_provenance_and_diagnostics": true
+  },
+  "dependency_packaging": {
+    "isolation_requirement": "M1, M2, and M3 must remain dependency-isolated and reproducible.",
+    "packaging_strategy": "PROVISIONAL_PENDING_DEPENDENCY_SMOKE",
+    "preferred_strategy": "Unified Modal GPU container with lazy adapter imports"
+  }
+}

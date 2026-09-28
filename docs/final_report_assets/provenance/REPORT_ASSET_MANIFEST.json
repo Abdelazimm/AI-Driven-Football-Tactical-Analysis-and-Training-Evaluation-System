@@ -1,0 +1,1583 @@
+{
+  "project": "AI-Driven Football Tactical Analysis and Training Evaluation System",
+  "source_map": "C:\\Users\\Abdelazim\\Downloads\\CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v89.md",
+  "source_map_sha256": "885ecdb9cacfc4d9d6ab6106529bdd8248d4e4e5bd8acf550809e613fd85257a",
+  "study_csv_uncompressed_sha256": "b61c5ec89c0a3b96905af9e4e3ac928e4777e232d78d08706f9fa8d96232dbb5",
+  "asset_count": 54,
+  "assets": [
+    {
+      "id": "system_overview",
+      "title": "System overview",
+      "kind": "figure",
+      "paths": [
+        "01_introduction/system_overview.svg",
+        "01_introduction/system_overview.png"
+      ],
+      "source_paths": [
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\P0_ARCHITECTURE_CONTRACT_FREEZE_REV2A.json",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\IMPLEMENTATION_PHASE6_FINAL_E2E_RESULT.json",
+        "C:\\Users\\Abdelazim\\Downloads\\CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v89.md"
+      ],
+      "source_fields": "P0 contracts; E2E analysis status",
+      "derived_calculation": "Schematic only",
+      "caption": "The integrated product processes private media through Vision, ASR, fusion, safety gates and reporting. The completed full-session run withheld player-level conclusions.",
+      "guardrail": "Schematic; no claim that automated persistent identity passed.",
+      "priority": "A",
+      "placement": "Introduction / system overview",
+      "source_data": null,
+      "source_sha256": {
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\P0_ARCHITECTURE_CONTRACT_FREEZE_REV2A.json": "6b2927ce580d6b46501764e0902e433fc480b751e62dfadab2b670baee547dd9",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\IMPLEMENTATION_PHASE6_FINAL_E2E_RESULT.json": "c0a5d54ceb8cdd249967455d96a26e7df7be143566ad33ffb88ec036b0c66404",
+        "C:\\Users\\Abdelazim\\Downloads\\CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v89.md": "885ecdb9cacfc4d9d6ab6106529bdd8248d4e4e5bd8acf550809e613fd85257a"
+      },
+      "asset_sha256": {
+        "01_introduction/system_overview.svg": "e07b5a77022fda811f8d9c24e7c7a8b78c30da0ca8af95509e1740f224f9af6e",
+        "01_introduction/system_overview.png": "cf10715142b171e1efbd646d6c38b13ae2b27518874e110da7f96568ec980440"
+      }
+    },
+    {
+      "id": "fail_closed_identity_gate",
+      "title": "Fail-closed identity gate",
+      "kind": "figure",
+      "paths": [
+        "02_design_architecture/fail_closed_identity_gate.svg",
+        "02_design_architecture/fail_closed_identity_gate.png"
+      ],
+      "source_paths": [
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\IMPLEMENTATION_PHASE6_FINAL_E2E_RESULT.json",
+        "C:\\Users\\Abdelazim\\Downloads\\CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v89.md"
+      ],
+      "source_fields": "analysis.identity; v89 §138.4",
+      "derived_calculation": "Schematic only",
+      "caption": "All three formal methods failed the identity-safety gate. The Phase 6 run returned scoped non-player evidence while withholding player-level analytics.",
+      "guardrail": "TrackEval IDSW and separate unsafe-merge audit are distinct diagnostics.",
+      "priority": "A",
+      "placement": "Design / safety architecture",
+      "source_data": null,
+      "source_sha256": {
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\IMPLEMENTATION_PHASE6_FINAL_E2E_RESULT.json": "c0a5d54ceb8cdd249967455d96a26e7df7be143566ad33ffb88ec036b0c66404",
+        "C:\\Users\\Abdelazim\\Downloads\\CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v89.md": "885ecdb9cacfc4d9d6ab6106529bdd8248d4e4e5bd8acf550809e613fd85257a"
+      },
+      "asset_sha256": {
+        "02_design_architecture/fail_closed_identity_gate.svg": "6f8bc0421b472b443acad1fb2141b98d10a79598767177654af42b4837794c87",
+        "02_design_architecture/fail_closed_identity_gate.png": "c94ce061925735d3547ce1445bc7e730fce4a96e4e7c0c95a6075a5c2a0d17d6"
+      }
+    },
+    {
+      "id": "methodology_stacks",
+      "title": "Vision method stacks",
+      "kind": "figure",
+      "paths": [
+        "03_methodology/vision/methodology_stacks.svg",
+        "03_methodology/vision/methodology_stacks.png"
+      ],
+      "source_paths": [
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\P0_ARCHITECTURE_CONTRACT_FREEZE_REV2A.json",
+        "C:\\Users\\Abdelazim\\Downloads\\CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v89.md"
+      ],
+      "source_fields": "P0 method contracts; v89 §138",
+      "derived_calculation": "Schematic only",
+      "caption": "The formal comparison evaluates complete detector-and-tracker methodologies. M2 is selected for the product, subject to a failed identity-safety gate.",
+      "guardrail": "Do not attribute DetA differences solely to detectors; no method enables player-level accumulated analytics.",
+      "priority": "A",
+      "placement": "Methodology / Vision",
+      "source_data": null,
+      "source_sha256": {
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\P0_ARCHITECTURE_CONTRACT_FREEZE_REV2A.json": "6b2927ce580d6b46501764e0902e433fc480b751e62dfadab2b670baee547dd9",
+        "C:\\Users\\Abdelazim\\Downloads\\CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v89.md": "885ecdb9cacfc4d9d6ab6106529bdd8248d4e4e5bd8acf550809e613fd85257a"
+      },
+      "asset_sha256": {
+        "03_methodology/vision/methodology_stacks.svg": "498d4b92760b76b8e6750d2ec1a52f2905be9bb80d58ab8bd3d447bad5c18e33",
+        "03_methodology/vision/methodology_stacks.png": "deb0b525506ac3bc31dc353098df836159f1fd3f9c809926cd1bebdbd143bd69"
+      }
+    },
+    {
+      "id": "response_window_contract",
+      "title": "Fusion response window",
+      "kind": "figure",
+      "paths": [
+        "03_methodology/fusion/response_window_contract.svg",
+        "03_methodology/fusion/response_window_contract.png"
+      ],
+      "source_paths": [
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\P0_ARCHITECTURE_CONTRACT_FREEZE_REV2A.json",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\IMPLEMENTATION_PHASE6_FINAL_E2E_RESULT.json",
+        "C:\\Users\\Abdelazim\\Downloads\\CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v89.md"
+      ],
+      "source_fields": "P0 fusion window; analysis.response_windows_without_tracking",
+      "derived_calculation": "Schematic only",
+      "caption": "Fusion inspects visual evidence from two to six seconds after an instruction ends and explicitly records unavailable responses.",
+      "guardrail": "Window is a contract, not a guarantee of observed player behaviour.",
+      "priority": "A",
+      "placement": "Methodology / Fusion",
+      "source_data": null,
+      "source_sha256": {
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\P0_ARCHITECTURE_CONTRACT_FREEZE_REV2A.json": "6b2927ce580d6b46501764e0902e433fc480b751e62dfadab2b670baee547dd9",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\IMPLEMENTATION_PHASE6_FINAL_E2E_RESULT.json": "c0a5d54ceb8cdd249967455d96a26e7df7be143566ad33ffb88ec036b0c66404",
+        "C:\\Users\\Abdelazim\\Downloads\\CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v89.md": "885ecdb9cacfc4d9d6ab6106529bdd8248d4e4e5bd8acf550809e613fd85257a"
+      },
+      "asset_sha256": {
+        "03_methodology/fusion/response_window_contract.svg": "93515259235566d29173ebca22074414cf9a9ecba4609c3e4c1ebdb6ccdce918",
+        "03_methodology/fusion/response_window_contract.png": "86cab5a0b0610a9dfd19fa2408e1953cf136320ba989fbb29eb0a3dacf407029"
+      }
+    },
+    {
+      "id": "calibration_permission_boundary",
+      "title": "Calibration permission boundary",
+      "kind": "figure",
+      "paths": [
+        "03_methodology/calibration/calibration_permission_boundary.svg",
+        "03_methodology/calibration/calibration_permission_boundary.png"
+      ],
+      "source_paths": [
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\IMPLEMENTATION_PHASE6_CALIBRATION_GATE.json",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\IMPLEMENTATION_PHASE6_TRANSPORT_COPY_MANIFEST.json",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\IMPLEMENTATION_PHASE6_FINAL_E2E_RESULT.json"
+      ],
+      "source_fields": "calibration gate; source/transport SHA; analysis.calibration",
+      "derived_calculation": "Schematic only",
+      "caption": "The research homography was denied for the derived transport input; the full-session product result used no metric calibration.",
+      "guardrail": "Research-camera RMSE does not validate arbitrary uploads or the Phase 6 transport copy.",
+      "priority": "A",
+      "placement": "Methodology / Calibration",
+      "source_data": null,
+      "source_sha256": {
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\IMPLEMENTATION_PHASE6_CALIBRATION_GATE.json": "f31c4041012921e9ed85a2804f01e12b705ccadb1f98526fdb8622046846e0c9",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\IMPLEMENTATION_PHASE6_TRANSPORT_COPY_MANIFEST.json": "12e27a872688903403fec920a31d2d400c93a7f554e9da4d480f2588aa202d14",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\IMPLEMENTATION_PHASE6_FINAL_E2E_RESULT.json": "c0a5d54ceb8cdd249967455d96a26e7df7be143566ad33ffb88ec036b0c66404"
+      },
+      "asset_sha256": {
+        "03_methodology/calibration/calibration_permission_boundary.svg": "cc18a26d17d26dfa1853f99e79fbf3c70ce3bb2bd0e237405fbc81350d6c0b81",
+        "03_methodology/calibration/calibration_permission_boundary.png": "fc14f8b526354b00456f2c51135678e2f80155a34db3f60ddf310365d34e4fe5"
+      }
+    },
+    {
+      "id": "grounded_reporting_flow",
+      "title": "Report grounding flow",
+      "kind": "figure",
+      "paths": [
+        "03_methodology/llm/grounded_reporting_flow.svg",
+        "03_methodology/llm/grounded_reporting_flow.png"
+      ],
+      "source_paths": [
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\P0_ARCHITECTURE_CONTRACT_FREEZE_REV2A.json",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\IMPLEMENTATION_PHASE6_FINAL_E2E_RESULT.json",
+        "C:\\Users\\Abdelazim\\Downloads\\CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v89.md"
+      ],
+      "source_fields": "P0 validator contract; analysis.report_status; v89 §143–144",
+      "derived_calculation": "Schematic only",
+      "caption": "Structured evidence passes through the frozen Llama 3.1/Patch-001 reporting path; the full-session result used deterministic fallback.",
+      "guardrail": "A bounded C04 8/8 gate pass does not imply the full-session report was LLM-validated.",
+      "priority": "B",
+      "placement": "Methodology / Reporting",
+      "source_data": null,
+      "source_sha256": {
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\P0_ARCHITECTURE_CONTRACT_FREEZE_REV2A.json": "6b2927ce580d6b46501764e0902e433fc480b751e62dfadab2b670baee547dd9",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\IMPLEMENTATION_PHASE6_FINAL_E2E_RESULT.json": "c0a5d54ceb8cdd249967455d96a26e7df7be143566ad33ffb88ec036b0c66404",
+        "C:\\Users\\Abdelazim\\Downloads\\CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v89.md": "885ecdb9cacfc4d9d6ab6106529bdd8248d4e4e5bd8acf550809e613fd85257a"
+      },
+      "asset_sha256": {
+        "03_methodology/llm/grounded_reporting_flow.svg": "d6fb5d1391acafb86a0849be5836b86f421e15d33ac267f15372034ae1bde5b2",
+        "03_methodology/llm/grounded_reporting_flow.png": "af15535338f8b219e9f17f6f4ba271a22df259b2ccb35e8e6f473dd84fd33fbd"
+      }
+    },
+    {
+      "id": "vision_formal_aggregate",
+      "title": "Official four-clip complete-system Vision evaluation",
+      "kind": "table",
+      "paths": [
+        "tables/vision_formal_aggregate.md",
+        "tables/vision_formal_aggregate.csv"
+      ],
+      "source_paths": [
+        "G:\\My Drive\\Football_Training_Assistant_MVP\\methodology_comparison\\final_evaluation\\whole_system_challenge_evaluation\\FINAL_WHOLE_SYSTEM_AGGREGATE_METRICS.csv",
+        "G:\\My Drive\\Football_Training_Assistant_MVP\\methodology_comparison\\final_evaluation\\whole_system_challenge_evaluation\\FINAL_WHOLE_SYSTEM_IDENTITY_SAFETY.json",
+        "C:\\Users\\Abdelazim\\Downloads\\CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v89.md",
+        "D:\\Final project videos transcripts\\final_vision_evaluation\\FORMAL_EXECUTION_PROTOCOL.json"
+      ],
+      "source_fields": "v89 §138.2 and §138.4; protocol four clips",
+      "derived_calculation": "Direct transcription; no recomputation",
+      "caption": "Official TrackEval aggregate over four independent frozen challenge clips; unsafe shared-track IDs are a separate descriptive audit.",
+      "guardrail": "All methods fail identity safety. M3's five IDSW must be read beside its 0.3273 recall and 14,180 FN.",
+      "priority": "A",
+      "placement": "Evaluation / Vision",
+      "source_data": null,
+      "source_sha256": {
+        "G:\\My Drive\\Football_Training_Assistant_MVP\\methodology_comparison\\final_evaluation\\whole_system_challenge_evaluation\\FINAL_WHOLE_SYSTEM_AGGREGATE_METRICS.csv": "6cab5ca9b30f4d50a5d90e4cfdaa1dd0727d7bb5de71bbe35a73929e39c8978c",
+        "G:\\My Drive\\Football_Training_Assistant_MVP\\methodology_comparison\\final_evaluation\\whole_system_challenge_evaluation\\FINAL_WHOLE_SYSTEM_IDENTITY_SAFETY.json": "69bdf22cf333b78b67c3a15493491bca8ce2e910c34a0c2398db4b6544acfdc4",
+        "C:\\Users\\Abdelazim\\Downloads\\CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v89.md": "885ecdb9cacfc4d9d6ab6106529bdd8248d4e4e5bd8acf550809e613fd85257a",
+        "D:\\Final project videos transcripts\\final_vision_evaluation\\FORMAL_EXECUTION_PROTOCOL.json": "349c2f7810355ef97949c2ff364a0b32a1df2babc0bbc04ae4209e3a78501279"
+      },
+      "asset_sha256": {
+        "tables/vision_formal_aggregate.md": "3c4cd94820184ea2d730736e5b847e5d21232d1d1c391b2e5ee6a6e25a3b9afc",
+        "tables/vision_formal_aggregate.csv": "5171601711b09fbd5a10b49002166b2fbc2cb45cb92babf77e66966bac97c929"
+      }
+    },
+    {
+      "id": "hota_deta_assa",
+      "title": "Official HOTA, DetA and AssA",
+      "kind": "figure",
+      "paths": [
+        "05_evaluation/vision/hota_deta_assa.svg",
+        "05_evaluation/vision/hota_deta_assa.png"
+      ],
+      "source_paths": [
+        "G:\\My Drive\\Football_Training_Assistant_MVP\\methodology_comparison\\final_evaluation\\whole_system_challenge_evaluation\\FINAL_WHOLE_SYSTEM_AGGREGATE_METRICS.csv",
+        "C:\\Users\\Abdelazim\\Downloads\\CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v89.md",
+        "D:\\Final project videos transcripts\\final_vision_evaluation\\FORMAL_EXECUTION_PROTOCOL.json"
+      ],
+      "source_fields": "v89 §138.2 HOTA/DetA/AssA",
+      "derived_calculation": "Direct plotting of frozen aggregate values",
+      "caption": "M2 achieved the highest aggregate HOTA, DetA and AssA across the frozen four-clip complete-system evaluation.",
+      "guardrail": "Whole-system metrics; all methods still fail the identity-safety gate.",
+      "priority": "A",
+      "placement": "Evaluation / Vision",
+      "source_data": "source_data/vision_formal_aggregate.csv",
+      "source_sha256": {
+        "G:\\My Drive\\Football_Training_Assistant_MVP\\methodology_comparison\\final_evaluation\\whole_system_challenge_evaluation\\FINAL_WHOLE_SYSTEM_AGGREGATE_METRICS.csv": "6cab5ca9b30f4d50a5d90e4cfdaa1dd0727d7bb5de71bbe35a73929e39c8978c",
+        "C:\\Users\\Abdelazim\\Downloads\\CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v89.md": "885ecdb9cacfc4d9d6ab6106529bdd8248d4e4e5bd8acf550809e613fd85257a",
+        "D:\\Final project videos transcripts\\final_vision_evaluation\\FORMAL_EXECUTION_PROTOCOL.json": "349c2f7810355ef97949c2ff364a0b32a1df2babc0bbc04ae4209e3a78501279"
+      },
+      "asset_sha256": {
+        "05_evaluation/vision/hota_deta_assa.svg": "89c5e416ad8bd6276178d06e446796db8cee6038a74faa3723a2371a2e3f5620",
+        "05_evaluation/vision/hota_deta_assa.png": "bfdb7a578c61f8d36b117aa7c7006f790e212d5f0a8d66e549e88485905599cc"
+      },
+      "source_data_sha256": "5171601711b09fbd5a10b49002166b2fbc2cb45cb92babf77e66966bac97c929"
+    },
+    {
+      "id": "precision_recall",
+      "title": "Precision and recall by complete Vision method",
+      "kind": "figure",
+      "paths": [
+        "05_evaluation/vision/precision_recall.svg",
+        "05_evaluation/vision/precision_recall.png"
+      ],
+      "source_paths": [
+        "G:\\My Drive\\Football_Training_Assistant_MVP\\methodology_comparison\\final_evaluation\\whole_system_challenge_evaluation\\FINAL_WHOLE_SYSTEM_AGGREGATE_METRICS.csv",
+        "C:\\Users\\Abdelazim\\Downloads\\CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v89.md",
+        "D:\\Final project videos transcripts\\final_vision_evaluation\\FORMAL_EXECUTION_PROTOCOL.json"
+      ],
+      "source_fields": "v89 §138.2 precision/recall",
+      "derived_calculation": "Direct plotting",
+      "caption": "M3-v1's low IDSW count accompanies very low recall (0.3273); coverage must be considered when interpreting identity diagnostics.",
+      "guardrail": "Precision/recall are whole-method evaluation values, not a standalone detector test.",
+      "priority": "B",
+      "placement": "Evaluation / Vision",
+      "source_data": "source_data/vision_formal_aggregate.csv",
+      "source_sha256": {
+        "G:\\My Drive\\Football_Training_Assistant_MVP\\methodology_comparison\\final_evaluation\\whole_system_challenge_evaluation\\FINAL_WHOLE_SYSTEM_AGGREGATE_METRICS.csv": "6cab5ca9b30f4d50a5d90e4cfdaa1dd0727d7bb5de71bbe35a73929e39c8978c",
+        "C:\\Users\\Abdelazim\\Downloads\\CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v89.md": "885ecdb9cacfc4d9d6ab6106529bdd8248d4e4e5bd8acf550809e613fd85257a",
+        "D:\\Final project videos transcripts\\final_vision_evaluation\\FORMAL_EXECUTION_PROTOCOL.json": "349c2f7810355ef97949c2ff364a0b32a1df2babc0bbc04ae4209e3a78501279"
+      },
+      "asset_sha256": {
+        "05_evaluation/vision/precision_recall.svg": "d48cf020e1b9c353ec4e3257d7a35f467d67f238ca72a422c7f6356abace246e",
+        "05_evaluation/vision/precision_recall.png": "5400fc19c538364a2bd33ec46271f769f7034f3582a002d017453b4e3533dab0"
+      },
+      "source_data_sha256": "5171601711b09fbd5a10b49002166b2fbc2cb45cb92babf77e66966bac97c929"
+    },
+    {
+      "id": "identity_diagnostics",
+      "title": "Distinct identity diagnostics",
+      "kind": "figure",
+      "paths": [
+        "05_evaluation/vision/identity_diagnostics.svg",
+        "05_evaluation/vision/identity_diagnostics.png"
+      ],
+      "source_paths": [
+        "G:\\My Drive\\Football_Training_Assistant_MVP\\methodology_comparison\\final_evaluation\\whole_system_challenge_evaluation\\FINAL_WHOLE_SYSTEM_AGGREGATE_METRICS.csv",
+        "G:\\My Drive\\Football_Training_Assistant_MVP\\methodology_comparison\\final_evaluation\\whole_system_challenge_evaluation\\FINAL_WHOLE_SYSTEM_IDENTITY_SAFETY.json",
+        "C:\\Users\\Abdelazim\\Downloads\\CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v89.md"
+      ],
+      "source_fields": "v89 §138.2 IDSW and §138.4 one-to-one IoU audit",
+      "derived_calculation": "Direct plotting",
+      "caption": "TrackEval ID switches and the separate one-to-one IoU shared-track audit are different measures; every method retained a failed identity gate.",
+      "guardrail": "Do not add the two count types or treat low IDSW as proof of safe persistent identity.",
+      "priority": "A",
+      "placement": "Evaluation / Vision",
+      "source_data": "source_data/vision_formal_aggregate.csv",
+      "source_sha256": {
+        "G:\\My Drive\\Football_Training_Assistant_MVP\\methodology_comparison\\final_evaluation\\whole_system_challenge_evaluation\\FINAL_WHOLE_SYSTEM_AGGREGATE_METRICS.csv": "6cab5ca9b30f4d50a5d90e4cfdaa1dd0727d7bb5de71bbe35a73929e39c8978c",
+        "G:\\My Drive\\Football_Training_Assistant_MVP\\methodology_comparison\\final_evaluation\\whole_system_challenge_evaluation\\FINAL_WHOLE_SYSTEM_IDENTITY_SAFETY.json": "69bdf22cf333b78b67c3a15493491bca8ce2e910c34a0c2398db4b6544acfdc4",
+        "C:\\Users\\Abdelazim\\Downloads\\CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v89.md": "885ecdb9cacfc4d9d6ab6106529bdd8248d4e4e5bd8acf550809e613fd85257a"
+      },
+      "asset_sha256": {
+        "05_evaluation/vision/identity_diagnostics.svg": "15c8fa117bbcccabe8ddc6c39b7b4bcbb611a68b8217b28b74b8f8e106a533eb",
+        "05_evaluation/vision/identity_diagnostics.png": "2b4fb8c5e357a6c815680df7a1dde463653f7151f66a525631cea42ae4201909"
+      },
+      "source_data_sha256": "5171601711b09fbd5a10b49002166b2fbc2cb45cb92babf77e66966bac97c929"
+    },
+    {
+      "id": "vision_formal_per_clip",
+      "title": "Official Vision metrics by frozen challenge clip",
+      "kind": "table",
+      "paths": [
+        "tables/vision_formal_per_clip.md",
+        "tables/vision_formal_per_clip.csv"
+      ],
+      "source_paths": [
+        "G:\\My Drive\\Football_Training_Assistant_MVP\\methodology_comparison\\final_evaluation\\whole_system_challenge_evaluation\\FINAL_WHOLE_SYSTEM_PER_CLIP_METRICS.csv",
+        "C:\\Users\\Abdelazim\\Downloads\\CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v89.md"
+      ],
+      "source_fields": "per-clip HOTA, DetA, AssA, MOTA, IDF1, IDSW, FP, FN, precision, recall",
+      "derived_calculation": "Direct CSV transcription",
+      "caption": "M2 achieved the highest HOTA and IDF1 in each of the four independent challenge clips.",
+      "guardrail": "The clips were fresh-state independent runs; per-clip scores do not prove full-session persistent identity.",
+      "priority": "C",
+      "placement": "Evaluation / Vision",
+      "source_data": null,
+      "source_sha256": {
+        "G:\\My Drive\\Football_Training_Assistant_MVP\\methodology_comparison\\final_evaluation\\whole_system_challenge_evaluation\\FINAL_WHOLE_SYSTEM_PER_CLIP_METRICS.csv": "53a87fbddeff41f5238b013b0d3a75f54d2589f8d060c9dc12b439d6b1f76ef0",
+        "C:\\Users\\Abdelazim\\Downloads\\CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v89.md": "885ecdb9cacfc4d9d6ab6106529bdd8248d4e4e5bd8acf550809e613fd85257a"
+      },
+      "asset_sha256": {
+        "tables/vision_formal_per_clip.md": "5ca68982f8f0121caf69f7c56bf53a4909df7052505e329bf8d808ab02ef5114",
+        "tables/vision_formal_per_clip.csv": "4b8a672b0325fca9335e56dfcd119a964896f0d37b382eca6987c05b43e3cbde"
+      }
+    },
+    {
+      "id": "per_clip_idf1",
+      "title": "Per-clip Vision IDF1",
+      "kind": "figure",
+      "paths": [
+        "05_evaluation/vision/per_clip_idf1.svg",
+        "05_evaluation/vision/per_clip_idf1.png"
+      ],
+      "source_paths": [
+        "G:\\My Drive\\Football_Training_Assistant_MVP\\methodology_comparison\\final_evaluation\\whole_system_challenge_evaluation\\FINAL_WHOLE_SYSTEM_PER_CLIP_METRICS.csv",
+        "C:\\Users\\Abdelazim\\Downloads\\CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v89.md"
+      ],
+      "source_fields": "IDF1 by method and clip",
+      "derived_calculation": "Direct plotting of per-clip CSV",
+      "caption": "M2 had the highest IDF1 in all four frozen challenge clips, but failed the separate identity-safety gate.",
+      "guardrail": "IDF1 is not trajectory survival or permission for player-specific analytics.",
+      "priority": "B",
+      "placement": "Evaluation / Vision",
+      "source_data": "source_data/vision_formal_per_clip.csv",
+      "source_sha256": {
+        "G:\\My Drive\\Football_Training_Assistant_MVP\\methodology_comparison\\final_evaluation\\whole_system_challenge_evaluation\\FINAL_WHOLE_SYSTEM_PER_CLIP_METRICS.csv": "53a87fbddeff41f5238b013b0d3a75f54d2589f8d060c9dc12b439d6b1f76ef0",
+        "C:\\Users\\Abdelazim\\Downloads\\CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v89.md": "885ecdb9cacfc4d9d6ab6106529bdd8248d4e4e5bd8acf550809e613fd85257a"
+      },
+      "asset_sha256": {
+        "05_evaluation/vision/per_clip_idf1.svg": "2002961fb7da9e847058247b7531dd79c2d8b88476ab4349389bdc848751331b",
+        "05_evaluation/vision/per_clip_idf1.png": "1187bfbcd2e664be30d6ab01d6bdf21b0791a56ad9ce8eec1d0a3bf86f7c9f0c"
+      },
+      "source_data_sha256": "4b8a672b0325fca9335e56dfcd119a964896f0d37b382eca6987c05b43e3cbde"
+    },
+    {
+      "id": "asr_frozen_benchmark",
+      "title": "Frozen ASR lexical and tactical-event comparison",
+      "kind": "table",
+      "paths": [
+        "tables/asr_frozen_benchmark.md",
+        "tables/asr_frozen_benchmark.csv"
+      ],
+      "source_paths": [
+        "G:\\My Drive\\Football_Training_Assistant_MVP\\methodology_comparison\\asr\\model_selection\\ASR_CANDIDATE_A_VS_B_FINAL_COMPARISON.csv",
+        "C:\\Users\\Abdelazim\\Downloads\\CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v89.md"
+      ],
+      "source_fields": "v89 §125–126",
+      "derived_calculation": "Direct transcription",
+      "caption": "Candidate A was selected on the project's coaching audio under the corrected frozen tactical-event protocol.",
+      "guardrail": "Project-specific benchmark; candidate runtimes used different hardware. No universal ASR ranking.",
+      "priority": "B",
+      "placement": "Evaluation / ASR",
+      "source_data": null,
+      "source_sha256": {
+        "G:\\My Drive\\Football_Training_Assistant_MVP\\methodology_comparison\\asr\\model_selection\\ASR_CANDIDATE_A_VS_B_FINAL_COMPARISON.csv": "7a5b8476e587b4b4070a6af24193121ffcb0ca27542eba7b12db6e5cff0dbfa6",
+        "C:\\Users\\Abdelazim\\Downloads\\CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v89.md": "885ecdb9cacfc4d9d6ab6106529bdd8248d4e4e5bd8acf550809e613fd85257a"
+      },
+      "asset_sha256": {
+        "tables/asr_frozen_benchmark.md": "664e492a4d06a0061c78498272a224a1ed3a42160659bc9089cd509290b2047e",
+        "tables/asr_frozen_benchmark.csv": "af1f0e07bc8cc9d77cf6f440322f79a5aa4fde109800e52c3f35ea0063e2f2ee"
+      }
+    },
+    {
+      "id": "asr_comparison",
+      "title": "Frozen ASR candidate comparison",
+      "kind": "figure",
+      "paths": [
+        "05_evaluation/asr/asr_comparison.svg",
+        "05_evaluation/asr/asr_comparison.png"
+      ],
+      "source_paths": [
+        "G:\\My Drive\\Football_Training_Assistant_MVP\\methodology_comparison\\asr\\model_selection\\ASR_CANDIDATE_A_VS_B_FINAL_COMPARISON.csv",
+        "C:\\Users\\Abdelazim\\Downloads\\CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v89.md"
+      ],
+      "source_fields": "v89 §125–126 WER and REV3 tactical F1",
+      "derived_calculation": "Direct plotting",
+      "caption": "Selected Candidate A had 18.4% WER and 83.871% tactical-event F1, versus Candidate B's 36.8% and 66.667% on this project audio.",
+      "guardrail": "Candidate A's initial temporal-boundary circularity was corrected in the frozen REV3 protocol; hardware differs for runtime.",
+      "priority": "A",
+      "placement": "Evaluation / ASR",
+      "source_data": "source_data/asr_frozen_benchmark.csv",
+      "source_sha256": {
+        "G:\\My Drive\\Football_Training_Assistant_MVP\\methodology_comparison\\asr\\model_selection\\ASR_CANDIDATE_A_VS_B_FINAL_COMPARISON.csv": "7a5b8476e587b4b4070a6af24193121ffcb0ca27542eba7b12db6e5cff0dbfa6",
+        "C:\\Users\\Abdelazim\\Downloads\\CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v89.md": "885ecdb9cacfc4d9d6ab6106529bdd8248d4e4e5bd8acf550809e613fd85257a"
+      },
+      "asset_sha256": {
+        "05_evaluation/asr/asr_comparison.svg": "07c249cfa5ad9ec4ad30a093e1bac139e2caa5953ddcb446e1698e314d8b29f7",
+        "05_evaluation/asr/asr_comparison.png": "bb4049c928bdce61d9eb8eb16883fea41d0ffcbbf654c92d8f1ae3df3d968aa2"
+      },
+      "source_data_sha256": "af1f0e07bc8cc9d77cf6f440322f79a5aa4fde109800e52c3f35ea0063e2f2ee"
+    },
+    {
+      "id": "llm_formal_selection",
+      "title": "LLM frozen formal selection evidence",
+      "kind": "table",
+      "paths": [
+        "tables/llm_formal_selection.md",
+        "tables/llm_formal_selection.csv"
+      ],
+      "source_paths": [
+        "G:\\My Drive\\Football_Training_Assistant_MVP\\methodology_comparison\\llm\\LLM_SELECTION_DECISION.json",
+        "G:\\My Drive\\Football_Training_Assistant_MVP\\methodology_comparison\\llm\\LLM_FINAL_INTEGRATION_FREEZE.json"
+      ],
+      "source_fields": "selection ranks 1–6; frozen Patch-001 contract",
+      "derived_calculation": "Counts parsed from frozen selection decision; no new evaluation",
+      "caption": "Both candidates avoided unsupported player identity and unavailable-evidence misuse. Llama 3.1 was selected after 15/16 schema-valid runs versus Qwen3's 5/16.",
+      "guardrail": "Raw pre-patch gate flags misclassified authorized numbers from string observations; do not interpret 0/16 as 16 hallucinations. Post-patch full benchmark was not rerun.",
+      "priority": "A",
+      "placement": "Evaluation / LLM",
+      "source_data": null,
+      "source_sha256": {
+        "G:\\My Drive\\Football_Training_Assistant_MVP\\methodology_comparison\\llm\\LLM_SELECTION_DECISION.json": "8cc3e35215ffbdcc98584aa43593504e60547ef798148b6b917b837f78f4cf02",
+        "G:\\My Drive\\Football_Training_Assistant_MVP\\methodology_comparison\\llm\\LLM_FINAL_INTEGRATION_FREEZE.json": "d46c46961514f59008fb834e49bdd9e5d0af9680931b7a7ceff3269bec746b1e"
+      },
+      "asset_sha256": {
+        "tables/llm_formal_selection.md": "63553700e1755e948d07ea886e9936fdf39148c6eb000278342ffbc861807dcd",
+        "tables/llm_formal_selection.csv": "002acbb289b272406b41e35c3aec666b86f02cd04b1e8bd8e6c477335a879b4a"
+      }
+    },
+    {
+      "id": "llm_schema_delivery",
+      "title": "LLM formal schema delivery",
+      "kind": "figure",
+      "paths": [
+        "05_evaluation/llm/llm_schema_delivery.svg",
+        "05_evaluation/llm/llm_schema_delivery.png"
+      ],
+      "source_paths": [
+        "G:\\My Drive\\Football_Training_Assistant_MVP\\methodology_comparison\\llm\\LLM_SELECTION_DECISION.json",
+        "G:\\My Drive\\Football_Training_Assistant_MVP\\methodology_comparison\\llm\\LLM_FINAL_INTEGRATION_FREEZE.json"
+      ],
+      "source_fields": "selection ranks 4 and 9",
+      "derived_calculation": "Direct case counts from selection record",
+      "caption": "The selected Llama 3.1 candidate completed and schema-validated 15/16 frozen cases, while Qwen3 did so for 5/16.",
+      "guardrail": "Pre-patch grounding numeric flags were false positives on authorized observations; safety was maintained through deterministic fallback. Full-session Phase 6 used fallback.",
+      "priority": "B",
+      "placement": "Evaluation / LLM",
+      "source_data": "source_data/llm_formal_selection.csv",
+      "source_sha256": {
+        "G:\\My Drive\\Football_Training_Assistant_MVP\\methodology_comparison\\llm\\LLM_SELECTION_DECISION.json": "8cc3e35215ffbdcc98584aa43593504e60547ef798148b6b917b837f78f4cf02",
+        "G:\\My Drive\\Football_Training_Assistant_MVP\\methodology_comparison\\llm\\LLM_FINAL_INTEGRATION_FREEZE.json": "d46c46961514f59008fb834e49bdd9e5d0af9680931b7a7ceff3269bec746b1e"
+      },
+      "asset_sha256": {
+        "05_evaluation/llm/llm_schema_delivery.svg": "6cd76728d78ddef8af24929cdc5348bdec87cb7d684f7566455f53582adc1bbd",
+        "05_evaluation/llm/llm_schema_delivery.png": "93cf7e57cf23c7261e6bbf1fce9c4f0849afae8c634fbad80a0ecb386716ac3d"
+      },
+      "source_data_sha256": "002acbb289b272406b41e35c3aec666b86f02cd04b1e8bd8e6c477335a879b4a"
+    },
+    {
+      "id": "grounding_gates",
+      "title": "Eight deterministic report-grounding gates",
+      "kind": "table",
+      "paths": [
+        "tables/grounding_gates.md",
+        "tables/grounding_gates.csv"
+      ],
+      "source_paths": [
+        "G:\\My Drive\\Football_Training_Assistant_MVP\\methodology_comparison\\llm\\LLM_FINAL_INTEGRATION_FREEZE.json"
+      ],
+      "source_fields": "validator_contract.deterministic_gates",
+      "derived_calculation": "Direct list extraction",
+      "caption": "Patch-001 preserves eight checks for identity, privacy, missing data and unsupported claims.",
+      "guardrail": "The gate list specifies intended validation scope; it is not an empirical pass-rate result.",
+      "priority": "B",
+      "placement": "Methodology / Reporting",
+      "source_data": null,
+      "source_sha256": {
+        "G:\\My Drive\\Football_Training_Assistant_MVP\\methodology_comparison\\llm\\LLM_FINAL_INTEGRATION_FREEZE.json": "d46c46961514f59008fb834e49bdd9e5d0af9680931b7a7ceff3269bec746b1e"
+      },
+      "asset_sha256": {
+        "tables/grounding_gates.md": "02d4bd3a4b8cc4c75e4d5b56909da38cb15c0e5fcf61e414804bd1fa90243c28",
+        "tables/grounding_gates.csv": "1e53756ba488b5c3734fb4865e61dee8557156ee19c85500c717a4771a181da3"
+      }
+    },
+    {
+      "id": "corrected_landmark_errors",
+      "title": "Independent calibration residuals",
+      "kind": "figure",
+      "paths": [
+        "05_evaluation/calibration/corrected_landmark_errors.svg",
+        "05_evaluation/calibration/corrected_landmark_errors.png"
+      ],
+      "source_paths": [
+        "D:\\Final project videos transcripts\\physical_metric_upgrade\\experiments\\homography_validation_physical_corrected\\03_validation\\corrected_independent_point_validation.csv",
+        "D:\\Final project videos transcripts\\physical_metric_upgrade\\experiments\\homography_validation_physical_corrected\\04_results\\corrected_homography_validation_summary.json"
+      ],
+      "source_fields": "euclidean_error_m; corrected RMSE",
+      "derived_calculation": "Direct point plot; RMSE line from summary (rounded to 3 decimals)",
+      "caption": "Four independent landmarks support a corrected research-camera RMSE of approximately 0.651 m, with maximum error 0.841 m.",
+      "guardrail": "Moderate-confidence camera-specific estimate; not valid for arbitrary uploads or Phase 6 transport.",
+      "priority": "A",
+      "placement": "Evaluation / Calibration",
+      "source_data": "source_data/corrected_calibration_points.csv",
+      "source_sha256": {
+        "D:\\Final project videos transcripts\\physical_metric_upgrade\\experiments\\homography_validation_physical_corrected\\03_validation\\corrected_independent_point_validation.csv": "d961fea6729970a7ed28fec64d95579078710099187e770f56479c1542d08bdb",
+        "D:\\Final project videos transcripts\\physical_metric_upgrade\\experiments\\homography_validation_physical_corrected\\04_results\\corrected_homography_validation_summary.json": "28ae9e9dffd1c0f642a17780e54b59fea35c4c0518750540afca9b8eec491f35"
+      },
+      "asset_sha256": {
+        "05_evaluation/calibration/corrected_landmark_errors.svg": "3cd154c63b900dcd250a272fed52d144f4e7f06b2aa04769ea1531ba6000e919",
+        "05_evaluation/calibration/corrected_landmark_errors.png": "39ea2e591b3f29ad08e4de5e5f2bbea89968057b725b019022969e4287e0a14f"
+      },
+      "source_data_sha256": "3ae347a61c9787d706a57a23726a4d72216a19c5cfc69994b8ae25ce43437b23"
+    },
+    {
+      "id": "phase6_media_provenance",
+      "title": "Phase 6 source and transport provenance",
+      "kind": "table",
+      "paths": [
+        "tables/phase6_media_provenance.md",
+        "tables/phase6_media_provenance.csv"
+      ],
+      "source_paths": [
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\IMPLEMENTATION_PHASE6_TRANSPORT_COPY_MANIFEST.json",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\IMPLEMENTATION_PHASE6_FINAL_E2E_RESULT.json"
+      ],
+      "source_fields": "source/derived probe, SHA, size, frames",
+      "derived_calculation": "Direct fields",
+      "caption": "The accepted product input was a downscaled, nontrimmed derived copy with 20,391 frames; it is distinct from the research source.",
+      "guardrail": "No formal research benchmark or research-camera metric calibration is transferred to the derived copy.",
+      "priority": "B",
+      "placement": "Implementation / Phase 6",
+      "source_data": null,
+      "source_sha256": {
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\IMPLEMENTATION_PHASE6_TRANSPORT_COPY_MANIFEST.json": "12e27a872688903403fec920a31d2d400c93a7f554e9da4d480f2588aa202d14",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\IMPLEMENTATION_PHASE6_FINAL_E2E_RESULT.json": "c0a5d54ceb8cdd249967455d96a26e7df7be143566ad33ffb88ec036b0c66404"
+      },
+      "asset_sha256": {
+        "tables/phase6_media_provenance.md": "39c22905195961226fa8b29cce124be86a66735e51fcf74ad149a30d6b73a0ad",
+        "tables/phase6_media_provenance.csv": "8b5d764a0278f80417e4c977dcc5e25b91c70e087b8d3cbb974c33803cb09208"
+      }
+    },
+    {
+      "id": "phase6_transport_provenance",
+      "title": "Phase 6 transport provenance",
+      "kind": "figure",
+      "paths": [
+        "04_implementation/phase6_transport_provenance.svg",
+        "04_implementation/phase6_transport_provenance.png"
+      ],
+      "source_paths": [
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\IMPLEMENTATION_PHASE6_TRANSPORT_COPY_MANIFEST.json",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\IMPLEMENTATION_PHASE6_FINAL_E2E_RESULT.json",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\IMPLEMENTATION_PHASE6_CALIBRATION_GATE.json"
+      ],
+      "source_fields": "source/transport probe; analysis.calibration",
+      "derived_calculation": "GB/MB display rounded decimal from byte counts; full bytes in table",
+      "caption": "The 2.390 GB original could not be uploaded; the 44.0 MB nontrimmed downscaled copy was accepted and used for the 340-second M2 E2E run.",
+      "guardrail": "Original upload and 64 MiB probe returned 413; exact provider limit is unknown. The copy is not a research benchmark input.",
+      "priority": "A",
+      "placement": "Implementation / Phase 6",
+      "source_data": "source_data/phase6_media_provenance.csv",
+      "source_sha256": {
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\IMPLEMENTATION_PHASE6_TRANSPORT_COPY_MANIFEST.json": "12e27a872688903403fec920a31d2d400c93a7f554e9da4d480f2588aa202d14",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\IMPLEMENTATION_PHASE6_FINAL_E2E_RESULT.json": "c0a5d54ceb8cdd249967455d96a26e7df7be143566ad33ffb88ec036b0c66404",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\IMPLEMENTATION_PHASE6_CALIBRATION_GATE.json": "f31c4041012921e9ed85a2804f01e12b705ccadb1f98526fdb8622046846e0c9"
+      },
+      "asset_sha256": {
+        "04_implementation/phase6_transport_provenance.svg": "a253f7e0d6d9f33a6b051901087a6f8a79428b765a375bb79b3d6ff672b3291c",
+        "04_implementation/phase6_transport_provenance.png": "86d299a1ba915d8cf90b659b156d5aaa93da5c0d2d4d1640e66bfe03450459c2"
+      },
+      "source_data_sha256": "8b5d764a0278f80417e4c977dcc5e25b91c70e087b8d3cbb974c33803cb09208"
+    },
+    {
+      "id": "phase6_measured_timings",
+      "title": "Measured Phase 6 worker timings",
+      "kind": "table",
+      "paths": [
+        "tables/phase6_measured_timings.md",
+        "tables/phase6_measured_timings.csv"
+      ],
+      "source_paths": [
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\IMPLEMENTATION_PHASE6_STAGE_TIMINGS.json",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\IMPLEMENTATION_PHASE6_FINAL_E2E_RESULT.json"
+      ],
+      "source_fields": "modal_worker_measured_component_seconds",
+      "derived_calculation": "Seconds to minutes: seconds/60",
+      "caption": "The worker total was 2,032.682 s (33 min 52.682 s); the pipeline aggregate dominated.",
+      "guardrail": "Vision, ASR, fusion and report were not separately instrumented. Do not mistake API polling for exact stage runtime.",
+      "priority": "C",
+      "placement": "Evaluation / E2E",
+      "source_data": null,
+      "source_sha256": {
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\IMPLEMENTATION_PHASE6_STAGE_TIMINGS.json": "2c6f2cccfcd45990056a2fdc4721b924e18317afe553c2c8af3a284a065cc680",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\IMPLEMENTATION_PHASE6_FINAL_E2E_RESULT.json": "c0a5d54ceb8cdd249967455d96a26e7df7be143566ad33ffb88ec036b0c66404"
+      },
+      "asset_sha256": {
+        "tables/phase6_measured_timings.md": "e3009001d3bdb71f9795f80ff0ef9ee2170a7972f1daaa506b21d0893424f55d",
+        "tables/phase6_measured_timings.csv": "fa041145f5f95be0318dcd79653942aa710e7a94cd93e4b0fe0d102fe49a0661"
+      }
+    },
+    {
+      "id": "worker_timing",
+      "title": "Measured Phase 6 worker components",
+      "kind": "figure",
+      "paths": [
+        "05_evaluation/end_to_end/worker_timing.svg",
+        "05_evaluation/end_to_end/worker_timing.png"
+      ],
+      "source_paths": [
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\IMPLEMENTATION_PHASE6_STAGE_TIMINGS.json"
+      ],
+      "source_fields": "modal_worker_measured_component_seconds",
+      "derived_calculation": "seconds/60; total is separately measured, not sum of bars",
+      "caption": "The measured pipeline aggregate was 2,012.314 s of a 2,032.682 s worker run. Individual Vision/ASR/fusion/report durations are unavailable.",
+      "guardrail": "Bars omit uninstrumented overhead; component sums must not replace independently measured worker total.",
+      "priority": "A",
+      "placement": "Evaluation / E2E",
+      "source_data": "source_data/phase6_measured_timings.csv",
+      "source_sha256": {
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\IMPLEMENTATION_PHASE6_STAGE_TIMINGS.json": "2c6f2cccfcd45990056a2fdc4721b924e18317afe553c2c8af3a284a065cc680"
+      },
+      "asset_sha256": {
+        "05_evaluation/end_to_end/worker_timing.svg": "b90ff4a0a2960b4ce1d7b7ad2f0727a3065c4bb0a33c2d698ccb4d841c7b76a4",
+        "05_evaluation/end_to_end/worker_timing.png": "76d6693c9c9bc027a0a0bd32edd5678e1bd221476dab6bb3ebb485919cde1e61"
+      },
+      "source_data_sha256": "fa041145f5f95be0318dcd79653942aa710e7a94cd93e4b0fe0d102fe49a0661"
+    },
+    {
+      "id": "event_categories",
+      "title": "Phase 6 tactical event categories",
+      "kind": "figure",
+      "paths": [
+        "05_evaluation/end_to_end/event_categories.svg",
+        "05_evaluation/end_to_end/event_categories.png"
+      ],
+      "source_paths": [
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\IMPLEMENTATION_PHASE6_FINAL_E2E_RESULT.json"
+      ],
+      "source_fields": "analysis.instruction_events[].category",
+      "derived_calculation": "Count persisted event categories; Positioning / Hold Ground shortened for label",
+      "caption": "The full-session run yielded 13 tactical events: six pressing, four positioning and three defensive.",
+      "guardrail": "These are ASR-derived events, not verified individual player responses or tactical compliance.",
+      "priority": "B",
+      "placement": "Evaluation / E2E",
+      "source_data": "source_data/phase6_event_summary.csv",
+      "source_sha256": {
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\IMPLEMENTATION_PHASE6_FINAL_E2E_RESULT.json": "c0a5d54ceb8cdd249967455d96a26e7df7be143566ad33ffb88ec036b0c66404"
+      },
+      "asset_sha256": {
+        "05_evaluation/end_to_end/event_categories.svg": "a32be485b186920fd30d81ac71439643736cabd9acb4cbfc4fdeedfaf1287173",
+        "05_evaluation/end_to_end/event_categories.png": "11be0350ef301a4c795636dd0d00c969b7861c79b89a849c3db30f0bda73dcf7"
+      },
+      "source_data_sha256": "faf48e4a2381700f0c3d09aa11ef34baabddfb579779a7174a78fd67080cee29"
+    },
+    {
+      "id": "missing_response_windows",
+      "title": "Phase 6 unavailable response windows",
+      "kind": "figure",
+      "paths": [
+        "05_evaluation/end_to_end/missing_response_windows.svg",
+        "05_evaluation/end_to_end/missing_response_windows.png"
+      ],
+      "source_paths": [
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\IMPLEMENTATION_PHASE6_FINAL_E2E_RESULT.json"
+      ],
+      "source_fields": "analysis.response_windows_without_tracking",
+      "derived_calculation": "Direct window segments; media boundary from duration_s",
+      "caption": "Six response windows lacked tracking or visual observations; some extend beyond the 340-second media boundary.",
+      "guardrail": "Unavailable tracking is not zero movement. Overlapping event windows remain separate records.",
+      "priority": "B",
+      "placement": "Evaluation / E2E",
+      "source_data": "source_data/phase6_missing_response_windows.csv",
+      "source_sha256": {
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\IMPLEMENTATION_PHASE6_FINAL_E2E_RESULT.json": "c0a5d54ceb8cdd249967455d96a26e7df7be143566ad33ffb88ec036b0c66404"
+      },
+      "asset_sha256": {
+        "05_evaluation/end_to_end/missing_response_windows.svg": "f1cd3633dc4645bb26e185d6302059da31b3e4af8f967dbac6baa0bd8da5ba5d",
+        "05_evaluation/end_to_end/missing_response_windows.png": "75ef448dcbb855d053be5fbea3d4a5a64859abd872b6be0d4f0f204d58913826"
+      },
+      "source_data_sha256": "bb8b4b03df291d0c4c8ebc9e4e3a160097657e8e24cbab38803a5827520defb1"
+    },
+    {
+      "id": "phase6_e2e_summary",
+      "title": "Phase 6 full-session result",
+      "kind": "table",
+      "paths": [
+        "tables/phase6_e2e_summary.md",
+        "tables/phase6_e2e_summary.csv"
+      ],
+      "source_paths": [
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\IMPLEMENTATION_PHASE6_FINAL_E2E_RESULT.json"
+      ],
+      "source_fields": "product; analysis",
+      "derived_calculation": "Direct fields and explicit wording",
+      "caption": "The accepted derived transport copy completed the full product path with explicit identity, calibration and report limitations.",
+      "guardrail": "Metric value count is an absence of reported metric evidence, not a zero distance or speed.",
+      "priority": "A",
+      "placement": "Evaluation / E2E",
+      "source_data": null,
+      "source_sha256": {
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\IMPLEMENTATION_PHASE6_FINAL_E2E_RESULT.json": "c0a5d54ceb8cdd249967455d96a26e7df7be143566ad33ffb88ec036b0c66404"
+      },
+      "asset_sha256": {
+        "tables/phase6_e2e_summary.md": "76284114d7dc04aabb3565d23c4de7c4fa61a02aded24ea6ce6f6f160ad64003",
+        "tables/phase6_e2e_summary.csv": "a600c7999cd3363ef133cdef3f8af8d911c3865b671235dff9ece828981d0e6b"
+      }
+    },
+    {
+      "id": "coach_study_likert",
+      "title": "Coach-study descriptive Likert summary (n=6)",
+      "kind": "table",
+      "paths": [
+        "tables/coach_study_likert.md",
+        "tables/coach_study_likert.csv"
+      ],
+      "source_paths": [
+        "C:\\Users\\Abdelazim\\Downloads\\AI-Driven Football Tactical Analysis and Training Evaluation System — Prototype Evaluation.csv.zip",
+        "C:\\Users\\Abdelazim\\Downloads\\CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v89.md"
+      ],
+      "source_fields": "CSV columns 6–17,20–22,27; v89 §148.2",
+      "derived_calculation": "Mean=sum of six integer ratings/6; rating counts per 1–5 category",
+      "caption": "Six respondents rated 16 prototype statements/items on a 1–5 scale; all means and response counts derive from the hash-matched CSV.",
+      "guardrail": "Small purposive stakeholder sample; descriptive only, no inferential or population claim. Raw comments and timestamps excluded.",
+      "priority": "C",
+      "placement": "Evaluation / user study",
+      "source_data": null,
+      "source_sha256": {
+        "C:\\Users\\Abdelazim\\Downloads\\AI-Driven Football Tactical Analysis and Training Evaluation System — Prototype Evaluation.csv.zip": "0c10630dbc117de9185621be9d3695222b4837c7223de0811f0c932d566fa05f",
+        "C:\\Users\\Abdelazim\\Downloads\\CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v89.md": "885ecdb9cacfc4d9d6ab6106529bdd8248d4e4e5bd8acf550809e613fd85257a"
+      },
+      "asset_sha256": {
+        "tables/coach_study_likert.md": "4d617d71a751454b06e061612a028074f78a04d9c4ba7b191cc7ba29e6c67b25",
+        "tables/coach_study_likert.csv": "265fa8c81f0a9ab2030acf058062819628e0d69a284381c6ded4a848bda51263"
+      }
+    },
+    {
+      "id": "study_item_means",
+      "title": "Coach-study item means",
+      "kind": "figure",
+      "paths": [
+        "05_evaluation/user_study/study_item_means.svg",
+        "05_evaluation/user_study/study_item_means.png"
+      ],
+      "source_paths": [
+        "C:\\Users\\Abdelazim\\Downloads\\AI-Driven Football Tactical Analysis and Training Evaluation System — Prototype Evaluation.csv.zip",
+        "C:\\Users\\Abdelazim\\Downloads\\CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v89.md"
+      ],
+      "source_fields": "CSV columns 6–17,20–22,27",
+      "derived_calculation": "Mean of six integer responses per item",
+      "caption": "Withholding explanation was the lowest-rated item (3.83/5), informing the subsequent coach-facing design iterations.",
+      "guardrail": "Descriptive six-person study; ordinal item means are presentation summaries, not population estimates.",
+      "priority": "A",
+      "placement": "Evaluation / user study",
+      "source_data": "source_data/coach_study_likert_aggregates.csv",
+      "source_sha256": {
+        "C:\\Users\\Abdelazim\\Downloads\\AI-Driven Football Tactical Analysis and Training Evaluation System — Prototype Evaluation.csv.zip": "0c10630dbc117de9185621be9d3695222b4837c7223de0811f0c932d566fa05f",
+        "C:\\Users\\Abdelazim\\Downloads\\CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v89.md": "885ecdb9cacfc4d9d6ab6106529bdd8248d4e4e5bd8acf550809e613fd85257a"
+      },
+      "asset_sha256": {
+        "05_evaluation/user_study/study_item_means.svg": "44d16eba1800e500bf3ed193451d0cf37fb76ab94d68e5956fa61a7768a49c59",
+        "05_evaluation/user_study/study_item_means.png": "a565f0598e5b45e8b139b91dacf205ccb1ef9f02d7950bce26db15f2b1e0072a"
+      },
+      "source_data_sha256": "265fa8c81f0a9ab2030acf058062819628e0d69a284381c6ded4a848bda51263"
+    },
+    {
+      "id": "coach_study_future_preferences",
+      "title": "Future-capability selections (n=6)",
+      "kind": "table",
+      "paths": [
+        "tables/coach_study_future_preferences.md",
+        "tables/coach_study_future_preferences.csv"
+      ],
+      "source_paths": [
+        "C:\\Users\\Abdelazim\\Downloads\\AI-Driven Football Tactical Analysis and Training Evaluation System — Prototype Evaluation.csv.zip",
+        "C:\\Users\\Abdelazim\\Downloads\\CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v89.md"
+      ],
+      "source_fields": "CSV column 18",
+      "derived_calculation": "Split semicolon-delimited choices; count respondents selecting each",
+      "caption": "Four of six respondents selected comparison between players as a desired capability for a reliable future version.",
+      "guardrail": "Multiple selections per respondent; counts do not sum to six. Preferences are not current system capabilities.",
+      "priority": "B",
+      "placement": "Evaluation / user study",
+      "source_data": null,
+      "source_sha256": {
+        "C:\\Users\\Abdelazim\\Downloads\\AI-Driven Football Tactical Analysis and Training Evaluation System — Prototype Evaluation.csv.zip": "0c10630dbc117de9185621be9d3695222b4837c7223de0811f0c932d566fa05f",
+        "C:\\Users\\Abdelazim\\Downloads\\CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v89.md": "885ecdb9cacfc4d9d6ab6106529bdd8248d4e4e5bd8acf550809e613fd85257a"
+      },
+      "asset_sha256": {
+        "tables/coach_study_future_preferences.md": "69af6406b37af71bfe20a9e03d756833ddfbfafa82a2cf74667db78665bdf16f",
+        "tables/coach_study_future_preferences.csv": "719b707c59f84698bd223541a4df5acca938cbe43174be4975d6fcd1e841e3c7"
+      }
+    },
+    {
+      "id": "future_capabilities",
+      "title": "Coach-study future-capability preferences",
+      "kind": "figure",
+      "paths": [
+        "05_evaluation/user_study/future_capabilities.svg",
+        "05_evaluation/user_study/future_capabilities.png"
+      ],
+      "source_paths": [
+        "C:\\Users\\Abdelazim\\Downloads\\AI-Driven Football Tactical Analysis and Training Evaluation System — Prototype Evaluation.csv.zip",
+        "C:\\Users\\Abdelazim\\Downloads\\CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v89.md"
+      ],
+      "source_fields": "CSV column 18",
+      "derived_calculation": "Count multi-select choices across six responses",
+      "caption": "Player comparison was the most selected future capability (4/6), but requires safe persistent identity before implementation.",
+      "guardrail": "Multiple-choice preferences, not validated product features or a representative population survey.",
+      "priority": "B",
+      "placement": "Evaluation / user study",
+      "source_data": "source_data/coach_study_future_preferences.csv",
+      "source_sha256": {
+        "C:\\Users\\Abdelazim\\Downloads\\AI-Driven Football Tactical Analysis and Training Evaluation System — Prototype Evaluation.csv.zip": "0c10630dbc117de9185621be9d3695222b4837c7223de0811f0c932d566fa05f",
+        "C:\\Users\\Abdelazim\\Downloads\\CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v89.md": "885ecdb9cacfc4d9d6ab6106529bdd8248d4e4e5bd8acf550809e613fd85257a"
+      },
+      "asset_sha256": {
+        "05_evaluation/user_study/future_capabilities.svg": "497346efaed148f80208ba6873ae21336f0411a4ea801b0f1047a27c0843d8d3",
+        "05_evaluation/user_study/future_capabilities.png": "e5dd2411e4c1391874fb5014bff5eaf45247c8463250bbb080ea6d56ac5e24da"
+      },
+      "source_data_sha256": "719b707c59f84698bd223541a4df5acca938cbe43174be4975d6fcd1e841e3c7"
+    },
+    {
+      "id": "coach_study_profile",
+      "title": "Coach-study participant profile",
+      "kind": "table",
+      "paths": [
+        "tables/coach_study_profile.md",
+        "tables/coach_study_profile.csv"
+      ],
+      "source_paths": [
+        "C:\\Users\\Abdelazim\\Downloads\\AI-Driven Football Tactical Analysis and Training Evaluation System — Prototype Evaluation.csv.zip",
+        "C:\\Users\\Abdelazim\\Downloads\\CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v89.md"
+      ],
+      "source_fields": "CSV columns 3–5",
+      "derived_calculation": "Category counts",
+      "caption": "The six participants included head coaches, assistant coaches, an analyst and a former player.",
+      "guardrail": "Small stakeholder sample; no identifying response-level records included.",
+      "priority": "B",
+      "placement": "Evaluation / user study",
+      "source_data": null,
+      "source_sha256": {
+        "C:\\Users\\Abdelazim\\Downloads\\AI-Driven Football Tactical Analysis and Training Evaluation System — Prototype Evaluation.csv.zip": "0c10630dbc117de9185621be9d3695222b4837c7223de0811f0c932d566fa05f",
+        "C:\\Users\\Abdelazim\\Downloads\\CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v89.md": "885ecdb9cacfc4d9d6ab6106529bdd8248d4e4e5bd8acf550809e613fd85257a"
+      },
+      "asset_sha256": {
+        "tables/coach_study_profile.md": "fcfa043f4448e76136270818ceda89b7ee2603bf79bf32b79350c2b41f38595c",
+        "tables/coach_study_profile.csv": "f62207b39b8e51fa2508a85d51c578fd4a129670e3efdc8ef2f9c66341bcf317"
+      }
+    },
+    {
+      "id": "before_report",
+      "title": "Pass 01 before: report",
+      "kind": "screenshot",
+      "paths": [
+        "screenshots/before_report.png"
+      ],
+      "source_paths": [
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\evaluation\\coach_study_iteration\\before_report.png"
+      ],
+      "source_fields": "Screenshot pixels; original file SHA in catalog",
+      "derived_calculation": "Unmodified copy",
+      "caption": "Pass 01 before: report from the recorded iterative-design evidence.",
+      "guardrail": "UI evidence only; screenshot does not validate scientific accuracy.",
+      "priority": "B",
+      "placement": "Iterative design",
+      "source_data": null,
+      "source_sha256": {
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\evaluation\\coach_study_iteration\\before_report.png": "93f54f2d6aefeaabeef50eb965a82ca09cfce435988751dfd6b1279fca168115"
+      },
+      "asset_sha256": {
+        "screenshots/before_report.png": "93f54f2d6aefeaabeef50eb965a82ca09cfce435988751dfd6b1279fca168115"
+      }
+    },
+    {
+      "id": "after_report",
+      "title": "Pass 01 after: coach report",
+      "kind": "screenshot",
+      "paths": [
+        "screenshots/after_report.png"
+      ],
+      "source_paths": [
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\evaluation\\coach_study_iteration\\after_report.png"
+      ],
+      "source_fields": "Screenshot pixels; original file SHA in catalog",
+      "derived_calculation": "Unmodified copy",
+      "caption": "Pass 01 after: coach report from the recorded iterative-design evidence.",
+      "guardrail": "UI evidence only; screenshot does not validate scientific accuracy.",
+      "priority": "B",
+      "placement": "Iterative design",
+      "source_data": null,
+      "source_sha256": {
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\evaluation\\coach_study_iteration\\after_report.png": "dbe9ae04c2a6e9fea31b4ee06d10b30b84dbfabd88537d4bfa374d2d53192aaa"
+      },
+      "asset_sha256": {
+        "screenshots/after_report.png": "dbe9ae04c2a6e9fea31b4ee06d10b30b84dbfabd88537d4bfa374d2d53192aaa"
+      }
+    },
+    {
+      "id": "before_showcase_plain_report",
+      "title": "Pass 02 before: plain showcase report",
+      "kind": "screenshot",
+      "paths": [
+        "screenshots/before_showcase_plain_report.png"
+      ],
+      "source_paths": [
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\evaluation\\coach_study_iteration_pass02\\before_showcase_plain_report.png"
+      ],
+      "source_fields": "Screenshot pixels; original file SHA in catalog",
+      "derived_calculation": "Unmodified copy",
+      "caption": "Pass 02 before: plain showcase report from the recorded iterative-design evidence.",
+      "guardrail": "UI evidence only; screenshot does not validate scientific accuracy.",
+      "priority": "B",
+      "placement": "Iterative design",
+      "source_data": null,
+      "source_sha256": {
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\evaluation\\coach_study_iteration_pass02\\before_showcase_plain_report.png": "66e51b44da4c1c9662519979744afda0f77733fb3898ccfed1813b0db8c30c44"
+      },
+      "asset_sha256": {
+        "screenshots/before_showcase_plain_report.png": "66e51b44da4c1c9662519979744afda0f77733fb3898ccfed1813b0db8c30c44"
+      }
+    },
+    {
+      "id": "after_full_session_summary_rich_report",
+      "title": "Pass 02 after: full-session rich report",
+      "kind": "screenshot",
+      "paths": [
+        "screenshots/after_full_session_summary_rich_report.png"
+      ],
+      "source_paths": [
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\evaluation\\coach_study_iteration_pass02\\after_full_session_summary_rich_report.png"
+      ],
+      "source_fields": "Screenshot pixels; original file SHA in catalog",
+      "derived_calculation": "Unmodified copy",
+      "caption": "Pass 02 after: full-session rich report from the recorded iterative-design evidence.",
+      "guardrail": "UI evidence only; screenshot does not validate scientific accuracy.",
+      "priority": "B",
+      "placement": "Iterative design",
+      "source_data": null,
+      "source_sha256": {
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\evaluation\\coach_study_iteration_pass02\\after_full_session_summary_rich_report.png": "097928ade9f1a1e93b7475de67643c3c2b1fd130047d47ca6b29dad17c13db4d"
+      },
+      "asset_sha256": {
+        "screenshots/after_full_session_summary_rich_report.png": "097928ade9f1a1e93b7475de67643c3c2b1fd130047d47ca6b29dad17c13db4d"
+      }
+    },
+    {
+      "id": "after_c04_summary_rich_report",
+      "title": "Pass 02 after: C04 rich report",
+      "kind": "screenshot",
+      "paths": [
+        "screenshots/after_c04_summary_rich_report.png"
+      ],
+      "source_paths": [
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\evaluation\\coach_study_iteration_pass02\\after_c04_summary_rich_report.png"
+      ],
+      "source_fields": "Screenshot pixels; original file SHA in catalog",
+      "derived_calculation": "Unmodified copy",
+      "caption": "Pass 02 after: C04 rich report from the recorded iterative-design evidence.",
+      "guardrail": "UI evidence only; screenshot does not validate scientific accuracy.",
+      "priority": "B",
+      "placement": "Iterative design",
+      "source_data": null,
+      "source_sha256": {
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\evaluation\\coach_study_iteration_pass02\\after_c04_summary_rich_report.png": "7b11b09550802c19e1a35323ea4e0e9a1baddd4be754e326b07399df1801ceaf"
+      },
+      "asset_sha256": {
+        "screenshots/after_c04_summary_rich_report.png": "7b11b09550802c19e1a35323ea4e0e9a1baddd4be754e326b07399df1801ceaf"
+      }
+    },
+    {
+      "id": "after_coach_overview",
+      "title": "Pass 01 after: coach overview",
+      "kind": "screenshot",
+      "paths": [
+        "screenshots/after_coach_overview.png"
+      ],
+      "source_paths": [
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\evaluation\\coach_study_iteration\\after_coach_overview.png"
+      ],
+      "source_fields": "Screenshot pixels; original file SHA in catalog",
+      "derived_calculation": "Unmodified copy",
+      "caption": "Pass 01 after: coach overview from the recorded iterative-design evidence.",
+      "guardrail": "UI evidence only; screenshot does not validate scientific accuracy.",
+      "priority": "B",
+      "placement": "Iterative design",
+      "source_data": null,
+      "source_sha256": {
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\evaluation\\coach_study_iteration\\after_coach_overview.png": "a87af7904feda594ea3b77a731a7c5e517769e4ba29122243726bf2230871f2b"
+      },
+      "asset_sha256": {
+        "screenshots/after_coach_overview.png": "a87af7904feda594ea3b77a731a7c5e517769e4ba29122243726bf2230871f2b"
+      }
+    },
+    {
+      "id": "feedback_to_ui_iterations",
+      "title": "Iterative design rationale",
+      "kind": "figure",
+      "paths": [
+        "06_iterative_design/feedback_to_ui_iterations.svg",
+        "06_iterative_design/feedback_to_ui_iterations.png"
+      ],
+      "source_paths": [
+        "C:\\Users\\Abdelazim\\Downloads\\AI-Driven Football Tactical Analysis and Training Evaluation System — Prototype Evaluation.csv.zip",
+        "C:\\Users\\Abdelazim\\Downloads\\CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v89.md",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\evaluation\\coach_study_iteration_pass02\\after_full_session_summary_rich_report.png"
+      ],
+      "source_fields": "study column 27 and qualitative themes; v89 §§148–150",
+      "derived_calculation": "Schematic only; 3.83 is mean from CSV",
+      "caption": "The lowest-rated explanation item and qualitative readability feedback informed coach-first summaries and richer report presentation across two recorded passes.",
+      "guardrail": "No post-iteration repeat user study was recorded; do not claim measured usability improvement.",
+      "priority": "A",
+      "placement": "Iterative design",
+      "source_data": null,
+      "source_sha256": {
+        "C:\\Users\\Abdelazim\\Downloads\\AI-Driven Football Tactical Analysis and Training Evaluation System — Prototype Evaluation.csv.zip": "0c10630dbc117de9185621be9d3695222b4837c7223de0811f0c932d566fa05f",
+        "C:\\Users\\Abdelazim\\Downloads\\CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v89.md": "885ecdb9cacfc4d9d6ab6106529bdd8248d4e4e5bd8acf550809e613fd85257a",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\evaluation\\coach_study_iteration_pass02\\after_full_session_summary_rich_report.png": "097928ade9f1a1e93b7475de67643c3c2b1fd130047d47ca6b29dad17c13db4d"
+      },
+      "asset_sha256": {
+        "06_iterative_design/feedback_to_ui_iterations.svg": "de2fdf1805004b90af8890b07fd20765fa683d4b133330ca87a50c615696af55",
+        "06_iterative_design/feedback_to_ui_iterations.png": "80ae2b03e9136ce7ce453ec1f19563c61676e3dc2d8b6573fef1aa9444bc1aca"
+      }
+    },
+    {
+      "id": "limitations_matrix",
+      "title": "Evidence and reporting limitations",
+      "kind": "table",
+      "paths": [
+        "tables/limitations_matrix.md",
+        "tables/limitations_matrix.csv"
+      ],
+      "source_paths": [
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\IMPLEMENTATION_PHASE6_FINAL_E2E_RESULT.json",
+        "C:\\Users\\Abdelazim\\Downloads\\CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v89.md",
+        "C:\\Users\\Abdelazim\\Downloads\\AI-Driven Football Tactical Analysis and Training Evaluation System — Prototype Evaluation.csv.zip"
+      ],
+      "source_fields": "v89 §138, §148, Phase 6 analysis",
+      "derived_calculation": "Qualitative synthesis of frozen status fields",
+      "caption": "The result is useful when evidence scope, missing data and failed safety gates remain visible.",
+      "guardrail": "No row is an estimated metric or a claim that future work is currently implemented.",
+      "priority": "A",
+      "placement": "Limitations / future work",
+      "source_data": null,
+      "source_sha256": {
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\IMPLEMENTATION_PHASE6_FINAL_E2E_RESULT.json": "c0a5d54ceb8cdd249967455d96a26e7df7be143566ad33ffb88ec036b0c66404",
+        "C:\\Users\\Abdelazim\\Downloads\\CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v89.md": "885ecdb9cacfc4d9d6ab6106529bdd8248d4e4e5bd8acf550809e613fd85257a",
+        "C:\\Users\\Abdelazim\\Downloads\\AI-Driven Football Tactical Analysis and Training Evaluation System — Prototype Evaluation.csv.zip": "0c10630dbc117de9185621be9d3695222b4837c7223de0811f0c932d566fa05f"
+      },
+      "asset_sha256": {
+        "tables/limitations_matrix.md": "b172f40656d6d01ccdc5a451a106c94de870ca78113cc9ba4d9e81bb15cfdaab",
+        "tables/limitations_matrix.csv": "995ab3cf10613e8ef6c94a567b43e3eeaa6e912fce7e7ab366c05021cea3f6e5"
+      }
+    },
+    {
+      "id": "formal_clip_protocol",
+      "title": "Frozen independent Vision challenge protocol",
+      "kind": "table",
+      "paths": [
+        "tables/formal_clip_protocol.md",
+        "tables/formal_clip_protocol.csv"
+      ],
+      "source_paths": [
+        "G:\\My Drive\\Football_Training_Assistant_MVP\\methodology_comparison\\final_vision_evaluation\\formal_fresh_state_per_clip\\FORMAL_EXECUTION_PROTOCOL.json",
+        "G:\\My Drive\\Football_Training_Assistant_MVP\\methodology_comparison\\final_evaluation\\whole_system_challenge_evaluation\\FINAL_WHOLE_SYSTEM_EVALUATION_MANIFEST.json"
+      ],
+      "source_fields": "clips; state_contract; total_frames_per_method",
+      "derived_calculation": "Direct protocol extraction",
+      "caption": "Each method ran on four independent fresh-state clips, totaling 3,780 scored frames per method.",
+      "guardrail": "The full 20,391-frame session and M3 R2 are excluded from this formal comparison.",
+      "priority": "B",
+      "placement": "Methodology / Vision",
+      "source_data": null,
+      "source_sha256": {
+        "G:\\My Drive\\Football_Training_Assistant_MVP\\methodology_comparison\\final_vision_evaluation\\formal_fresh_state_per_clip\\FORMAL_EXECUTION_PROTOCOL.json": "349c2f7810355ef97949c2ff364a0b32a1df2babc0bbc04ae4209e3a78501279",
+        "G:\\My Drive\\Football_Training_Assistant_MVP\\methodology_comparison\\final_evaluation\\whole_system_challenge_evaluation\\FINAL_WHOLE_SYSTEM_EVALUATION_MANIFEST.json": "ec8c60824622d9b07b1b03b9b19365a7b1a2f7aab635a9c596dbec6cf90dd556"
+      },
+      "asset_sha256": {
+        "tables/formal_clip_protocol.md": "0f59f0dc1b656834c7a7cbc1d79e03b851680cdfd66933d1de15236377ae6816",
+        "tables/formal_clip_protocol.csv": "0be272fbcf027f72ff35a906db38318836d2e629e0530ec1eaf97d9461733474"
+      }
+    },
+    {
+      "id": "vision_checkpoint_provenance",
+      "title": "Frozen Vision checkpoint provenance",
+      "kind": "table",
+      "paths": [
+        "tables/vision_checkpoint_provenance.md",
+        "tables/vision_checkpoint_provenance.csv"
+      ],
+      "source_paths": [
+        "G:\\My Drive\\Football_Training_Assistant_MVP\\methodology_comparison\\final_evaluation\\whole_system_challenge_evaluation\\FINAL_WHOLE_SYSTEM_EVALUATION_MANIFEST.json"
+      ],
+      "source_fields": "external_authoritative_artifacts SHA and bytes",
+      "derived_calculation": "Direct manifest fields; appendix candidate",
+      "caption": "The formal comparison used specific frozen model artifacts; these hashes identify their checkpoint provenance.",
+      "guardrail": "Manifest metadata is not a fresh hash verification of large checkpoint binaries in this report run.",
+      "priority": "C",
+      "placement": "Methodology / Vision",
+      "source_data": null,
+      "source_sha256": {
+        "G:\\My Drive\\Football_Training_Assistant_MVP\\methodology_comparison\\final_evaluation\\whole_system_challenge_evaluation\\FINAL_WHOLE_SYSTEM_EVALUATION_MANIFEST.json": "ec8c60824622d9b07b1b03b9b19365a7b1a2f7aab635a9c596dbec6cf90dd556"
+      },
+      "asset_sha256": {
+        "tables/vision_checkpoint_provenance.md": "fb66bb10f0e409699287c1f95b21227b83c181c9a996cb8169410bad3084ce35",
+        "tables/vision_checkpoint_provenance.csv": "43805c3c50036a8bf3e8d0f7381436d1612a2049255afee914518e281c10baeb"
+      }
+    },
+    {
+      "id": "oracle_showcase_scope",
+      "title": "Three frozen oracle-assisted showcase cases",
+      "kind": "table",
+      "paths": [
+        "tables/oracle_showcase_scope.md",
+        "tables/oracle_showcase_scope.csv"
+      ],
+      "source_paths": [
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\golden\\fixtures\\showcase_frontend_payload.json",
+        "C:\\Users\\Abdelazim\\Downloads\\CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v89.md"
+      ],
+      "source_fields": "showcase_mode; cards; manual_verification",
+      "derived_calculation": "Direct case labels and mode",
+      "caption": "C06 pressing, C04 defensive marking and C03 hold position demonstrate manually verified capabilities.",
+      "guardrail": "Showcase evidence must never be presented as automated persistent-identity success or mixed with Phase 6 product evidence.",
+      "priority": "A",
+      "placement": "Evaluation / showcase",
+      "source_data": null,
+      "source_sha256": {
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\golden\\fixtures\\showcase_frontend_payload.json": "20e0a6f0f8a537a8ce00567ffd136044231faa88c21446d1e82180751ce9c830",
+        "C:\\Users\\Abdelazim\\Downloads\\CM3070_CANONICAL_FINAL_REPORT_EVIDENCE_LOG_v89.md": "885ecdb9cacfc4d9d6ab6106529bdd8248d4e4e5bd8acf550809e613fd85257a"
+      },
+      "asset_sha256": {
+        "tables/oracle_showcase_scope.md": "cea576fd535a78432989c005a971a55733241e5031a699849f98d04c59ef9754",
+        "tables/oracle_showcase_scope.csv": "e6e077c7d0bff2efaba6cfd10384363b801c92104d091547f80d24cd59bb9f1c"
+      }
+    },
+    {
+      "id": "detailed_product_architecture",
+      "title": "Detailed final product architecture",
+      "kind": "figure",
+      "paths": [
+        "02_design_architecture/detailed_product_architecture.svg",
+        "02_design_architecture/detailed_product_architecture.png"
+      ],
+      "source_paths": [
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\frontend\\tactical-ai-insights-main\\package.json",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\backend\\app\\main.py",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\backend\\app\\api\\jobs.py",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\backend\\app\\services\\dispatch_service.py",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\backend\\app\\api\\internal.py",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\modal_app\\worker.py"
+      ],
+      "source_fields": "frontend dependencies; API job endpoints; dispatch; authenticated callback; worker flow",
+      "derived_calculation": "Schematic from implemented interfaces",
+      "caption": "The final React/TanStack frontend uses a FastAPI control plane, private Supabase persistence and a Modal compute worker; results return through durable job state and scoped evidence.",
+      "guardrail": "Diagram describes implemented product flow; the Phase 6 report still completed with identity/calibration limitations.",
+      "priority": "A",
+      "placement": "Requirements and Design / detailed architecture",
+      "source_data": null,
+      "completion_pass": true,
+      "source_sha256": {
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\frontend\\tactical-ai-insights-main\\package.json": "bf5607ea8d98fc91817f52ca021f47f31cf8474a80e8ade6bf75fb88921ebea6",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\backend\\app\\main.py": "f3edffdd575cabeda59365d6289ac7a57b1e81316876738fa498fed8d170b3c0",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\backend\\app\\api\\jobs.py": "f256c3d4b5ea2a3bfdbde5b219869aed622246956a44667ce785a230ec54d1e8",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\backend\\app\\services\\dispatch_service.py": "d6821e79596c190a2e028f0ac60f495226a00818eed1f7ca5a2d06dc05e98668",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\backend\\app\\api\\internal.py": "7b10ae38cfdbe30df91a1909600a61c4fb90fd2db0ae12f9435f002a724ee2c5",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\modal_app\\worker.py": "11699d623c7e7576a0e4c828758c36cc5f414628ac3109185a4a2b850cfaa69e"
+      },
+      "asset_sha256": {
+        "02_design_architecture/detailed_product_architecture.svg": "dd2ed4ee4bf022c91130aff73de2ff372c89b34239de8b710eb6a423941811ea",
+        "02_design_architecture/detailed_product_architecture.png": "d553073fe8f37d8f425f79460e4e1bdfb59b889343804461c7d5822a0d98e7a3"
+      }
+    },
+    {
+      "id": "product_research_boundary",
+      "title": "Product versus frozen research boundary",
+      "kind": "figure",
+      "paths": [
+        "02_design_architecture/product_research_boundary.svg",
+        "02_design_architecture/product_research_boundary.png"
+      ],
+      "source_paths": [
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\AGENTS.md",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\P0_ARCHITECTURE_CONTRACT_FREEZE_REV2A.json",
+        "G:\\My Drive\\Football_Training_Assistant_MVP\\methodology_comparison\\final_evaluation\\whole_system_challenge_evaluation\\FINAL_WHOLE_SYSTEM_AGGREGATE_METRICS.csv"
+      ],
+      "source_fields": "AGENTS research safety; P0 scientific invariants; direct final evaluation artifact",
+      "derived_calculation": "Schematic only",
+      "caption": "The D: workspace owns product code and contracts, while the mounted G: workspace supplies frozen Vision, ASR, LLM, homography and formal-evaluation evidence through controlled read-only adaptation.",
+      "guardrail": "The displayed absolute workspace paths are provenance labels, not application runtime dependencies.",
+      "priority": "A",
+      "placement": "Requirements and Design / research boundary",
+      "source_data": null,
+      "completion_pass": true,
+      "source_sha256": {
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\AGENTS.md": "b6efdcdb338d9232094672429d2a8e0713a19cc4066e2c9c5fa4edea27fb6572",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\P0_ARCHITECTURE_CONTRACT_FREEZE_REV2A.json": "6b2927ce580d6b46501764e0902e433fc480b751e62dfadab2b670baee547dd9",
+        "G:\\My Drive\\Football_Training_Assistant_MVP\\methodology_comparison\\final_evaluation\\whole_system_challenge_evaluation\\FINAL_WHOLE_SYSTEM_AGGREGATE_METRICS.csv": "6cab5ca9b30f4d50a5d90e4cfdaa1dd0727d7bb5de71bbe35a73929e39c8978c"
+      },
+      "asset_sha256": {
+        "02_design_architecture/product_research_boundary.svg": "3721f352414d7f8d42374446b62e016d97edacad0a6d4c8dbe6e7b7b63669208",
+        "02_design_architecture/product_research_boundary.png": "a7f5c4c1b7dbb776ae7b928e3fb4124b8997be736f24410fb9c6fbde01aaa14c"
+      }
+    },
+    {
+      "id": "coordinate_space_flow",
+      "title": "Coordinate-space and homography flow",
+      "kind": "figure",
+      "paths": [
+        "03_methodology/calibration/coordinate_space_flow.svg",
+        "03_methodology/calibration/coordinate_space_flow.png"
+      ],
+      "source_paths": [
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\P0_ARCHITECTURE_CONTRACT_FREEZE_REV2A.json",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\backend\\app\\adapters\\common_adapter.py",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\backend\\app\\services\\calibration_service.py",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\IMPLEMENTATION_PHASE6_TRANSPORT_COPY_MANIFEST.json"
+      ],
+      "source_fields": "coordinate_spaces, adapter_coordinate_policy; calibration authorization; source probe",
+      "derived_calculation": "Schematic; 3840×2160 is the frozen research-source example",
+      "caption": "Vision operates in a 1920×1080 working plane. Its working-space footpoints enter an approved homography for metric projection; adapters separately return bounding boxes to the dynamically probed source space.",
+      "guardrail": "The 3840×2160 source is an example. Generic uploads do not inherit the camera-specific homography; the Phase 6 transport used no metric calibration.",
+      "priority": "B",
+      "placement": "Methodology / calibration",
+      "source_data": null,
+      "completion_pass": true,
+      "source_sha256": {
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\P0_ARCHITECTURE_CONTRACT_FREEZE_REV2A.json": "6b2927ce580d6b46501764e0902e433fc480b751e62dfadab2b670baee547dd9",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\backend\\app\\adapters\\common_adapter.py": "8319e408f08eab349ed2c7b70e583a66bdd7ad801fc14e202dc24e22cbad6b67",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\backend\\app\\services\\calibration_service.py": "8bb197cdd450d06c5ba64b3ed6e8e4d5f35bd1f082ccb042ec5950e14df5e5f2",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\IMPLEMENTATION_PHASE6_TRANSPORT_COPY_MANIFEST.json": "12e27a872688903403fec920a31d2d400c93a7f554e9da4d480f2588aa202d14"
+      },
+      "asset_sha256": {
+        "03_methodology/calibration/coordinate_space_flow.svg": "1a3c8d6f7cfcc2617e7ff9215c6330185b58c5c49ffdc8ca0707f5e2474197d1",
+        "03_methodology/calibration/coordinate_space_flow.png": "dae5a3a0521f496245061d1ce959c6be1d8d26490cefa401a4dbe68e5023b109"
+      }
+    },
+    {
+      "id": "asr_pipeline",
+      "title": "Frozen ASR methodology pipeline",
+      "kind": "figure",
+      "paths": [
+        "03_methodology/asr/asr_pipeline.svg",
+        "03_methodology/asr/asr_pipeline.png"
+      ],
+      "source_paths": [
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\P0_ARCHITECTURE_CONTRACT_FREEZE_REV2A.json",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\backend\\app\\services\\asr_service.py"
+      ],
+      "source_fields": "asr_contract engine/model/preprocessing/taxonomy; FROZEN_TACTICAL_CATEGORIES",
+      "derived_calculation": "Direct category transcription; schematic stages",
+      "caption": "Coach audio is normalized to 16 kHz mono, transcribed with frozen faster-whisper base.en, and mapped deterministically into the five frozen tactical-event categories.",
+      "guardrail": "A tactical event is an extracted instruction, not proof of the target player or observed response.",
+      "priority": "B",
+      "placement": "Methodology / ASR",
+      "source_data": null,
+      "completion_pass": true,
+      "source_sha256": {
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\P0_ARCHITECTURE_CONTRACT_FREEZE_REV2A.json": "6b2927ce580d6b46501764e0902e433fc480b751e62dfadab2b670baee547dd9",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\backend\\app\\services\\asr_service.py": "823334ac9be694c1dc1001ecc60d0b43001bf968311b024b09ec721df3019b6c"
+      },
+      "asset_sha256": {
+        "03_methodology/asr/asr_pipeline.svg": "b805e91bef5fa1f0ef3044eff821e09775b041491d083742155277ececca1c1b",
+        "03_methodology/asr/asr_pipeline.png": "188a2493083e96a1da96424ed59572bfd59fa1d14f07c3471ee587ff85663e26"
+      }
+    },
+    {
+      "id": "kinematics_pipeline",
+      "title": "Metric kinematics safety pipeline",
+      "kind": "figure",
+      "paths": [
+        "03_methodology/calibration/kinematics_pipeline.svg",
+        "03_methodology/calibration/kinematics_pipeline.png"
+      ],
+      "source_paths": [
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\P0_ARCHITECTURE_CONTRACT_FREEZE_REV2A.json",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\backend\\app\\services\\kinematics_service.py",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\backend\\app\\services\\calibration_service.py"
+      ],
+      "source_fields": "kinematics thresholds/median/outlier policy; service calculate_steps",
+      "derived_calculation": "Schematic only",
+      "caption": "Metric movement derives from validated footpoints and approved homography, using seven-observation smoothing and actual probed FPS; gaps and implausible speeds are excluded.",
+      "guardrail": "A >0.5 s gap resets continuity and >36 km/h is rejected, not clamped. No metric output under NO_METRIC_CALIBRATION or failed player identity.",
+      "priority": "B",
+      "placement": "Methodology / calibration",
+      "source_data": null,
+      "completion_pass": true,
+      "source_sha256": {
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\P0_ARCHITECTURE_CONTRACT_FREEZE_REV2A.json": "6b2927ce580d6b46501764e0902e433fc480b751e62dfadab2b670baee547dd9",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\backend\\app\\services\\kinematics_service.py": "60ba6e6677d6576b758f306dfe435820542b785b9e9697ce2909d4e2d78810ed",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\backend\\app\\services\\calibration_service.py": "8bb197cdd450d06c5ba64b3ed6e8e4d5f35bd1f082ccb042ec5950e14df5e5f2"
+      },
+      "asset_sha256": {
+        "03_methodology/calibration/kinematics_pipeline.svg": "78a0868533ef1cbec2723eae386a7d891101059824c1238dd5a9361aa7bf2157",
+        "03_methodology/calibration/kinematics_pipeline.png": "ef88618b60de523195bfb750d5bb3d2286d8b70600a236cd6362df73bf1dd62a"
+      }
+    },
+    {
+      "id": "product_job_lifecycle",
+      "title": "Implemented product job lifecycle",
+      "kind": "figure",
+      "paths": [
+        "04_implementation/product_job_lifecycle.svg",
+        "04_implementation/product_job_lifecycle.png"
+      ],
+      "source_paths": [
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\backend\\app\\api\\jobs.py",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\backend\\app\\services\\dispatch_service.py",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\backend\\app\\api\\internal.py",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\modal_app\\worker.py",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\backend\\app\\main.py"
+      ],
+      "source_fields": "media validation/job creation/start/status/results; active-dispatch idempotency; worker callback terminal handling",
+      "derived_calculation": "Schematic only",
+      "caption": "Validated private media enters a session/job, is dispatched idempotently to Modal, and returns authenticated progress plus persisted results for review.",
+      "guardrail": "COMPLETED_WITH_LIMITATIONS is a successful fail-closed outcome; FAILED carries an explicit error. Diagram does not imply every upload or run succeeds.",
+      "priority": "B",
+      "placement": "Implementation / job lifecycle",
+      "source_data": null,
+      "completion_pass": true,
+      "source_sha256": {
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\backend\\app\\api\\jobs.py": "f256c3d4b5ea2a3bfdbde5b219869aed622246956a44667ce785a230ec54d1e8",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\backend\\app\\services\\dispatch_service.py": "d6821e79596c190a2e028f0ac60f495226a00818eed1f7ca5a2d06dc05e98668",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\backend\\app\\api\\internal.py": "7b10ae38cfdbe30df91a1909600a61c4fb90fd2db0ae12f9435f002a724ee2c5",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\modal_app\\worker.py": "11699d623c7e7576a0e4c828758c36cc5f414628ac3109185a4a2b850cfaa69e",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\backend\\app\\main.py": "f3edffdd575cabeda59365d6289ac7a57b1e81316876738fa498fed8d170b3c0"
+      },
+      "asset_sha256": {
+        "04_implementation/product_job_lifecycle.svg": "55f58500b7b20394138fe619cfe248164975d38356f73106468ff43028d8efa7",
+        "04_implementation/product_job_lifecycle.png": "86248ec2bb940cb6f50a88e49dfd34e3205eb17f74b711546669cfa5d1f54b9e"
+      }
+    },
+    {
+      "id": "key_outcome_metrics",
+      "title": "Key Vision outcome metrics",
+      "kind": "figure",
+      "paths": [
+        "05_evaluation/vision/key_outcome_metrics.svg",
+        "05_evaluation/vision/key_outcome_metrics.png"
+      ],
+      "source_paths": [
+        "G:\\My Drive\\Football_Training_Assistant_MVP\\methodology_comparison\\final_evaluation\\whole_system_challenge_evaluation\\FINAL_WHOLE_SYSTEM_AGGREGATE_METRICS.csv"
+      ],
+      "source_fields": "COMBINED_SEQ HOTA, MOTA, IDF1",
+      "derived_calculation": "Direct plotting of frozen aggregate rows",
+      "caption": "M2 led the frozen four-clip complete-system comparison on HOTA, MOTA and IDF1; all three methods nevertheless failed the formal identity-safety gate.",
+      "guardrail": "Project-specific challenge protocol; MOTA and IDF1 are not permission for player-level accumulated analytics.",
+      "priority": "B",
+      "placement": "Evaluation / Vision",
+      "source_data": "source_data/vision_formal_aggregate.csv",
+      "completion_pass": true,
+      "source_sha256": {
+        "G:\\My Drive\\Football_Training_Assistant_MVP\\methodology_comparison\\final_evaluation\\whole_system_challenge_evaluation\\FINAL_WHOLE_SYSTEM_AGGREGATE_METRICS.csv": "6cab5ca9b30f4d50a5d90e4cfdaa1dd0727d7bb5de71bbe35a73929e39c8978c"
+      },
+      "asset_sha256": {
+        "05_evaluation/vision/key_outcome_metrics.svg": "5e652b2d463f779b1830b3e896f632e26adf9c34daa63edf712b634e8571735e",
+        "05_evaluation/vision/key_outcome_metrics.png": "8474af5df3900bc369ff9a7990dbc1dae635948bd89fac1ae11731f85437a42b"
+      },
+      "source_data_sha256": "5171601711b09fbd5a10b49002166b2fbc2cb45cb92babf77e66966bac97c929"
+    },
+    {
+      "id": "formal_clip_timeline",
+      "title": "Frozen challenge clip timeline",
+      "kind": "figure",
+      "paths": [
+        "03_methodology/vision/formal_clip_timeline.svg",
+        "03_methodology/vision/formal_clip_timeline.png"
+      ],
+      "source_paths": [
+        "G:\\My Drive\\Football_Training_Assistant_MVP\\methodology_comparison\\final_vision_evaluation\\formal_fresh_state_per_clip\\FORMAL_EXECUTION_PROTOCOL.json",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\IMPLEMENTATION_PHASE6_TRANSPORT_COPY_MANIFEST.json"
+      ],
+      "source_fields": "clips source_start/end/frames; source avg_frame_rate",
+      "derived_calculation": "start_s=start_frame/(3058650/51001); end_exclusive_s=(end_frame+1)/fps",
+      "caption": "The four formal challenge clips occupy distinct positions in the research session and were evaluated with fresh tracker state for 3,780 frames per method.",
+      "guardrail": "This is not a continuous full-session TrackEval run; the Phase 6 transport is excluded from the formal benchmark.",
+      "priority": "B",
+      "placement": "Methodology / Vision",
+      "source_data": "source_data/completion_formal_clip_timeline.csv",
+      "completion_pass": true,
+      "source_sha256": {
+        "G:\\My Drive\\Football_Training_Assistant_MVP\\methodology_comparison\\final_vision_evaluation\\formal_fresh_state_per_clip\\FORMAL_EXECUTION_PROTOCOL.json": "349c2f7810355ef97949c2ff364a0b32a1df2babc0bbc04ae4209e3a78501279",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\IMPLEMENTATION_PHASE6_TRANSPORT_COPY_MANIFEST.json": "12e27a872688903403fec920a31d2d400c93a7f554e9da4d480f2588aa202d14"
+      },
+      "asset_sha256": {
+        "03_methodology/vision/formal_clip_timeline.svg": "527fac89fbebd9e50cdcec7ac69840160318d72fb161021c955e7dacf313fe7a",
+        "03_methodology/vision/formal_clip_timeline.png": "79ff8966aa45d24390ea754e3c805b1e725173b330fe24f32238d5ff0a56a174"
+      },
+      "source_data_sha256": "3f3c5b50a582d676c53fb35632427e1e639cff496ef65ea7ab6fe88d9b684503"
+    },
+    {
+      "id": "key_likert_distribution",
+      "title": "Selected coach-study Likert distributions",
+      "kind": "figure",
+      "paths": [
+        "05_evaluation/user_study/key_likert_distribution.svg",
+        "05_evaluation/user_study/key_likert_distribution.png"
+      ],
+      "source_paths": [
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\final_report_assets\\source_data\\coach_study_likert_aggregates.csv",
+        "C:\\Users\\Abdelazim\\Downloads\\AI-Driven Football Tactical Analysis and Training Evaluation System — Prototype Evaluation.csv.zip"
+      ],
+      "source_fields": "rating_1..rating_5 for five selected items; hash-matched original responses",
+      "derived_calculation": "Stack six integer response counts per item; no inferential statistics",
+      "caption": "Five report-relevant items show their full six-response distributions, including the two neutral ratings for the withholding explanation.",
+      "guardrail": "Small descriptive stakeholder sample (n=6); selection highlights interpretability and is not a population estimate.",
+      "priority": "B",
+      "placement": "User Study / response detail",
+      "source_data": "source_data/coach_study_likert_aggregates.csv",
+      "completion_pass": true,
+      "source_sha256": {
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\final_report_assets\\source_data\\coach_study_likert_aggregates.csv": "265fa8c81f0a9ab2030acf058062819628e0d69a284381c6ded4a848bda51263",
+        "C:\\Users\\Abdelazim\\Downloads\\AI-Driven Football Tactical Analysis and Training Evaluation System — Prototype Evaluation.csv.zip": "0c10630dbc117de9185621be9d3695222b4837c7223de0811f0c932d566fa05f"
+      },
+      "asset_sha256": {
+        "05_evaluation/user_study/key_likert_distribution.svg": "7974c64a7d5433cf63823ca649abdc29f2a937f06a1725c9aaa08d51b568fa26",
+        "05_evaluation/user_study/key_likert_distribution.png": "984c9862f9f73a849ff9b8ddc9f49c00155f40831b257e8f46ccb447d8b16755"
+      },
+      "source_data_sha256": "265fa8c81f0a9ab2030acf058062819628e0d69a284381c6ded4a848bda51263"
+    },
+    {
+      "id": "completion_home_current",
+      "title": "Current homepage browser capture",
+      "kind": "screenshot",
+      "paths": [
+        "screenshots/completion_home_current.png"
+      ],
+      "source_paths": [
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\final_report_assets\\screenshots\\completion_home_current.png",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\frontend\\tactical-ai-insights-main\\package.json"
+      ],
+      "source_fields": "localhost:8081 homepage screenshot and current frontend dependency manifest",
+      "derived_calculation": "Unmodified 464-pixel browser viewport capture",
+      "caption": "Current homepage shows the official project title and navigation to the validated full-session result and showcase.",
+      "guardrail": "Mobile-width viewport; this capture is UI evidence, not a scientific result.",
+      "priority": "B",
+      "placement": "Implementation / UI capture",
+      "source_data": null,
+      "completion_pass": true,
+      "source_sha256": {
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\final_report_assets\\screenshots\\completion_home_current.png": "aeb9d7031d5cec16b9691f8c1800ebe05a610d1560d4821c16b1ba071468bfa0",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\frontend\\tactical-ai-insights-main\\package.json": "bf5607ea8d98fc91817f52ca021f47f31cf8474a80e8ade6bf75fb88921ebea6"
+      },
+      "asset_sha256": {
+        "screenshots/completion_home_current.png": "aeb9d7031d5cec16b9691f8c1800ebe05a610d1560d4821c16b1ba071468bfa0"
+      },
+      "capture_url": "http://127.0.0.1:8081/",
+      "capture_method": "Codex in-app browser screenshot"
+    },
+    {
+      "id": "final_ui_workflow",
+      "title": "Final UI workflow: entry to tactical events",
+      "kind": "composite",
+      "paths": [
+        "04_implementation/final_ui_workflow.png"
+      ],
+      "source_paths": [
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\final_report_assets\\screenshots\\completion_home_current.png",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\evaluation\\coach_study_iteration\\after_coach_overview.png",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\evaluation\\coach_study_iteration\\after_events.png"
+      ],
+      "source_fields": "Source screenshot pixels and recorded UI context",
+      "derived_calculation": "Crop and panel arrangement only; no UI content fabricated",
+      "caption": "Actual current homepage and recorded final coach-overview/event captures show navigation from entry to scoped full-session evidence.",
+      "guardrail": "Panels B/C are recorded Pass 01 final-iteration screenshots; mobile-width captures and crops, not fresh backend execution.",
+      "priority": "A",
+      "placement": "Implementation / final UI",
+      "source_data": null,
+      "completion_pass": true,
+      "source_sha256": {
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\final_report_assets\\screenshots\\completion_home_current.png": "aeb9d7031d5cec16b9691f8c1800ebe05a610d1560d4821c16b1ba071468bfa0",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\evaluation\\coach_study_iteration\\after_coach_overview.png": "a87af7904feda594ea3b77a731a7c5e517769e4ba29122243726bf2230871f2b",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\evaluation\\coach_study_iteration\\after_events.png": "593df226f4a4dd730be5e6b5e1bd2be6bcf98531475cb6c3385920b203f5ec29"
+      },
+      "asset_sha256": {
+        "04_implementation/final_ui_workflow.png": "65f95eb73392df58d71878e0156d46c0c56c3b543fa8962f21002c86ff13b198"
+      },
+      "panel_sources": [
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\final_report_assets\\screenshots\\completion_home_current.png",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\evaluation\\coach_study_iteration\\after_coach_overview.png",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\evaluation\\coach_study_iteration\\after_events.png"
+      ]
+    },
+    {
+      "id": "final_ui_evidence_review",
+      "title": "Final UI evidence review",
+      "kind": "composite",
+      "paths": [
+        "04_implementation/final_ui_evidence_review.png"
+      ],
+      "source_paths": [
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\evaluation\\coach_study_iteration\\after_events.png",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\evaluation\\coach_study_iteration\\after_coach_overview.png",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\evaluation\\coach_study_iteration_pass02\\after_full_session_summary_rich_report.png",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\evaluation\\coach_study_iteration\\after_video_early_26.54s.png"
+      ],
+      "source_fields": "recorded event navigation, withheld identity and Pass 02 rich report screenshots",
+      "derived_calculation": "Crop and panel arrangement only; private video frame omitted",
+      "caption": "Recorded final UI shows event-to-video navigation, explicit identity withholding and report/provenance presentation.",
+      "guardrail": "Recorded UI evidence only; the rich-report panel includes technical provenance and does not claim a new usability measurement.",
+      "priority": "B",
+      "placement": "Implementation / final UI",
+      "source_data": null,
+      "completion_pass": true,
+      "source_sha256": {
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\evaluation\\coach_study_iteration\\after_events.png": "593df226f4a4dd730be5e6b5e1bd2be6bcf98531475cb6c3385920b203f5ec29",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\evaluation\\coach_study_iteration\\after_coach_overview.png": "a87af7904feda594ea3b77a731a7c5e517769e4ba29122243726bf2230871f2b",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\evaluation\\coach_study_iteration_pass02\\after_full_session_summary_rich_report.png": "097928ade9f1a1e93b7475de67643c3c2b1fd130047d47ca6b29dad17c13db4d",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\evaluation\\coach_study_iteration\\after_video_early_26.54s.png": "ac350f86d183f02b50deff9a99c569fbc99c7bdf75bdd991e3f8cb06094544e9"
+      },
+      "asset_sha256": {
+        "04_implementation/final_ui_evidence_review.png": "65d8db46dd8338eec91dd15bbab75dcf60e8f8ee38dc68e66b099aa24ce6dc37"
+      },
+      "panel_sources": [
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\evaluation\\coach_study_iteration\\after_events.png",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\evaluation\\coach_study_iteration\\after_coach_overview.png",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\evaluation\\coach_study_iteration_pass02\\after_full_session_summary_rich_report.png"
+      ]
+    },
+    {
+      "id": "showcase_cases",
+      "title": "MANUALLY VERIFIED / ORACLE-ASSISTED CAPABILITY DEMONSTRATION",
+      "kind": "composite",
+      "paths": [
+        "05_evaluation/showcase/showcase_cases.png"
+      ],
+      "source_paths": [
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\evaluation\\coach_study_iteration\\after_showcase_c03.png",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\evaluation\\coach_study_iteration\\after_showcase_c04.png",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\evaluation\\coach_study_iteration\\after_showcase_c06.png"
+      ],
+      "source_fields": "Source screenshot pixels and recorded UI context",
+      "derived_calculation": "Crop and panel arrangement only; no UI content fabricated",
+      "caption": "The frozen C03, C04 and C06 showcase cases use manually verified identity, targets and tactical meaning; the panels are real recorded UI captures.",
+      "guardrail": "Oracle-assisted capability examples are distinct from automated full-session analysis and do not establish safe persistent identity.",
+      "priority": "A",
+      "placement": "Evaluation / showcase",
+      "source_data": null,
+      "completion_pass": true,
+      "source_sha256": {
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\evaluation\\coach_study_iteration\\after_showcase_c03.png": "d16a7500a1dd9e5b37299ef02d5ca6896723dd9de7c609b9e383d85ab7e38570",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\evaluation\\coach_study_iteration\\after_showcase_c04.png": "c41fae9432b065915308fa4cb8e6d11b7256ad1fb6a0a1b63384373a7359cdc0",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\evaluation\\coach_study_iteration\\after_showcase_c06.png": "7b1ce69d602645c3b8fbf641970778f501e52a48d27a4cdfdc468bd5b16a2957"
+      },
+      "asset_sha256": {
+        "05_evaluation/showcase/showcase_cases.png": "8d77ab8b73d15810789600a0431f721f90cf55d036c7a3988c6d1e970f38b48d"
+      },
+      "panel_sources": [
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\evaluation\\coach_study_iteration\\after_showcase_c03.png",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\evaluation\\coach_study_iteration\\after_showcase_c04.png",
+        "D:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System\\docs\\evaluation\\coach_study_iteration\\after_showcase_c06.png"
+      ]
+    }
+  ],
+  "research_drive_access_at_initial_generation": "Mounted after discovery; final Vision, ASR and LLM records reconciled directly on G drive",
+  "research_safety": "Read-only inputs; no inference, retraining or research reruns.",
+  "completion_pass": {
+    "added_entries": 13,
+    "original_entries_preserved": 41,
+    "excluded_as_redundant": [],
+    "new_inference": false
+  }
+}

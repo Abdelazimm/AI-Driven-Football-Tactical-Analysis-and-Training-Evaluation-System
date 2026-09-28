@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "catalog_entries": 54,
+  "counts": {
+    "figures": 29,
+    "tables": 15,
+    "screenshots": 7,
+    "composites": 3,
+    "source_data": 12
+  },
+  "svg_png_pairs_valid": 29,
+  "png_dpi_minimum": 300,
+  "all_catalogued_asset_hashes_match": true,
+  "all_recorded_source_hashes_match": true,
+  "all_tables_readable": true,
+  "errors": []
+}

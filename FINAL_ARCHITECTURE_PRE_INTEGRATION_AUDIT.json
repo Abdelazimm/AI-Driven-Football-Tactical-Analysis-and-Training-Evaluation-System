@@ -1,0 +1,281 @@
+{
+  "audit_metadata": {
+    "title": "CM3070 Final Architecture Pre-Integration Audit",
+    "project": "AI-Driven Football Tactical Analysis and Training Evaluation System",
+    "audit_timestamp_utc": "2026-09-26T07:05:00Z",
+    "audit_type": "READ_ONLY_COMPLETE_ARCHITECTURE_AUDIT",
+    "audit_status": "COMPLETE_BASELINE_ESTABLISHED",
+    "primary_product_workspace": "d:\\Final project videos transcripts\\AI-Driven Football Tactical Analysis and Training Evaluation System",
+    "secondary_research_workspace": "G:\\My Drive\\Football_Training_Assistant_MVP"
+  },
+  "workspace_authority": {
+    "product_architecture_authority": {
+      "workspace": "primary_product_workspace",
+      "authoritative_for": [
+        "frontend_application",
+        "backend_fastapi_control_plane",
+        "supabase_database_schema_and_migrations",
+        "supabase_storage_service",
+        "authoritative_ffprobe_media_validation",
+        "worker_dispatch_atomic_idempotency",
+        "worker_callback_hmac_security",
+        "modal_deployment_harness",
+        "product_automated_test_suites",
+        "golden_showcase_runtime_service"
+      ]
+    },
+    "methodology_research_authority": {
+      "workspace": "secondary_research_workspace",
+      "authoritative_for": [
+        "vision_methodologies_m1_m2_m3",
+        "vision_evaluation_protocols_and_dense_gt",
+        "frozen_asr_methodology_and_contract",
+        "frozen_llm_methodology_and_patch_001_validator",
+        "homography_and_pitch_kinematics_calibration",
+        "canonical_scientific_evidence"
+      ]
+    },
+    "duplication_analysis": {
+      "frontend": "Research workspace contains obsolete 3-file static prototype (index.html, index.css, app.js). Primary workspace contains modern TanStack Start SSR application.",
+      "backend": "Research workspace contains monolithic server.py prototype. Primary workspace contains modular FastAPI control plane.",
+      "pipeline": "Research workspace contains operational pipeline scripts (asr.py, homography.py, fusion.py, validator.py, reporter.py). Primary workspace contains stub interfaces raising NotImplementedError."
+    },
+    "reconciliation_required": [
+      "Update backend/app/core/model_manifest.yaml to replace stale qwen3:8b reference with frozen llama3.1:8b (digest 46e0c10c... and prompt SHA ab95a835...).",
+      "Wire frontend/tactical-ai-insights-main/src/routes/showcase.tsx to consume backend /api/v1/showcase endpoint instead of static constants.",
+      "Port and adapt research pipeline modules into primary backend/app/pipeline/ once Vision selection is frozen."
+    ]
+  },
+  "subsystem_status": {
+    "frontend": {
+      "framework": "React 19.0.0 + TanStack Start 1.170.18 + Vite 8.1.5 + Tailwind CSS 4.2.1",
+      "status": "IMPLEMENTED_AND_WORKING",
+      "build_status": "PASS_CLEAN_BUILD_0_ERRORS",
+      "routes": {
+        "/": "WORKING_PARTIAL",
+        "/analysis/new": "IMPLEMENTED_AND_WORKING",
+        "/analysis/$jobId": "IMPLEMENTED_AND_WORKING",
+        "/analysis/$jobId/results": "WORKING_PARTIAL",
+        "/analysis/processing": "LEGACY_PREVIEW",
+        "/results": "LEGACY_PREVIEW",
+        "/showcase": "PARTIAL_MOCKED",
+        "/comparisons": "IMPLEMENTED_AND_WORKING",
+        "/research": "IMPLEMENTED_AND_WORKING"
+      }
+    },
+    "backend_control_plane": {
+      "framework": "FastAPI 0.115.6 + Uvicorn 0.34.0 + Pydantic 2.10.4",
+      "status": "IMPLEMENTED_AND_WORKING",
+      "api_version": "v1",
+      "endpoints": [
+        "/api/v1/sessions",
+        "/api/v1/sessions/{id}",
+        "/api/v1/sessions/{id}/upload-intent",
+        "/api/v1/sessions/{id}/complete",
+        "/api/v1/jobs",
+        "/api/v1/jobs/{id}",
+        "/api/v1/jobs/{id}/dispatch",
+        "/api/v1/jobs/{id}/result",
+        "/api/v1/internal/jobs/{id}/progress",
+        "/api/v1/showcase",
+        "/api/v1/showcase/{case_id}",
+        "/api/v1/calibrations"
+      ]
+    },
+    "database_and_migrations": {
+      "database": "Supabase PostgreSQL",
+      "status": "IMPLEMENTED_AND_VERIFIED_LIVE",
+      "applied_migrations": [
+        "001_phase3_initial_schema.sql",
+        "002_fix_immutability_and_rls.sql",
+        "003_job_lifecycle_and_dispatch_idempotency.sql",
+        "004_media_validation.sql"
+      ],
+      "key_invariants": {
+        "dispatch_idempotency_index": "uq_active_worker_dispatch_per_job",
+        "media_validation_status_enum": ["PENDING", "VALIDATED", "VALIDATION_FAILED"],
+        "job_status_enum": ["QUEUED", "PROCESSING", "COMPLETED", "COMPLETED_WITH_LIMITATIONS", "FAILED"],
+        "progress_percent_constraint": "CHECK (progress_percent >= 0 AND progress_percent <= 100)"
+      }
+    },
+    "storage_and_media_validation": {
+      "status": "IMPLEMENTED_AND_WORKING",
+      "storage_provider": "Supabase Storage (private buckets: raw-videos, audio-extractions, artifacts)",
+      "validation_service": "MediaValidationService + FFProbeMediaProbeService",
+      "server_enforced_duration_cap_seconds": 300.0,
+      "container_whitelist": ["mov", "mp4", "m4v"],
+      "video_codec_whitelist": ["h264", "hevc", "mp4v-20", "mpeg4"]
+    },
+    "modal_compute": {
+      "status": "HARNESS_IMPLEMENTED_GPU_PIPELINE_NOT_LOADED",
+      "role": "Control plane smoke test and callback verification",
+      "compute_tier": "CPU-only (cpu=2.0, memory=2048)",
+      "gpu_attached": false,
+      "ai_inference_loaded": false
+    },
+    "vision_subsystem": {
+      "status": "VISION_METHOD_PENDING_FINAL_EVALUATION_SELECTION",
+      "detector_implementation": "IMPLEMENTED (Stage 4B fine-tuned YOLO11m, best.pt, SHA-256 f6b3fe6f..., 3 horizontal tiles, 15% overlap, global NMS IoU 0.70)",
+      "tracking_implementation": "STUB_RAISES_NOT_IMPLEMENTED_ERROR",
+      "candidate_methods": [
+        "METHOD_1_YOLO11_BOTSORT",
+        "METHOD_2_RFDETR_GTATRACK",
+        "METHOD_3_YOLO26_SRITRACK"
+      ],
+      "evaluation_status": "PENDING_DENSE_GT_ANNOTATION_AND_TRACKEVAL_FREEZE",
+      "automated_identity_status_real_session": "FAIL_HIGH_FRAGMENTATION",
+      "fragmentation_ratio": 6.1667,
+      "fragmentation_threshold": 1.5,
+      "player_level_reporting": "WITHHELD"
+    },
+    "asr_subsystem": {
+      "status": "FROZEN_RESEARCH_EXTERNAL",
+      "selected_model": "faster-whisper base.en",
+      "framework": "faster-whisper==1.2.1 / CTranslate2",
+      "execution_target": "CPU int8, 8 threads",
+      "primary_repo_status": "STUB_RAISES_NOT_IMPLEMENTED_ERROR",
+      "research_repo_status": "FULLY_OPERATIONAL_AND_TESTED"
+    },
+    "llm_subsystem": {
+      "status": "FROZEN_RESEARCH_EXTERNAL",
+      "selected_model": "llama3.1:8b",
+      "authoritative_digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+      "system_prompt_sha256": "ab95a8350208367aee29395866ece720c17c85c8d03a79b33b052e99442ae9ce",
+      "grounding_validator": "LLM_GROUNDING_VALIDATOR_PATCH_001",
+      "deterministic_gates_count": 8,
+      "patch_regression_tests_passed": 13,
+      "primary_repo_status": "STUB_RAISES_NOT_IMPLEMENTED_ERROR",
+      "research_repo_status": "FULLY_OPERATIONAL_AND_TESTED"
+    },
+    "multimodal_fusion": {
+      "status": "FROZEN_RESEARCH_EXTERNAL",
+      "primary_repo_status": "STUB_RAISES_NOT_IMPLEMENTED_ERROR",
+      "research_repo_status": "FULLY_OPERATIONAL_AND_TESTED"
+    },
+    "homography_and_kinematics": {
+      "status": "FROZEN_RESEARCH_EXTERNAL",
+      "classification": "MODERATE_CONFIDENCE_MEASURED_METRIC_ESTIMATE",
+      "pitch_dimensions_m": {
+        "length": 19.31,
+        "width": 19.88
+      },
+      "config_path": "config/3v3_homography_measured_metric_corrected.json",
+      "config_sha256": "d0e9680fdcdf3b5f6290ebf1f0e7cd1dbedcd6527f88873d857babe968cbd507",
+      "validated_rmse_m": 0.651,
+      "speed_clamp_kmh": 36.0,
+      "primary_repo_status": "STUB_RAISES_NOT_IMPLEMENTED_ERROR",
+      "research_repo_status": "FULLY_OPERATIONAL_AND_TESTED"
+    },
+    "golden_showcase": {
+      "status": "IMMUTABLE_FIXTURES_AND_MEDIA_AVAILABLE",
+      "scientific_status": "PASS_FINAL_ORACLE_ASSISTED_CAPABILITY_SHOWCASE",
+      "mode": "ORACLE_ASSISTED_CAPABILITY_DEMONSTRATION",
+      "cases": ["C03", "C04", "C06"],
+      "backend_service": "GoldenFixtureService (OPERATIONAL)",
+      "frontend_wiring": "PARTIAL_MOCKED"
+    }
+  },
+  "test_verification_summary": {
+    "primary_backend_pytest": {
+      "total_tests": 150,
+      "passed": 150,
+      "failed": 0,
+      "pass_rate_percent": 100.0,
+      "duration_seconds": 1.30
+    },
+    "primary_frontend_build": {
+      "build_tool": "Vite 8.1.5 + Nitro SSR",
+      "status": "PASS",
+      "error_count": 0
+    },
+    "research_workspace_tests": {
+      "validator_patch_regression_tests": {
+        "total": 13,
+        "passed": 13,
+        "pass_rate_percent": 100.0
+      },
+      "real_session_smoke_test": {
+        "session_id": "REAL_3V3_SMOKE_TEST_001",
+        "video_duration_seconds": 339.87,
+        "wall_clock_seconds": 101.88,
+        "status": "COMPLETED_WITH_LIMITATIONS"
+      }
+    }
+  },
+  "gap_register": [
+    {
+      "id": "GAP-P0-1",
+      "severity": "P0 — BLOCKS FINAL PROTOTYPE",
+      "component": "AI Pipeline Integration",
+      "description": "Primary workspace backend/app/pipeline/ stubs raise NotImplementedError and MethodologyExecutorRegistry blocks dispatch with HTTP 409.",
+      "remediation": "Port and adapt tested pipeline modules from research workspace (asr.py, homography.py, fusion.py, validator.py, reporter.py) into primary backend."
+    },
+    {
+      "id": "GAP-P0-2",
+      "severity": "P0 — BLOCKS FINAL PROTOTYPE",
+      "component": "Vision Methodology Selection",
+      "description": "Final tracker/identity selection among M1, M2, and M3 awaits human dense-GT annotation and TrackEval scoring on 4 challenge clips.",
+      "remediation": "Complete dense-GT TrackEval benchmark, record winning method, and integrate its tracker into backend/app/pipeline/tracking.py."
+    },
+    {
+      "id": "GAP-P0-3",
+      "severity": "P0 — BLOCKS FINAL PROTOTYPE",
+      "component": "Modal Cloud Compute",
+      "description": "modal_app/worker.py is a CPU smoke harness and does not run AI models.",
+      "remediation": "Configure Modal container with GPU, dependencies, and pipeline execution script."
+    },
+    {
+      "id": "GAP-P1-1",
+      "severity": "P1 — MUST FIX BEFORE SUBMISSION",
+      "component": "Model Manifest",
+      "description": "backend/app/core/model_manifest.yaml references qwen3:8b instead of frozen llama3.1:8b.",
+      "remediation": "Update model_manifest.yaml with llama3.1:8b digest 46e0c10c... and system prompt SHA-256 ab95a835...."
+    },
+    {
+      "id": "GAP-P1-2",
+      "severity": "P1 — MUST FIX BEFORE SUBMISSION",
+      "component": "Frontend Showcase Route",
+      "description": "frontend/tactical-ai-insights-main/src/routes/showcase.tsx uses hardcoded static cards rather than calling /api/v1/showcase.",
+      "remediation": "Wire showcase.tsx to fetch from /api/v1/showcase and render golden media."
+    },
+    {
+      "id": "GAP-P2-1",
+      "severity": "P2 — IMPORTANT HARDENING",
+      "component": "Runtime Consistency",
+      "description": "Local development environment is running Python 3.8.10, whereas contracts and Modal specify Python >= 3.10.",
+      "remediation": "Standardize local development virtual environment to Python 3.10+."
+    },
+    {
+      "id": "GAP-P2-2",
+      "severity": "P2 — IMPORTANT HARDENING",
+      "component": "Frontend Legacy Routes",
+      "description": "Preview routes /analysis/processing and /results remain in build.",
+      "remediation": "Cleanly deprecate or redirect preview routes."
+    },
+    {
+      "id": "GAP-P3-1",
+      "severity": "P3 — OPTIONAL / FUTURE WORK",
+      "component": "Authentication UI",
+      "description": "System runs in single-tenant dev mode without Supabase Auth UI.",
+      "remediation": "Implement login/signup and JWT verification in production release."
+    }
+  ],
+  "critical_questions_assessment": {
+    "1_frontend_fundamentally_complete": true,
+    "2_backend_fundamentally_complete": {
+      "control_plane": true,
+      "pipeline_execution": false
+    },
+    "3_supabase_integration_complete": true,
+    "4_modal_integration_usable": {
+      "control_harness": true,
+      "gpu_inference": false
+    },
+    "5_ai_orchestration_real_or_mocked": "Stubbed with fail-closed safeguards in primary product; 100% real and tested in secondary research workspace.",
+    "6_frozen_asr_production_wired": false,
+    "7_frozen_llm_production_wired": false,
+    "8_vision_production_slot": "VISION_METHOD_PENDING_FINAL_EVALUATION_SELECTION (Stage 4B YOLO11m detector implemented; tracker pending dense-GT evaluation).",
+    "9_exact_work_remaining_after_vision_selection": "Port research pipeline modules into primary backend/app/pipeline/, update model manifest, configure Modal worker container with GPU/dependencies, and wire frontend showcase route.",
+    "10_effort_classification": "MEDIUM_INTEGRATION_TASK (Estimated 3 to 5 engineering days; NOT a major rebuild)."
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "classification": "FINAL_MEASURED_AND_OBSERVED_TIMINGS",
+  "measurement_note": "Exact local timestamps and Modal worker component timers are separated from approximate 15-second API stage observations. Uninstrumented stages remain null.",
+  "original_upload_rejection": {
+    "http_status": 413,
+    "bytes_transferred": 0,
+    "timings_preserved_at": "scratch/phase6_original_failure_timings.json"
+  },
+  "local_transport_encode": {
+    "start_timestamp_utc_from_file_creation": "2026-09-27T10:24:55.819668+00:00",
+    "end_timestamp_utc_from_file_modification": "2026-09-27T10:33:50.808197+00:00",
+    "duration_s_from_file_timestamps": 534.989,
+    "status": "COMPLETED"
+  },
+  "storage_transport": {
+    "upload_started_at_utc": "2026-09-27T10:39:36.946123+00:00",
+    "upload_completed_at_utc": "2026-09-27T10:39:59.925267+00:00",
+    "upload_duration_s": 22.979,
+    "media_validation_completed_at_utc": "2026-09-27T10:40:12.175394+00:00",
+    "upload_to_validation_s": 35.229,
+    "bytes_uploaded": 43997249
+  },
+  "dispatch": {
+    "job_created_at_utc": "2026-09-27T10:40:19.788701+00:00",
+    "dispatched_at_utc": "2026-09-27T10:40:23.038928+00:00",
+    "job_creation_to_dispatch_s": 3.25
+  },
+  "api_stage_observations": {
+    "VALIDATING": {
+      "first_observed_at_utc": null,
+      "next_stage_first_observed_at_utc": null,
+      "observed_duration_upper_bound_s": null,
+      "measurement_scope": "NOT_OBSERVED"
+    },
+    "PREPROCESSING": {
+      "first_observed_at_utc": null,
+      "next_stage_first_observed_at_utc": null,
+      "observed_duration_upper_bound_s": null,
+      "measurement_scope": "NOT_OBSERVED"
+    },
+    "DETECTING": {
+      "first_observed_at_utc": "2026-09-27T10:42:50.012893+00:00",
+      "next_stage_first_observed_at_utc": "2026-09-27T11:13:52.395990+00:00",
+      "observed_duration_upper_bound_s": 1862.383,
+      "measurement_scope": "15-second status polling; transitions are approximate, not exact stage execution timings"
+    },
+    "IDENTITY_EVALUATION": {
+      "first_observed_at_utc": null,
+      "next_stage_first_observed_at_utc": null,
+      "observed_duration_upper_bound_s": null,
+      "measurement_scope": "NOT_OBSERVED"
+    },
+    "AUDIO_EXTRACTION": {
+      "first_observed_at_utc": "2026-09-27T11:13:52.395990+00:00",
+      "next_stage_first_observed_at_utc": "2026-09-27T11:14:22.880600+00:00",
+      "observed_duration_upper_bound_s": 30.485,
+      "measurement_scope": "15-second status polling; transitions are approximate, not exact stage execution timings"
+    },
+    "TRANSCRIBING": {
+      "first_observed_at_utc": null,
+      "next_stage_first_observed_at_utc": null,
+      "observed_duration_upper_bound_s": null,
+      "measurement_scope": "NOT_OBSERVED"
+    },
+    "FUSION": {
+      "first_observed_at_utc": null,
+      "next_stage_first_observed_at_utc": null,
+      "observed_duration_upper_bound_s": null,
+      "measurement_scope": "NOT_OBSERVED"
+    },
+    "GENERATING_REPORT": {
+      "first_observed_at_utc": null,
+      "next_stage_first_observed_at_utc": null,
+      "observed_duration_upper_bound_s": null,
+      "measurement_scope": "NOT_OBSERVED"
+    },
+    "UPLOADING_RESULTS": {
+      "first_observed_at_utc": "2026-09-27T11:14:22.880600+00:00",
+      "next_stage_first_observed_at_utc": null,
+      "observed_duration_upper_bound_s": null,
+      "measurement_scope": "15-second status polling; transitions are approximate, not exact stage execution timings"
+    }
+  },
+  "modal_worker_measured_component_seconds": {
+    "media_acquisition": 10.703,
+    "model_verification": 3.336,
+    "pipeline_total": 2012.314,
+    "persistence": 4.459,
+    "worker_total": 2032.682
+  },
+  "individual_pipeline_stage_seconds": {
+    "vision": null,
+    "asr": null,
+    "fusion": null,
+    "report": null,
+    "reason": "These stages were not separately timed by the running worker; API observations give approximate boundaries only."
+  },
+  "terminal_status_observed_at_utc": "2026-09-27T11:14:38.251698+00:00"
+}

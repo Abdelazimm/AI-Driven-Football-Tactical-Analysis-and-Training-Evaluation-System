@@ -1,0 +1,63 @@
+{
+  "description": "Synthetic deterministic detection test fixture for testing tiling, coordinate remapping, and Global NMS duplicate suppression without model weights.",
+  "frame_dimensions": {
+    "width": 1920,
+    "height": 1080
+  },
+  "tile_configuration": {
+    "tile_count": 3,
+    "overlap_fraction": 0.15
+  },
+  "simulated_tile_detections": {
+    "tile_0": [
+      {
+        "description": "Person on left wing (purely in tile 0)",
+        "box": [100.0, 200.0, 150.0, 350.0],
+        "confidence": 0.88,
+        "class_id": 0
+      },
+      {
+        "description": "Person in seam between tile 0 and tile 1 (observed from tile 0)",
+        "box": [620.0, 400.0, 680.0, 560.0],
+        "confidence": 0.75,
+        "class_id": 0
+      }
+    ],
+    "tile_1": [
+      {
+        "description": "Same person in seam between tile 0 and tile 1 (observed from tile 1, higher confidence)",
+        "box": [15.0, 402.0, 74.0, 558.0],
+        "confidence": 0.89,
+        "class_id": 0
+      },
+      {
+        "description": "Person in midfield (center of tile 1)",
+        "box": [300.0, 150.0, 360.0, 320.0],
+        "confidence": 0.92,
+        "class_id": 0
+      },
+      {
+        "description": "Non-person object (should be filtered out by class_id)",
+        "box": [400.0, 450.0, 430.0, 480.0],
+        "confidence": 0.95,
+        "class_id": 32
+      },
+      {
+        "description": "Low confidence person (should be filtered out by confidence_threshold=0.20)",
+        "box": [500.0, 100.0, 550.0, 220.0],
+        "confidence": 0.12,
+        "class_id": 0
+      }
+    ],
+    "tile_2": [
+      {
+        "description": "Person on right wing (purely in tile 2)",
+        "box": [500.0, 300.0, 570.0, 480.0],
+        "confidence": 0.84,
+        "class_id": 0
+      }
+    ]
+  },
+  "expected_final_detections_count": 4,
+  "expected_suppressed_duplicates_count": 1
+}

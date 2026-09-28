@@ -1,0 +1,222 @@
+{
+  "contract_version": "P0_REV2A",
+  "status": "P0_CONTRACT_FREEZE_REV2A_READY_FOR_APPROVAL",
+  "project": "AI-Driven Football Tactical Analysis and Training Evaluation System",
+  "date": "2026-09-26",
+  "scientific_invariants": {
+    "research_code_frozen_readonly": true,
+    "automatic_research_reruns_prohibited": true,
+    "fabrication_prohibited": true,
+    "zero_mock_data_in_production": true
+  },
+  "coordinate_spaces": {
+    "media_source_space": {
+      "definition": "Probed video container resolution (e.g. 3840x2160 for 4K iPhone 16; dynamic for uploads)",
+      "canonical_bounding_box_target": true,
+      "format": "[x1, y1, x2, y2] source pixel coordinates"
+    },
+    "vision_working_space": {
+      "definition": "Fixed 1920x1080 tracking, homography, and association plane",
+      "resolution": [1920, 1080],
+      "native_runner_output_space_for_all_methods": true
+    },
+    "model_inference_space": {
+      "definition": "Internal neural network tensor input dimensions",
+      "m1_imgsz": 1280,
+      "m2_imgsz": 704,
+      "m3_imgsz": 1280
+    },
+    "adapter_coordinate_policy": {
+      "anti_double_scaling_rule": "Adapters MUST NOT apply internal tensor rescales (e.g. 704->1920 or 1280->1920) because runners already emit native VISION_WORKING_SPACE coordinates. Adapters apply ONLY the source transform: s_x = W_source / 1920.0, s_y = H_source / 1080.0."
+    }
+  },
+  "vision_methodologies": {
+    "m1_yolo11_botsort": {
+      "status": "FROZEN_BASELINE_COMPARISON",
+      "detector_checkpoint": "runs/method_1/M1_FORMAL_003_DOMAIN_ADAPTED/training/yolo11m_domain_adapted/weights/epoch28.pt",
+      "detector_filename": "epoch28.pt",
+      "detector_architecture": "YOLO11m custom-domain-adapted",
+      "detector_sha256": "ad908a9caf757f3f2b68a92d260da85a8308fb115e220b91d1bdccef31393f8b",
+      "detector_size_bytes": 104950959,
+      "reid_checkpoint": "runs/method_1/M1_FINAL_EVALUATION_BASELINE/checkpoints/yolo26n-reid.onnx",
+      "reid_sha256": "8529c383197ae4c468eda535d1b165f8b4162cf17bf5fbcff49c7cb6455bc0bb",
+      "reid_size_bytes": 9873245,
+      "tiling": {
+        "tile_count": 3,
+        "overlap_fraction": 0.15,
+        "imgsz": 1280
+      },
+      "detection_thresholds": {
+        "tracker_input_candidate_confidence_floor": 0.05,
+        "standalone_qualification_confidence": 0.25,
+        "tile_nms_iou": 0.70,
+        "global_nms_iou": 0.50,
+        "historical_stage4b_leakage_rejected": true
+      },
+      "tracker": {
+        "algorithm": "BoT-SORT",
+        "track_high_thresh": 0.35,
+        "track_low_thresh": 0.10,
+        "new_track_thresh": 0.35,
+        "track_buffer": 120,
+        "match_thresh": 0.85,
+        "gmc_method": "none",
+        "proximity_thresh": 0.15,
+        "appearance_thresh": 0.88,
+        "with_reid": true,
+        "fuse_score": true
+      },
+      "adapter_transform": {
+        "native_runner_output": "VISION_WORKING_SPACE (1920x1080)",
+        "source_scale_formula": "s_x = W_source / 1920.0, s_y = H_source / 1080.0"
+      }
+    },
+    "m2_rfdetr_gtatrack": {
+      "status": "RECOMMENDED_DEFAULT_AUTO",
+      "detector_checkpoint": "runs/method_2/M2_FORMAL_001_DOMAIN_ADAPTED/checkpoint_best_total.pth",
+      "detector_filename": "checkpoint_best_total.pth",
+      "detector_architecture": "RF-DETR-L",
+      "detector_sha256": "7539cfb3eca3125136c1446d7a522a5a46abb14136d55f79aec8daececc00b85",
+      "detector_size_bytes": 134747227,
+      "operating_point": 0.50,
+      "external_nms": false,
+      "reid_checkpoint": "runs/method_2/M2_P0_preflight/checkpoints/sports_model.pth.tar-60",
+      "reid_filename": "sports_model.pth.tar-60",
+      "reid_architecture": "OSNet-x1.0",
+      "reid_sha256": "8d5b2fd8763db34c2aad69810466adf413f0426d9f8119d322227e0e639c5fbd",
+      "reid_size_bytes": 30393613,
+      "tracklet_association": "Deep-EIoU",
+      "global_association": "GTA-Track",
+      "adapter_transform": {
+        "native_runner_output": "VISION_WORKING_SPACE (1920x1080)",
+        "internal_tensor_rescale_prohibited": true,
+        "source_scale_formula": "s_x = W_source / 1920.0, s_y = H_source / 1080.0"
+      }
+    },
+    "m3_yolo26_sritrack": {
+      "status": "EXPERIMENTAL_COMPARISON",
+      "detector_checkpoint": "methodology_comparison/runs/method_3/M3_FORMAL_001_DOMAIN_ADAPTED/checkpoints/M3_ADAPTED_YOLO26M.pt",
+      "detector_sha256": "ea9b3e434ffd7c2ca7ebcd563497accd90e03cfc8da1e8e9fc883e4790199dbf",
+      "detector_size_bytes": 44081689,
+      "operating_point": 0.30,
+      "tracker": {
+        "algorithm": "SRITrack-v1",
+        "track_new_th": 0.30,
+        "track_new_th_provenance": "amended from source-default 0.70 via P5A score compatibility amendment",
+        "track_high_th": 0.60,
+        "track_buffer": 1000
+      },
+      "adapter_transform": {
+        "native_runner_output": "VISION_WORKING_SPACE (1920x1080)",
+        "unproven_720p_rejected": true,
+        "source_scale_formula": "s_x = W_source / 1920.0, s_y = H_source / 1080.0"
+      }
+    }
+  },
+  "identity_assurance": {
+    "method_formal_identity_status": "FAIL_UNSAFE_MERGE",
+    "method_formal_identity_evidence_basis": "FORMAL_DENSE_GT",
+    "runtime_identity_evidence_basis": "RUNTIME_HEURISTIC_ONLY",
+    "runtime_diagnostics_cannot_claim_formal_unsafe_merge": true,
+    "player_level_analysis_allowed": false,
+    "fail_closed_status": "COMPLETED_WITH_LIMITATIONS",
+    "withholding_reason": "Automated tracking methodology has not demonstrated sufficiently safe persistent physical-player identity under formal benchmark evaluation. Accumulated player-level analytics are withheld."
+  },
+  "kinematics": {
+    "velocity_continuity_time_threshold_seconds": 0.50,
+    "velocity_continuity_rule": "delta_t_seconds = (current_frame - prev_frame) / actual_probed_fps; if delta_t_seconds > 0.50 -> reset velocity continuity, do not interpolate across gap",
+    "track_buffer_distinction": "120 frames belongs strictly to M1 BoT-SORT track buffer, NOT kinematics continuity",
+    "median_filter_window": 7,
+    "outlier_speed_threshold_kmh": 36.0,
+    "outlier_policy": "REJECT_AND_EXCLUDE_OUTLIER",
+    "clamping_prohibited": true
+  },
+  "calibration_permission_matrix": {
+    "CAMERA_SPECIFIC_INDEPENDENTLY_VALIDATED": {
+      "description": "Research pitch geometry with independent landmark validation",
+      "homography_sha256": "d0e9680fdcdf3b5f6290ebf1f0e7cd1dbedcd6527f88873d857babe968cbd507",
+      "rmse_m": 0.6505,
+      "metric_reporting_allowed": true,
+      "pitch_radar_visualization_allowed": true
+    },
+    "GEOMETRIC_SOLVE_ONLY": {
+      "description": "User 4-point corner solve without ground-truth landmark validation",
+      "rmse_m": null,
+      "metric_reporting_allowed": false,
+      "metric_suppression_strictly_enforced": true,
+      "pitch_radar_visualization_allowed": true
+    },
+    "NO_METRIC_CALIBRATION": {
+      "description": "Uncalibrated upload or degenerated homography",
+      "metric_reporting_allowed": false,
+      "pitch_radar_visualization_allowed": false
+    }
+  },
+  "asr_contract": {
+    "engine": "faster-whisper==1.2.1",
+    "model": "base.en",
+    "backend": "CTranslate2",
+    "device": "cpu",
+    "compute_type": "int8",
+    "cpu_threads": 8,
+    "audio_preprocessing": "16 kHz mono PCM WAV",
+    "decoding_parameters": {
+      "task": "transcribe",
+      "language": "en",
+      "beam_size": 5,
+      "word_timestamps": true,
+      "vad_filter": true,
+      "min_silence_duration_ms": 500,
+      "condition_on_previous_text": false
+    },
+    "tactical_taxonomy": {
+      "categories": [
+        "Defensive",
+        "Offensive",
+        "Pressing",
+        "Passing",
+        "Positioning / Hold Ground"
+      ],
+      "purged_categories": ["COVERAGE", "TRANSITION", "TACTICAL_DISCIPLINE"],
+      "keyword_mappings": {
+        "Defensive": ["defend", "defence", "defense", "drop back", "mark", "cover"],
+        "Offensive": ["attack", "shoot", "go forward", "make a run", "run forward"],
+        "Pressing": ["press", "close down", "pressure", "sprint"],
+        "Passing": ["pass", "play the ball", "switch the ball"],
+        "Positioning / Hold Ground": ["hold your position", "hold position", "hold your ground", "stay in position", "stick to your zone", "stay in your zone", "keep your shape"]
+      }
+    },
+    "failure_policy": "Explicit typed ASRFailure engaging COMPLETED_WITH_LIMITATIONS; zero historical transcript fallback"
+  },
+  "llm_report_contract": {
+    "model": "llama3.1:8b",
+    "model_digest": "46e0c10c039e019119339687c3c1757cc81b9da49709a3b3924863ba87ca666e",
+    "system_prompt_sha256": "ab95a8350208367aee29395866ece720c17c85c8d03a79b33b052e99442ae9ce",
+    "formal_benchmark_timeout_seconds": 120,
+    "initial_production_default_timeout_seconds": 120,
+    "production_timeout_configurable": true,
+    "provisional_candidate_policy_timeout_seconds": 45,
+    "generation_parameters": {
+      "temperature": 0.0,
+      "seed": 42,
+      "top_p": 1.0,
+      "num_ctx": 4096,
+      "retries": 0
+    },
+    "grounding_validator": "LLM_GROUNDING_VALIDATOR_PATCH_001",
+    "gates_enforced": 8,
+    "fallback_policy": "ReportStatus.DETERMINISTIC_FALLBACK engages on timeout or validator rejection without crashing"
+  },
+  "fusion_engine": {
+    "reaction_window": {
+      "t_eval_start_offset_s": 2.0,
+      "t_eval_end_offset_s": 6.0,
+      "legacy_window_rejected": true
+    },
+    "oracle_readback_metrics": {
+      "c04_separation_drop": "14.30m -> 7.96m",
+      "c06_min_separation": ["0.70m", "0.49m"],
+      "c03_zone_retention": "100% over 6.0s"
+    }
+  }
+}
