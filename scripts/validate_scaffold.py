@@ -63,9 +63,6 @@ def run_checks():
         ".gitignore",
         ".env.example",
         "README.md",
-        "AGENTS.md",
-        os.path.join("docs", "architecture.md"),
-        os.path.join("docs", "deployment_targets.md"),
         os.path.join("golden", "README.md"),
         os.path.join("golden", "manifest.json"),
         os.path.join("backend", "app", "core", "model_manifest.yaml"),
@@ -193,24 +190,24 @@ def run_checks():
     print("\n" + "=" * 60)
     print("7. VERIFYING SCIENTIFIC BOUNDARIES & DEPLOYMENT DECISION")
     print("=" * 60)
-    agents_path = os.path.join(base_dir, "AGENTS.md")
-    with open(agents_path, "r", encoding="utf-8") as f:
-        agents_content = f.read()
+    readme_path = os.path.join(base_dir, "README.md")
+    with open(readme_path, "r", encoding="utf-8") as f:
+        readme_content = f.read()
 
-    if "FAIL_HIGH_FRAGMENTATION" in agents_content:
+    if "FAIL_HIGH_FRAGMENTATION" in readme_content:
         print("  [OK] Persistent identity failure (FAIL_HIGH_FRAGMENTATION) recorded.")
     else:
-        errors.append("AGENTS.md missing explicit FAIL_HIGH_FRAGMENTATION boundary.")
+        errors.append("README.md missing explicit FAIL_HIGH_FRAGMENTATION boundary.")
 
-    if "Stage 4B fine-tuned YOLO11m" in agents_content and "SELECTED_FOR_DEPLOYMENT" in agents_content:
+    if "Stage 4B fine-tuned YOLO11m" in readme_content and "SELECTED_FOR_DEPLOYMENT" in readme_content:
         print("  [OK] Deployment detector (Stage 4B fine-tuned YOLO11m) explicitly recorded.")
     else:
-        errors.append("AGENTS.md missing explicit Stage 4B fine-tuned YOLO11m deployment detector record.")
+        errors.append("README.md missing explicit Stage 4B fine-tuned YOLO11m deployment detector record.")
 
-    if "PASS_FINAL_ORACLE_ASSISTED_CAPABILITY_SHOWCASE" in agents_content:
+    if "PASS_FINAL_ORACLE_ASSISTED_CAPABILITY_SHOWCASE" in readme_content:
         print("  [OK] Showcase status PASS_FINAL_ORACLE_ASSISTED_CAPABILITY_SHOWCASE recorded.")
     else:
-        errors.append("AGENTS.md missing showcase status record.")
+        errors.append("README.md missing showcase status record.")
 
     print("\n" + "=" * 60)
     print("8. VERIFYING RESEARCH PROVENANCE PRESERVATION")
@@ -218,11 +215,6 @@ def run_checks():
     handoff_dir = os.path.join(base_dir, "docs", "research_handoff")
     handoff_files = [
         "integration_audit.json",
-        "integration_audit.md",
-        "integration_dependency_audit.md",
-        "integration_file_map.csv",
-        "integration_handoff_to_antigravity.md",
-        "integration_runtime_risks.md",
     ]
     all_handoff_present = True
     for hf in handoff_files:

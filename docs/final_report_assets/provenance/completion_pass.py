@@ -82,21 +82,21 @@ def canvas(title,width=13,height=6):
     ax.text(.025,.975,title,ha="left",va="top",fontsize=16,fontweight="bold",color=NAVY)
     return fig,ax
 
-P0=ROOT/"P0_ARCHITECTURE_CONTRACT_FREEZE_REV2A.json"
+P0=ROOT/"docs/reproducibility/P0_ARCHITECTURE_CONTRACT_FREEZE_REV2A.json"
 PKG=ROOT/"frontend/tactical-ai-insights-main/package.json"
 API=ROOT/"backend/app/api/jobs.py"
 MAIN=ROOT/"backend/app/main.py"
 DISPATCH=ROOT/"backend/app/services/dispatch_service.py"
 WORKER=ROOT/"modal_app/worker.py"
 CALLBACK=ROOT/"backend/app/api/internal.py"
-AGENTS=ROOT/"AGENTS.md"
+README=ROOT/"README.md"
 ASR=ROOT/"backend/app/services/asr_service.py"
 KIN=ROOT/"backend/app/services/kinematics_service.py"
 CAL=ROOT/"backend/app/services/calibration_service.py"
 ADAPTER=ROOT/"backend/app/adapters/common_adapter.py"
 VISION=RESEARCH/"methodology_comparison/final_evaluation/whole_system_challenge_evaluation/FINAL_WHOLE_SYSTEM_AGGREGATE_METRICS.csv"
 PROTOCOL=RESEARCH/"methodology_comparison/final_vision_evaluation/formal_fresh_state_per_clip/FORMAL_EXECUTION_PROTOCOL.json"
-TRANSPORT=ROOT/"IMPLEMENTATION_PHASE6_TRANSPORT_COPY_MANIFEST.json"
+TRANSPORT=ROOT/"docs/phase6/IMPLEMENTATION_PHASE6_TRANSPORT_COPY_MANIFEST.json"
 
 # Detailed product architecture: current application code, not stale planning documents.
 fig,ax=canvas("Final product architecture: control, private storage, and compute",15,7.4)
@@ -141,8 +141,8 @@ arrow(ax,.57,.31,.43,.31,ORANGE)
 ax.text(.5,.34,"controlled adaptation",ha="center",fontsize=9,color=ORANGE,fontweight="bold")
 ax.text(.5,.10,"Research evidence is cited or adapted into product packages; source artifacts are never rerun or overwritten",ha="center",fontsize=9,color=RED)
 save_fig(fig,"02_design_architecture/product_research_boundary",
-         title="Product versus frozen research boundary",sources=[AGENTS,P0,VISION],
-         fields="AGENTS research safety; P0 scientific invariants; direct final evaluation artifact",
+         title="Product versus frozen research boundary",sources=[README,P0,VISION],
+         fields="README research safety; P0 scientific invariants; direct final evaluation artifact",
          calculation="Schematic only",caption="The D: workspace owns product code and contracts, while the mounted G: workspace supplies frozen Vision, ASR, LLM, homography and formal-evaluation evidence through controlled read-only adaptation.",
          guardrail="The displayed absolute workspace paths are provenance labels, not application runtime dependencies.",
          priority="A",placement="Requirements and Design / research boundary")

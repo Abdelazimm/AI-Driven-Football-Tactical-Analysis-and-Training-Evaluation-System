@@ -12,7 +12,7 @@
 | **Detector Checkpoint Path** | `/content/drive/MyDrive/Football_Training_Assistant_MVP/runs/vision_20260805T232509Z_d2f9bc0d/stage_4/fine_tuning_pilot/yolo11m_pilot_memory_safe/weights/best.pt` |
 | **Detector File Size** | 40,539,756 bytes |
 | **Detector Checkpoint SHA-256**| `f6b3fe6f21256c61083ccc6c6b96dffeb4490c65c3ce150c3924a0fa353e6f5e` |
-| **Audit Handoff Reference** | `docs/research_handoff/integration_audit.md` (Sections 4 & 5), `docs/research_handoff/integration_audit.json` |
+| **Dated Research Audit Reference** | `docs/research_handoff/integration_audit.json` (2026-09-21 provenance; see the current system summary in the root README) |
 
 ---
 

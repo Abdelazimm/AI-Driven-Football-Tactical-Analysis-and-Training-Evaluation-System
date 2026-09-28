@@ -17,7 +17,7 @@ Movement is treated as observable evidence, not a diagnosis of motivation or eff
 
 The React/TypeScript frontend uses TanStack Start. FastAPI provides the API and validates jobs and media. Supabase PostgreSQL and private Storage hold application records and media. Modal runs on-demand analysis workers. The processing path is Vision → ASR → temporal fusion → evidence validation → report → persisted result → coach-facing interface. The frontend reads an existing persisted result for the final local presentation; opening that result does not launch inference.
 
-- **Vision methodologies:** Three complete methods were evaluated. M1 combines YOLO11m, BoT-SORT, external ReID and reconciliation. M2 combines RF-DETR-L, Deep-EIoU, ReID and modified GTA. M3 combines YOLO26m, modified SRITrack and DINOv3-based appearance evidence. M2 was selected for the AUTO complete-method runner on the frozen formal evaluation. Separately, the Stage 4B fine-tuned YOLO11m checkpoint is the designated deployment *detector* artifact. These roles must not be conflated.
+- **Vision methodologies:** Three complete methods were evaluated. M1 combines YOLO11m, BoT-SORT, external ReID and reconciliation. M2 combines RF-DETR-L, Deep-EIoU, ReID and modified GTA. M3 combines YOLO26m, modified SRITrack and DINOv3-based appearance evidence. M2 was selected for the AUTO complete-method runner on the frozen formal evaluation. Separately, the Stage 4B fine-tuned YOLO11m checkpoint is the designated deployment *detector* artifact (`SELECTED_FOR_DEPLOYMENT`). These roles must not be conflated.
 - **ASR:** The selected transcription stack uses faster-whisper `base.en`; the comparison included NVIDIA Parakeet-TDT 0.6B v2. Tactical events are derived using deterministic categories and triggers.
 - **Multimodal fusion:** A coach event ending at `t_end` is evaluated over the frozen response window `[t_end + 2 s, t_end + 6 s]`. Event, team, spatial and anonymous-track evidence remain distinct.
 - **Grounded reporting:** Llama 3.1 8B was selected for structured report generation with deterministic grounding validation and a deterministic fallback. The full-session Phase 6 result used the fallback.
@@ -26,9 +26,9 @@ The React/TypeScript frontend uses TanStack Start. FastAPI provides the API and 
 
 ## Evaluation summary and key limitations
 
-Formal Vision evaluation compared the three complete methods on four dense-ground-truth clips. M2 had the strongest observed complete-system benchmark performance, but **none of the methods passed the persistent physical-player identity safety requirement**. The integrated Phase 6 run processed a 340-second derived transport input (20,391 frames), recorded 13 tactical events and 28 structured evidence items, and ended `COMPLETED_WITH_LIMITATIONS`. Player-level analysis was withheld (`FAIL_UNSAFE_MERGE`); the transport input used `NO_METRIC_CALIBRATION`; six response windows lacked sufficient visual observations. These are limitations, not evidence of non-response by players.
+Formal Vision evaluation compared the three complete methods on four dense-ground-truth clips. M2 had the strongest observed complete-system benchmark performance, but **none of the methods passed the persistent physical-player identity safety requirement**. The historical identity study recorded `FAIL_HIGH_FRAGMENTATION`; the formal complete-method gate recorded `FAIL_UNSAFE_MERGE`. The integrated Phase 6 run processed a 340-second derived transport input (20,391 frames), recorded 13 tactical events and 28 structured evidence items, and ended `COMPLETED_WITH_LIMITATIONS`. Player-level analysis was withheld; the transport input used `NO_METRIC_CALIBRATION`; six response windows lacked sufficient visual observations. These are limitations, not evidence of non-response by players.
 
-The C03, C04 and C06 capability showcase uses manually verified identities, targets and tactical context. It does **not** demonstrate successful automated persistent identity. A six-participant formative coach study informed two interface iterations; there was no second post-iteration user study. Further limitations include camera-specific calibration, long full-session inference time, missing observations and no full-session overlay for Phase 6. Focused tests pass, but the historical broad test suite had environment-dependent failures; this README makes no claim that every test passes.
+The C03, C04 and C06 capability showcase (`PASS_FINAL_ORACLE_ASSISTED_CAPABILITY_SHOWCASE`) uses manually verified identities, targets and tactical context. It does **not** demonstrate successful automated persistent identity. A six-participant formative coach study informed two interface iterations; there was no second post-iteration user study. Further limitations include camera-specific calibration, long full-session inference time, missing observations and no full-session overlay for Phase 6. Focused tests pass, but the historical broad test suite had environment-dependent failures; this README makes no claim that every test passes.
 
 ## Repository structure
 
@@ -43,7 +43,16 @@ The C03, C04 and C06 capability showcase uses manually verified identities, targ
 | `docs/` | Architecture, evaluation, report drafts and safe figures |
 | `scripts/` | Lightweight validation utilities |
 
-Historical reports and research handoff documents are retained for provenance. Frozen research experiments remain outside this application workspace and were not rerun for publication.
+One dated research audit remains under `docs/research_handoff/` because the golden manifest cites it; its earlier integration status does not describe the final product. Frozen research experiments remain outside this application workspace and were not rerun for publication.
+
+## Final evidence and reproducibility
+
+- [Phase 6 full-session evaluation](docs/phase6/IMPLEMENTATION_PHASE6_FINAL_E2E_REPORT.md) and [persisted result](docs/phase6/IMPLEMENTATION_PHASE6_FINAL_E2E_RESULT.json)
+- [Final software verification](docs/evaluation/software_verification/IMPLEMENTATION_PHASE5_FINAL_VERIFICATION.md) and [remote lifecycle evidence](docs/evaluation/software_verification/IMPLEMENTATION_PHASE5_REMOTE_CLOSURE.md)
+- [Coach-study iteration 1](docs/user-study/COACH_STUDY_ITERATION_REPORT.md) and [iteration 2](docs/user-study/COACH_STUDY_ITERATION_PASS02_REPORT.md)
+- [Frozen integration contract](docs/reproducibility/P0_ARCHITECTURE_CONTRACT_FREEZE_REV2A.md) and [final report figures](docs/final_report_assets/)
+
+The figure provenance manifests retain the original source paths and SHA-256 values recorded when the figures were made. Some source files have since been relocated into `docs/` without changing their evidence content.
 
 ## Local setup
 
